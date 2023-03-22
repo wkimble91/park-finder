@@ -1,0 +1,21 @@
+/*-- -------------------------- -->
+<---       Color Schemes        -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---        Breakpoints         -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---          Spacing           -->
+<--- -------------------------- -*/
+.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 6rem; height: 110vh; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 54, 47, 0)), to(rgba(24, 24, 24, 0.95))), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(48, 54, 47, 0), rgba(24, 24, 24, 0.95)), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
+@media only screen and (max-width: 75em) { .hero { padding: 4rem; } }
+@media only screen and (max-width: 56.25em) { .hero { padding: 0rem; } }
+
+.hero_header_container { background-color: rgba(0, 0, 0, 0.4); margin-top: 10rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 30vh; width: 60vw; max-height: 30rem; max-width: 100rem; border-radius: 1rem; text-align: center; }
+@media only screen and (max-width: 75em) { .hero_header_container { height: 20vh; width: 70vw; } }
+@media only screen and (max-width: 56.25em) { .hero_header_container { height: 16vh; width: 80vw; } }
+@media only screen and (max-width: 37.5em) { .hero_header_container { height: 10vh; width: 90vw; } }
+.hero_header_container .header { color: white; font-size: 10rem; font-weight: 800; line-height: 1.4; }
+@media only screen and (max-width: 75em) { .hero_header_container .header { font-size: 8rem; } }
+@media only screen and (max-width: 56.25em) { .hero_header_container .header { font-size: 5rem; } }
+@media only screen and (max-width: 37.5em) { .hero_header_container .header { font-size: 4rem; } }

@@ -1,0 +1,26 @@
+/*-- -------------------------- -->
+<---       Color Schemes        -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---        Breakpoints         -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---          Spacing           -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---     General Formatting     -->
+<--- -------------------------- -*/
+*, *::before, *::after { margin: 0; padding: 0; -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; overflow-x: hidden; scroll-behavior: smooth; }
+@media only screen and (max-width: 112.5em) { html { font-size: 50%; } }
+
+body { background-color: #181818; font-family: 'Monaco', 'Open Sans', sans-serif; line-height: 1.6; width: 100vw; overflow-x: hidden; }
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+::-moz-selection { background-color: #3a5a40; color: #fff; }
+
+::selection { background-color: #3a5a40; color: #fff; }

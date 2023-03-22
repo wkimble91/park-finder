@@ -1,0 +1,303 @@
+@import 'variables';
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 6rem;
+  height: 110vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(#30362f, 0),
+      rgba($background-color-dark, 0.95)
+    ),
+    url(../../public/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    padding: 4rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    //Spacing
+    padding: 0rem;
+  }
+}
+.hero_header_container {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 60vw;
+  max-height: 30rem;
+  max-width: 100rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    height: 20vh;
+    width: 70vw;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    //Spacing
+    height: 16vh;
+    width: 80vw;
+  }
+  @media only screen and (max-width: $bp-small) {
+    //Spacing
+    height: 10vh;
+    width: 90vw;
+  }
+
+  .header {
+    color: white;
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 1.4;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      font-size: 8rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      font-size: 5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      font-size: 4rem;
+    }
+  }
+  .subheader {
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      font-size: 2.6rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      font-size: 1.8rem;
+    }
+  }
+}
+.stateSelector {
+  margin: 10rem auto auto;
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    margin: 10rem auto auto;
+  }
+
+  select {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      width: 70vw;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      width: 80vw;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      width: 90vw;
+    }
+  }
+}
+
+.selectedPark {
+  display: flex;
+  gap: 2rem 2rem;
+  flex-wrap: wrap;
+  margin: 10rem 0;
+
+  &Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 30rem;
+    width: 28vw;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 44vw;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 94vw;
+    }
+
+    &Name {
+      margin: 0 auto;
+      padding: 1rem 1rem 0;
+      text-align: center;
+      font-size: 1.8rem;
+      color: white;
+      z-index: 200;
+      min-height: 5rem;
+      height: fit-content;
+
+      @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
+        display: none;
+      }
+    }
+
+    &Back {
+      &Name {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 1rem 0;
+        text-align: center;
+        font-size: 2.6rem;
+        font-weight: 800;
+        color: white;
+      }
+      &Cost {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2rem;
+        color: lightgray;
+      }
+      &Contact {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.8rem;
+        color: lightgray;
+      }
+      &Hours {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.9rem;
+        font-weight: 400;
+        color: lightgray;
+
+        ul li {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    &Side {
+      transition: all 0.8s ease;
+      position: absolute;
+
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+
+      &Front {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      &Back {
+        display: flex;
+        flex-wrap: wrap;
+        transform: rotateY(180deg);
+        height: 100%;
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(50, 50, 50, 0.9),
+          rgba(10, 10, 10, 0.9)
+        );
+
+        &Left {
+          width: 60%;
+          padding: 1rem 1rem 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          word-wrap: break-word;
+        }
+        &Right {
+          width: 40%;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    &Image {
+      object-fit: cover;
+      background-size: cover;
+      height: 100%;
+      background-blend-mode: screen;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+      &Container {
+        height: 24rem;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      height: auto;
+      border-radius: 3px;
+      background-color: white;
+      box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+
+      &Side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+
+        &Front {
+          margin-bottom: -8rem;
+        }
+
+        &Back {
+          padding: 6rem 0 0.5rem;
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          background-color: rgb(40, 40, 40);
+
+          &Left {
+            width: 50%;
+          }
+          &Right {
+            width: 50%;
+          }
+        }
+      }
+
+      &:hover &SideFront {
+        transform: rotateY(0) !important;
+      }
+    }
+
+    &:hover &SideFront {
+      transform: rotateY(-180deg);
+    }
+
+    &:hover &SideBack {
+      transform: rotateY(0);
+    }
+  }
+}

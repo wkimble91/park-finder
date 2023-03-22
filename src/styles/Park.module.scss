@@ -1,0 +1,104 @@
+@import 'variables';
+
+.selectedHeader {
+  width: 100vw;
+  height: 60vh;
+  background-color: black;
+
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+.park {
+  padding-top: 5rem;
+  color: white;
+  &Image {
+    object-fit: cover;
+    z-index: 1;
+
+    &Container {
+      position: relative;
+      width: 100vw;
+      height: 45vh;
+      z-index: 1;
+    }
+  }
+  &Name {
+    position: relative;
+
+    color: white;
+    font-size: 5rem;
+    margin: -4rem auto 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: fit-content;
+    text-align: center;
+    padding: 0.5rem 4rem;
+    z-index: 2000;
+    border-radius: 1rem;
+  }
+
+  &Info {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &Descripton {
+    color: white;
+    padding: 1rem 4rem;
+
+    h1 {
+      font-size: 4rem;
+      padding: 2rem 4rem;
+      text-align: center;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      padding: 3rem 0 0.5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  &Todo {
+    color: white;
+
+    h2 {
+      font-size: 4rem;
+      padding: 4rem;
+      text-align: center;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    &List {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0 4rem 10rem 4rem;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr;
+        padding: 0 6rem 10rem 6rem;
+      }
+
+      &Item {
+        font-size: 2rem;
+      }
+    }
+  }
+}

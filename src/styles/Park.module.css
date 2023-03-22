@@ -1,0 +1,28 @@
+/*-- -------------------------- -->
+<---       Color Schemes        -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---        Breakpoints         -->
+<--- -------------------------- -*/
+/*-- -------------------------- -->
+<---          Spacing           -->
+<--- -------------------------- -*/
+.selectedHeader { width: 100vw; height: 60vh; background-color: black; }
+.selectedHeader h1 { font-size: 8rem; }
+
+.park { padding-top: 5rem; color: white; }
+.parkImage { -o-object-fit: cover; object-fit: cover; z-index: 1; }
+.parkImageContainer { position: relative; width: 100vw; height: 45vh; z-index: 1; }
+.parkName { position: relative; color: white; font-size: 5rem; margin: -4rem auto 0; background-color: rgba(0, 0, 0, 0.9); width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; text-align: center; padding: 0.5rem 4rem; z-index: 2000; border-radius: 1rem; }
+.parkInfo { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: 3rem; font-size: 2rem; text-align: center; }
+.parkDescripton { color: white; padding: 1rem 4rem; }
+.parkDescripton h1 { font-size: 4rem; padding: 2rem 4rem; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; }
+.parkDescripton h2 { font-size: 2.4rem; padding: 3rem 0 0.5rem; }
+.parkDescripton p { font-size: 1.6rem; }
+.parkTodo { color: white; }
+.parkTodo h2 { font-size: 4rem; padding: 4rem; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; }
+.parkTodoList { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; padding: 0 4rem 10rem 4rem; }
+@media only screen and (max-width: 75em) { .parkTodoList { grid-template-columns: 1fr 1fr 1fr; } }
+@media only screen and (max-width: 56.25em) { .parkTodoList { grid-template-columns: 1fr 1fr; } }
+@media only screen and (max-width: 37.5em) { .parkTodoList { grid-template-columns: 1fr; padding: 0 6rem 10rem 6rem; } }
+.parkTodoListItem { font-size: 2rem; }

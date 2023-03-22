@@ -1,0 +1,77 @@
+@import 'variables';
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  height: 110vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(#30362f, 0),
+      rgba($background-color-dark, 0.95)
+    ),
+    url(../../public/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    padding: 4rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    //Spacing
+    padding: 0rem;
+  }
+}
+.hero_header_container {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 60vw;
+  max-height: 30rem;
+  max-width: 100rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    height: 20vh;
+    width: 70vw;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    //Spacing
+    height: 16vh;
+    width: 80vw;
+  }
+  @media only screen and (max-width: $bp-small) {
+    //Spacing
+    height: 10vh;
+    width: 90vw;
+  }
+
+  .header {
+    color: white;
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 1.4;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      font-size: 8rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      font-size: 5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      font-size: 4rem;
+    }
+  }
+}

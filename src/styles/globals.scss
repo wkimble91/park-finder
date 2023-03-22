@@ -1,0 +1,45 @@
+@import 'variables';
+/*-- -------------------------- -->
+<---     General Formatting     -->
+<--- -------------------------- -*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%; //1rem = 8px
+  }
+}
+
+body {
+  background-color: $background-color-dark;
+  font-family: 'Monaco', 'Open Sans', sans-serif;
+  line-height: 1.6;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+//Changes highlight coloring
+::selection {
+  background-color: $color-primary-dark;
+  color: #fff;
+}
