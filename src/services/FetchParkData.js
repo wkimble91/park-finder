@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function fetchParkData(url) {
@@ -17,9 +17,6 @@ export default function fetchParkData(url) {
       .catch((err) => {
         setError(err);
       });
-    // .finally(() => {
-    //   setLoading(false);
-    // });
   }, [url]);
 
   return { data, loading, error, setLoading };
