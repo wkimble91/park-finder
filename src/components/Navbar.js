@@ -18,7 +18,7 @@ export const Navbar = () => {
       <nav className={styles.headerBox}>
         <ul className={styles.header__nav}>
           <li className={styles.header__navItem}>
-            <Link href='/about' target='_self'>
+            <Link href='/about' target='_self' aria-label='Link to About Page'>
               About Us
             </Link>
           </li>
