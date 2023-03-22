@@ -167,7 +167,8 @@
         }
       }
 
-      & a {
+      & a,
+      & Link {
         //Spacing
         margin-right: 3rem;
         padding: 0.5rem 1rem;

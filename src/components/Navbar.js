@@ -18,9 +18,9 @@ export const Navbar = () => {
       <nav className={styles.headerBox}>
         <ul className={styles.header__nav}>
           <li className={styles.header__navItem}>
-            <a href='/about' target='_self'>
+            <Link href='/about' target='_self'>
               About Us
-            </a>
+            </Link>
           </li>
           <hr className={styles.header__divider} />
           <li className={styles.header__navItem}>

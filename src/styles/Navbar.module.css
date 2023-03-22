@@ -25,11 +25,11 @@
 @media only screen and (max-width: 37.5em) { .header__navToggle { padding: 4rem 0; } }
 @media only screen and (max-width: 75em) { .header__nav * button { margin-right: 3rem; } }
 @media only screen and (max-width: 37.5em) { .header__nav * button { margin-right: 0; margin-left: 0; } }
-.header__nav * a { margin-right: 3rem; padding: 0.5rem 1rem; position: relative; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: white; }
-.header__nav * a:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 4px; border-bottom: 2px solid #588157; -webkit-transition: width 0.3s; transition: width 0.3s; }
-.header__nav * a:hover:before { width: 20%; }
-@media only screen and (max-width: 56.25em) { .header__nav * a { margin-right: 3rem; } }
-@media only screen and (max-width: 37.5em) { .header__nav * a { width: 100%; margin: auto; color: #3a5a40; font-size: 3rem; } }
+.header__nav * a, .header__nav * Link { margin-right: 3rem; padding: 0.5rem 1rem; position: relative; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: white; }
+.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 4px; border-bottom: 2px solid #588157; -webkit-transition: width 0.3s; transition: width 0.3s; }
+.header__nav * a:hover:before, .header__nav * Link:hover:before { width: 20%; }
+@media only screen and (max-width: 56.25em) { .header__nav * a, .header__nav * Link { margin-right: 3rem; } }
+@media only screen and (max-width: 37.5em) { .header__nav * a, .header__nav * Link { width: 100%; margin: auto; color: #3a5a40; font-size: 3rem; } }
 .header__hamburger { display: none; }
 @media only screen and (max-width: 37.5em) { .header__hamburger { cursor: pointer; display: block; margin: auto 2rem; z-index: 300; } }
 .header__hamburger .bar { display: block; width: 4rem; height: 1px; margin: 8px auto; background-color: #16031a; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
