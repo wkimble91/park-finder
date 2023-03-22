@@ -1,15 +1,5 @@
 @import 'variables';
 
-.selectedHeader {
-  width: 100vw;
-  height: 60vh;
-  background-color: black;
-
-  h1 {
-    font-size: 8rem;
-  }
-}
-
 .park {
   padding-top: 5rem;
   color: white;
@@ -100,5 +90,15 @@
         font-size: 2rem;
       }
     }
+  }
+
+  &Error {
+    padding-top: 10rem;
+    font-size: 8rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
   }
 }
