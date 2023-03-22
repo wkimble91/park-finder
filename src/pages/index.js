@@ -1,23 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState, useContext, setContext } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar.js';
-import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
-export default function Home({
-  setSelectedParkCode,
-  setSelectedParkData,
-  selectedParkData,
-  selectedParkCode,
-  allData,
-}) {
-  const [stateCode, setStateCode] = useState(null);
+export default function Home({ setSelectedParkData }) {
   const [parkData, setParkData] = useState([]);
   const [loading, setLoading] = useState(false);
 

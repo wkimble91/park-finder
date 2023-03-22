@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 import { Navbar } from '@/components/Navbar.js';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/About.module.css';

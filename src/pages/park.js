@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Navbar } from '@/components/Navbar.js';
-import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Park.module.css';
 
-export default function SelectedPark({
-  selectedParkData,
-  selectedParkCode,
-  allData,
-}) {
+export default function SelectedPark({ selectedParkData }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [selectedParkData]);
-
-  let router = useRouter();
 
   console.log(selectedParkData);
 

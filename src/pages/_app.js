@@ -1,9 +1,8 @@
 import '@/styles/globals.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import fetchParkData from '@/services/FetchParkData.js';
 
 export default function App({ Component, pageProps }) {
-  const [featuredParks, setFeaturedParks] = useState([]);
   const [parkData, setParkData] = useState(null);
   const [selectedParkCode, setSelectedParkCode] = useState('');
   const [selectedParkData, setSelectedParkData] = useState([]);
