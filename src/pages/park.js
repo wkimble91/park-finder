@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { Navbar } from '@/components/Navbar.js';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Navbar } from '@/components/Navbar.js';
 import styles from '@/styles/Park.module.css';
 
 export default function SelectedPark({ selectedParkData }) {
@@ -16,7 +17,9 @@ export default function SelectedPark({ selectedParkData }) {
       </Head>
       <Navbar />
       {selectedParkData.length === 0 ? (
-        <h1 className={styles.parkError}>Please select a park</h1>
+        <Link href={'/'} className={styles.parkError}>
+          Please select a park
+        </Link>
       ) : (
         <div className={styles.park}>
           <div className={styles.parkImageContainer}>

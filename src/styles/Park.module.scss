@@ -93,10 +93,11 @@
   }
 
   &Error {
+    display: block;
     padding-top: 10rem;
     font-size: 8rem;
     color: white;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     width: fit-content;
     height: fit-content;

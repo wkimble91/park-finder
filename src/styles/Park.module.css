@@ -23,4 +23,4 @@
 @media only screen and (max-width: 56.25em) { .parkTodoList { grid-template-columns: 1fr 1fr; } }
 @media only screen and (max-width: 37.5em) { .parkTodoList { grid-template-columns: 1fr; padding: 0 6rem 10rem 6rem; } }
 .parkTodoListItem { font-size: 2rem; }
-.parkError { padding-top: 10rem; font-size: 8rem; color: white; margin: auto; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+.parkError { display: block; padding-top: 10rem; font-size: 8rem; color: white; margin: 0 auto; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
