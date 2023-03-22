@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-export default function fetchParkData(url) {
+export default function FetchParkData(url) {
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
