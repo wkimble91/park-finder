@@ -13,7 +13,11 @@ export default function SelectedPark({ selectedParkData }) {
   return (
     <>
       <Head>
-        <title>Park Finder</title>
+        {selectedParkData.length === 0 ? (
+          <title>Park Finder</title>
+        ) : (
+          <title>Park Finder | {selectedParkData.name}</title>
+        )}
       </Head>
       <Navbar />
       {selectedParkData.length === 0 ? (
