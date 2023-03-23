@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar.js';
+import { Footer } from '@/components/Footer.js';
 import styles from '@/styles/Home.module.css';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
@@ -209,6 +210,7 @@ export default function Home({ setSelectedParkData }) {
               );
             })}
         </div>
+        <Footer />
       </main>
     </>
   );
