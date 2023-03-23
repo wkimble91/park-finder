@@ -24,42 +24,41 @@
     //Spacing
     padding: 0rem;
   }
-}
-.hero_header_container {
-  background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 60vw;
-  max-height: 30rem;
-  max-width: 100rem;
-  border-radius: 1rem;
-  text-align: center;
 
-  @media only screen and (max-width: $bp-large) {
-    //Spacing
-    height: 20vh;
-    width: 70vw;
-  }
-  @media only screen and (max-width: $bp-medium) {
-    //Spacing
-    height: 16vh;
-    width: 80vw;
-  }
-  @media only screen and (max-width: $bp-small) {
-    //Spacing
-    height: 10vh;
-    width: 90vw;
+  &HeaderContainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    width: 60vw;
+    max-width: 100rem;
+    border-radius: $default-border-radius;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      // height: 20vh;
+      width: 70vw;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      height: 11rem;
+      width: 80vw;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      width: 90vw;
+    }
   }
 
-  .header {
+  &Header {
     color: white;
     font-size: 10rem;
     font-weight: 800;
-    line-height: 1.4;
+    line-height: 1.6;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
@@ -74,17 +73,22 @@
       font-size: 4rem;
     }
   }
-  .subheader {
+  &Subheader {
     color: white;
     font-size: 3rem;
     font-weight: 400;
+    line-height: 1.8;
+    padding-bottom: 3rem;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
+      padding-bottom: 2rem;
       font-size: 2.6rem;
     }
     @media only screen and (max-width: $bp-medium) {
       //Spacing
+      padding-bottom: 1rem;
+
       font-size: 2rem;
     }
     @media only screen and (max-width: $bp-small) {
@@ -98,7 +102,7 @@
 
   @media only screen and (max-width: $bp-large) {
     //Spacing
-    margin: 10rem auto auto;
+    margin: 4rem auto auto;
   }
 
   select {
@@ -109,7 +113,7 @@
     border: none;
     padding: 1rem 2rem;
     width: 50rem;
-    border-radius: 0.5rem;
+    border-radius: $default-border-radius;
     margin: 0 auto;
 
     @media only screen and (max-width: $bp-large) {
@@ -128,11 +132,13 @@
   }
 }
 
-.selectedPark {
-  display: flex;
-  gap: 2rem 2rem;
-  flex-wrap: wrap;
-  margin: 10rem 0;
+.park {
+  &Container {
+    display: flex;
+    gap: 2rem 2rem;
+    flex-wrap: wrap;
+    margin: 10rem 0;
+  }
 
   &Card {
     position: relative;
@@ -208,7 +214,7 @@
 
       width: 100%;
       backface-visibility: hidden;
-      border-radius: 3px;
+      border-radius: $default-border-radius;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
@@ -234,10 +240,18 @@
           flex-direction: column;
           justify-content: space-between;
           word-wrap: break-word;
+
+          @media only screen and (max-width: $bp-largest) {
+            width: 50%;
+          }
         }
         &Right {
           width: 40%;
           padding-right: 1rem;
+
+          @media only screen and (max-width: $bp-largest) {
+            width: 50%;
+          }
         }
       }
     }
@@ -248,7 +262,7 @@
       height: 100%;
       background-blend-mode: screen;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: ellipse(150% 100% at 50% 0%);
 
       &Container {
         height: 24rem;
@@ -259,8 +273,8 @@
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       height: auto;
-      border-radius: 3px;
-      background-color: white;
+      border-radius: $default-border-radius;
+      background-color: rgb(40, 40, 40);
       box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
       &Side {
@@ -269,14 +283,16 @@
         box-shadow: none;
 
         &Front {
-          margin-bottom: -8rem;
+          margin-bottom: -9rem;
         }
 
         &Back {
-          padding: 6rem 0 0.5rem;
+          padding: 7rem 0 1rem;
           transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%);
           background-color: rgb(40, 40, 40);
+          width: 100%;
+          border-radius: 0 0 $default-border-radius $default-border-radius;
 
           &Left {
             width: 50%;

@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 5vh 6rem;
   height: 110vh;
   background-image: linear-gradient(
       to bottom,
@@ -24,42 +24,41 @@
     //Spacing
     padding: 0rem;
   }
-}
-.hero_header_container {
-  background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 60vw;
-  max-height: 30rem;
-  max-width: 100rem;
-  border-radius: 1rem;
-  text-align: center;
 
-  @media only screen and (max-width: $bp-large) {
-    //Spacing
-    height: 20vh;
-    width: 70vw;
-  }
-  @media only screen and (max-width: $bp-medium) {
-    //Spacing
-    height: 16vh;
-    width: 80vw;
-  }
-  @media only screen and (max-width: $bp-small) {
-    //Spacing
-    height: 10vh;
-    width: 90vw;
+  &HeaderContainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    width: 60vw;
+    max-width: 100rem;
+    border-radius: $default-border-radius;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      // height: 20vh;
+      width: 70vw;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      height: 11rem;
+      width: 80vw;
+    }
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      width: 90vw;
+    }
   }
 
-  .header {
+  &Header {
     color: white;
     font-size: 10rem;
     font-weight: 800;
-    line-height: 1.4;
+    line-height: 1.6;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing

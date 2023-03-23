@@ -34,9 +34,9 @@ export default function Home({ setSelectedParkData }) {
       <Navbar />
 
       <main className={styles.hero}>
-        <div className={styles.hero_header_container}>
-          <h1 className={styles.header}>Park Finder</h1>
-          <h2 className={styles.subheader}>Not all who wander are lost</h2>
+        <div className={styles.heroHeaderContainer}>
+          <h1 className={styles.heroHeader}>Park Finder</h1>
+          <h2 className={styles.heroSubheader}>Not all who wander are lost</h2>
         </div>
         <div className={styles.stateSelector}>
           <select
@@ -102,7 +102,7 @@ export default function Home({ setSelectedParkData }) {
             <option value='WY'>Wyoming</option>
           </select>
         </div>
-        <div className={styles.selectedPark}>
+        <div className={styles.parkContainer}>
           {parkData.length > 0 &&
             parkData.map((item, index) => {
               return (
@@ -111,18 +111,18 @@ export default function Home({ setSelectedParkData }) {
                   href={{
                     pathname: '/park',
                   }}
-                  className={styles.selectedParkCard}
+                  className={styles.parkCard}
                   data-testid='card'
                   parkcode={item.parkCode}
                   key={index}
                   onClick={() => onSelectedClick(item)}
                 >
                   <div
-                    className={`${styles.selectedParkCardSide} ${styles.selectedParkCardSideFront}`}
+                    className={`${styles.parkCardSide} ${styles.parkCardSideFront}`}
                   >
-                    <div className={styles.selectedParkCardImageContainer}>
+                    <div className={styles.parkCardImageContainer}>
                       <Image
-                        className={styles.selectedParkCardImage}
+                        className={styles.parkCardImage}
                         alt={`Image of ${item.fullName}`}
                         src={item.images[0].url}
                         fill
@@ -132,18 +132,16 @@ export default function Home({ setSelectedParkData }) {
                       28vw'
                       />
                     </div>
-                    <h1 className={styles.selectedParkCardName}>{item.name}</h1>
+                    <h1 className={styles.parkCardName}>{item.name}</h1>
                   </div>
 
                   <div
-                    className={`${styles.selectedParkCardSide} ${styles.selectedParkCardSideBack}`}
+                    className={`${styles.parkCardSide} ${styles.parkCardSideBack}`}
                   >
-                    <p className={styles.selectedParkCardBackName}>
-                      {item.fullName}
-                    </p>
-                    <div className={styles.selectedParkCardSideBackLeft}>
+                    <p className={styles.parkCardBackName}>{item.fullName}</p>
+                    <div className={styles.parkCardSideBackLeft}>
                       {item.entranceFees[0] && (
-                        <p className={styles.selectedParkCardBackCost}>
+                        <p className={styles.parkCardBackCost}>
                           <b>Entrance Fee:</b>{' '}
                           {item.entranceFees[0].cost === '0.00'
                             ? 'Free'
@@ -152,14 +150,14 @@ export default function Home({ setSelectedParkData }) {
                       )}
                       <div>
                         {item.contacts.emailAddresses[0].emailAddress && (
-                          <p className={styles.selectedParkCardBackContact}>
+                          <p className={styles.parkCardBackContact}>
                             <b>Email:</b>
                             <br />
                             {item.contacts.emailAddresses[0].emailAddress}
                           </p>
                         )}
                         {item.contacts.phoneNumbers[0] && (
-                          <p className={styles.selectedParkCardBackContact}>
+                          <p className={styles.parkCardBackContact}>
                             <b>Phone:</b>
                             <br />
                             {item.contacts.phoneNumbers[0].phoneNumber}
@@ -167,9 +165,9 @@ export default function Home({ setSelectedParkData }) {
                         )}
                       </div>
                     </div>
-                    <div className={styles.selectedParkCardSideBackRight}>
+                    <div className={styles.parkCardSideBackRight}>
                       {item.operatingHours[0] && (
-                        <div className={styles.selectedParkCardBackHours}>
+                        <div className={styles.parkCardBackHours}>
                           <p>
                             <b>Operating Hours:</b>
                           </p>

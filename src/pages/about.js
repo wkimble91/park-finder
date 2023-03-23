@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
 
       <main className={styles.hero}>
-        <div className={styles.hero_header_container}>
-          <h1 className={styles.header}>About Us</h1>
+        <div className={styles.heroHeaderContainer}>
+          <h1 className={styles.heroHeader}>About Us</h1>
         </div>
       </main>
     </>

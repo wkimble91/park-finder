@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import styles from '@/styles/Navbar.module.css';
 
@@ -12,24 +12,23 @@ export const Navbar = () => {
         className={styles.headerLogo}
         target='_parent'
       >
-        Home
+        <span>Home</span>
       </Link>
 
       <nav className={styles.headerBox}>
-        <ul className={styles.header__nav}>
+        <ul id='navigation' className={styles.header__nav}>
           <li className={styles.header__navItem}>
             <Link href='/about' target='_self' aria-label='Link to About Page'>
               About Us
             </Link>
           </li>
-          <hr className={styles.header__divider} />
           <li className={styles.header__navItem}>
             <a href='https://www.nps.gov/' target='_blank'>
               NPS Website
             </a>
           </li>
         </ul>
-        <div className={styles.header__hamburger}>
+        <div id='header__hamburger' className={styles.header__hamburger}>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
