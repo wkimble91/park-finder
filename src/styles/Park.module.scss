@@ -21,24 +21,71 @@
     font-size: 5rem;
     margin: -4rem auto 0;
     background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: $default-box-shadow;
     width: fit-content;
     text-align: center;
     padding: 0.5rem 4rem;
     z-index: 2000;
-    border-radius: 1rem;
+    border-radius: $default-border-radius-small;
   }
 
   &Info {
     display: flex;
     justify-content: space-around;
-    padding: 3rem;
+    padding: 5rem 3rem 0;
     font-size: 2rem;
     text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &Container {
+      background-color: $color-primary-light;
+      color: black;
+      padding: 3rem 6rem;
+      border-radius: $default-border-radius-large;
+      box-shadow: $default-box-shadow;
+
+      @media only screen and (max-width: $bp-small) {
+        width: fit-content;
+        align-self: center;
+        margin: 1rem;
+        padding: 2rem 4rem;
+      }
+    }
+  }
+
+  &DetailsContainer {
+    display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &Descripton {
     color: white;
-    padding: 1rem 4rem;
+    background-color: $color-primary;
+    margin: 5rem 4rem;
+    padding: 2rem 4rem 6rem;
+    width: 45vw;
+
+    border-radius: $default-border-radius-large;
+    box-shadow: $default-box-shadow;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 90vw;
+    }
 
     h1 {
       font-size: 4rem;
@@ -54,16 +101,27 @@
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
   }
 
   &Todo {
     color: white;
+    background-color: $color-primary-dark;
+
+    margin: 4rem auto;
+    padding: 0 4rem;
+    border-radius: $default-border-radius-large;
+    box-shadow: $default-box-shadow;
+    width: 45vw;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 90vw;
+    }
 
     h2 {
       font-size: 4rem;
-      padding: 4rem;
+      padding: 4rem 0 5rem;
       text-align: center;
       width: fit-content;
       margin: 0 auto;
@@ -71,23 +129,34 @@
 
     &List {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      padding: 0 4rem 10rem 4rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem 1rem;
+      padding: 0 2rem 4rem;
+      width: fit-content;
+      margin: 0 auto;
 
-      @media only screen and (max-width: $bp-large) {
-        grid-template-columns: 1fr 1fr 1fr;
+      @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1rem;
       }
 
+      @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr;
+        gap: 0.5rem 2rem;
+      }
       @media only screen and (max-width: $bp-medium) {
         grid-template-columns: 1fr 1fr;
       }
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: $bp-smallest) {
         grid-template-columns: 1fr;
-        padding: 0 6rem 10rem 6rem;
       }
 
       &Item {
-        font-size: 2rem;
+        font-size: 1.4rem;
+
+        @media only screen and (max-width: $bp-largest) {
+          font-size: 1.6rem;
+        }
       }
     }
   }

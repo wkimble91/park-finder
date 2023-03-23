@@ -26,7 +26,7 @@
   }
 
   &HeaderContainer {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
     height: 18rem;
     width: 60vw;
     max-width: 100rem;
-    border-radius: $default-border-radius;
+    border-radius: $default-border-radius-small;
     text-align: center;
 
     @media only screen and (max-width: $bp-large) {
@@ -113,7 +113,7 @@
     border: none;
     padding: 1rem 2rem;
     width: 50rem;
-    border-radius: $default-border-radius;
+    border-radius: $default-border-radius-small;
     margin: 0 auto;
 
     @media only screen and (max-width: $bp-large) {
@@ -214,12 +214,16 @@
 
       width: 100%;
       backface-visibility: hidden;
-      border-radius: $default-border-radius;
+      border-radius: $default-border-radius-small;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
       &Front {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(20, 20, 20, 0.9),
+          rgba(10, 10, 10, 0.9)
+        );
       }
 
       &Back {
@@ -229,8 +233,8 @@
         height: 100%;
         background-image: linear-gradient(
           to right bottom,
-          rgba(50, 50, 50, 0.9),
-          rgba(10, 10, 10, 0.9)
+          rgba(40, 40, 40, 0.95),
+          rgba(10, 10, 10, 0.95)
         );
 
         &Left {
@@ -273,7 +277,7 @@
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       height: auto;
-      border-radius: $default-border-radius;
+      border-radius: $default-border-radius-small;
       background-color: rgb(40, 40, 40);
       box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
@@ -292,7 +296,8 @@
           clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%);
           background-color: rgb(40, 40, 40);
           width: 100%;
-          border-radius: 0 0 $default-border-radius $default-border-radius;
+          border-radius: 0 0 $default-border-radius-small
+            $default-border-radius-small;
 
           &Left {
             width: 50%;

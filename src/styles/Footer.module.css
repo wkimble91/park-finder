@@ -5,10 +5,10 @@
 <---        Breakpoints         -->
 <--- -------------------------- -*/
 /*-- -------------------------- -->
-<---          Spacing           -->
+<---          Defaults          -->
 <--- -------------------------- -*/
-.footer { width: 100vw; padding: 2rem 5rem; background-color: black; }
-.footerBox { color: white; font-size: 1.6rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.footer { width: 100vw; padding: 2rem 3rem; background-color: #181818; }
+.footerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.4rem; color: white; }
 @media only screen and (max-width: 75em) { .footerBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 @media only screen and (max-width: 75em) { .footerCopyright { padding: 0.5rem 0; } }
 @media only screen and (max-width: 75em) { .footerAcknowledgment { padding: 0.5rem 0; } }

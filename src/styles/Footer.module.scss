@@ -1,29 +1,40 @@
 @import 'variables';
 
 .footer {
+  //Spacing
   width: 100vw;
-  padding: 2rem 5rem;
-  background-color: black;
+  padding: 2rem 3rem;
+
+  //Color Styling
+  background-color: $background-color-dark;
 
   &Box {
-    color: white;
-    font-size: 1.6rem;
+    //Display
     display: flex;
     justify-content: space-between;
 
+    //Font Styling
+    font-size: 1.4rem;
+
+    //Color Styling
+    color: white;
+
     @media only screen and (max-width: $bp-large) {
+      //Display
       flex-direction: column;
       align-items: center;
     }
   }
   &Copyright {
     @media only screen and (max-width: $bp-large) {
+      //Spacing
       padding: 0.5rem 0;
     }
   }
 
   &Acknowledgment {
     @media only screen and (max-width: $bp-large) {
+      //Spacing
       padding: 0.5rem 0;
     }
   }

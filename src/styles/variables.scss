@@ -34,7 +34,9 @@ $bp-small: 37.5em; //600px
 $bp-smallest: 25em; //400px
 
 /*-- -------------------------- -->
-<---          Spacing           -->
+<---          Defaults          -->
 <--- -------------------------- -*/
 
-$default-border-radius: 1rem;
+$default-border-radius-small: 1rem;
+$default-border-radius-large: 3rem;
+$default-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
