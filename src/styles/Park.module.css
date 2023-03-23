@@ -27,11 +27,11 @@
 .parkTodo { color: white; background-color: #3a5a40; margin: 4rem auto; padding: 0 4rem; border-radius: 3rem; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); width: 45vw; }
 @media only screen and (max-width: 56.25em) { .parkTodo { width: 90vw; } }
 .parkTodo h2 { font-size: 4rem; padding: 4rem 0 5rem; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; }
-.parkTodoList { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3rem 1rem; padding: 0 2rem 4rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; }
+.parkTodoList { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3rem 1rem; padding: 0 2rem 4rem; margin: 0 auto; }
 @media only screen and (max-width: 112.5em) { .parkTodoList { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; } }
-@media only screen and (max-width: 75em) { .parkTodoList { grid-template-columns: 1fr; gap: 0.5rem 2rem; } }
-@media only screen and (max-width: 56.25em) { .parkTodoList { grid-template-columns: 1fr 1fr; } }
-@media only screen and (max-width: 25em) { .parkTodoList { grid-template-columns: 1fr; } }
+@media only screen and (max-width: 75em) { .parkTodoList { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; grid-template-columns: 1fr; gap: 0.5rem 2rem; } }
+@media only screen and (max-width: 56.25em) { .parkTodoList { width: 100%; grid-template-columns: 1fr 1fr; } }
+@media only screen and (max-width: 25em) { .parkTodoList { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; grid-template-columns: 1fr; } }
 .parkTodoListItem { font-size: 1.4rem; }
 @media only screen and (max-width: 112.5em) { .parkTodoListItem { font-size: 1.6rem; } }
 .parkError { display: block; padding-top: 10rem; font-size: 8rem; color: white; margin: 0 auto; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }

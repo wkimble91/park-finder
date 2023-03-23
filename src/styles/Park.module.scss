@@ -132,7 +132,6 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 3rem 1rem;
       padding: 0 2rem 4rem;
-      width: fit-content;
       margin: 0 auto;
 
       @media only screen and (max-width: $bp-largest) {
@@ -141,13 +140,17 @@
       }
 
       @media only screen and (max-width: $bp-large) {
+        width: fit-content;
         grid-template-columns: 1fr;
         gap: 0.5rem 2rem;
       }
       @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+
         grid-template-columns: 1fr 1fr;
       }
       @media only screen and (max-width: $bp-smallest) {
+        width: fit-content;
         grid-template-columns: 1fr;
       }
 
