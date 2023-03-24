@@ -1,7 +1,7 @@
 # Park Finder
 ==================================================
 
- A National Parks app for looking information on local parks, built with [SCSS] and [React (NextJS)].
+ A National Parks app for looking up information on local parks, built with [SCSS] and [React (NextJS)].
 
 [SCSS]: https://sass-lang.com/documentation/syntax
 [React (NextJS)]: https://nextjs.org/
