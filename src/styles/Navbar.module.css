@@ -7,16 +7,33 @@
 /*-- -------------------------- -->
 <---          Defaults          -->
 <--- -------------------------- -*/
-.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: fixed; width: 100%; z-index: 200; text-decoration: none; background-color: #181818; -webkit-transition: -webkit-box-shadow 0.2s; transition: -webkit-box-shadow 0.2s; transition: box-shadow 0.2s; transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: fixed; width: 100%; z-index: 200; border-bottom: 1px solid #d6d6d6; text-decoration: none; background-color: #181818; -webkit-transition: -webkit-box-shadow 0.2s; transition: -webkit-box-shadow 0.2s; transition: box-shadow 0.2s; transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
 @media only screen and (max-width: 37.5em) { .header { z-index: 10; } }
-.headerLogo { margin: auto 3rem; padding: 1rem; width: 4rem; height: 4rem; background-image: url("../../public/logo.png"); background-size: contain; background-repeat: no-repeat; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.3s; transition: all 0.3s; color: white; }
-.headerLogo:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
-.headerLogo span { font-size: 1.8rem; margin: auto -1.8rem; }
-.headerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; width: 100%; }
-.header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 6rem; }
+.headerLogo { margin: auto 3rem; width: 8.1rem; height: 6rem; background-image: url("../../public/logo-name-transparent.png"); background-size: contain; background-repeat: no-repeat; }
+.headerLogo:hover { -webkit-animation: wiggle 1s linear; animation: wiggle 1s linear; }
+@media only screen and (max-width: 37.5em) { .headerLogo { height: 4rem; width: 5.8rem; } }
+@-webkit-keyframes wiggle { 0%,
+      14% { -webkit-transform: rotateZ(0); transform: rotateZ(0); }
+  30% { -webkit-transform: rotateZ(-13deg); transform: rotateZ(-13deg); }
+  40% { -webkit-transform: rotateZ(8deg); transform: rotateZ(8deg); }
+  50% { -webkit-transform: rotateZ(-8deg); transform: rotateZ(-8deg); }
+  60% { -webkit-transform: rotateZ(4deg); transform: rotateZ(4deg); }
+  65% { -webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); }
+  80% { -webkit-transform: rotateZ(0); transform: rotateZ(0); } }
+@keyframes wiggle { 0%,
+      14% { -webkit-transform: rotateZ(0); transform: rotateZ(0); }
+  30% { -webkit-transform: rotateZ(-13deg); transform: rotateZ(-13deg); }
+  40% { -webkit-transform: rotateZ(8deg); transform: rotateZ(8deg); }
+  50% { -webkit-transform: rotateZ(-8deg); transform: rotateZ(-8deg); }
+  60% { -webkit-transform: rotateZ(4deg); transform: rotateZ(4deg); }
+  65% { -webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); }
+  80% { -webkit-transform: rotateZ(0); transform: rotateZ(0); } }
+.header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 7rem; }
+@media only screen and (max-width: 37.5em) { .header__nav { height: 5rem; } }
 @media only screen and (max-width: 75em) { .header__nav * button { margin-right: 3rem; } }
 @media only screen and (max-width: 37.5em) { .header__nav * button { margin-right: 0; margin-left: 0; } }
-.header__nav * a, .header__nav * Link { margin-right: 3rem; padding: 0.5rem 1rem; position: relative; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: white; }
-.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 1px; border-bottom: 3px solid #588157; -webkit-transition: width 0.3s; transition: width 0.3s; }
+.header__nav * a, .header__nav * Link { margin-right: 3rem; padding: 0.5rem 1rem; position: relative; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: #d6d6d6; }
+.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 1px; border-bottom: 3px solid #3b6986; -webkit-transition: width 0.4s; transition: width 0.4s; }
 .header__nav * a:hover:before, .header__nav * Link:hover:before { width: 30%; }
-@media only screen and (max-width: 56.25em) { .header__nav * a, .header__nav * Link { margin-right: 3rem; } }
+@media only screen and (max-width: 56.25em) { .header__nav * a, .header__nav * Link { font-size: 1.8rem; } }
+@media only screen and (max-width: 37.5em) { .header__nav * a, .header__nav * Link { margin-right: 2rem; font-size: 1.6rem; padding: 0.5rem 0; } }

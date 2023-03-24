@@ -9,7 +9,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(#30362f, 0),
-      rgba($background-color-dark, 0.95)
+      rgba($color-grey-dark, 0.95)
     ),
     url(../../public/hero.jpg);
   background-position: center;
@@ -35,7 +35,7 @@
     height: 18rem;
     width: 60vw;
     max-width: 100rem;
-    border-radius: $default-border-radius-small;
+    border-radius: $default-border-radius;
     text-align: center;
 
     @media only screen and (max-width: $bp-large) {

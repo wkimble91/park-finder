@@ -5,11 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 5vh 6rem 0 6rem;
-  height: 110vh;
+  height: 100vh;
   background-image: linear-gradient(
       to bottom,
-      rgba(#30362f, 0),
-      rgba($background-color-dark, 0.95)
+      rgba($color-grey-dark, 0.3),
+      rgba($color-grey-dark, 1)
     ),
     url(../../public/hero.jpg);
   background-position: center;
@@ -26,79 +26,61 @@
   }
 
   &HeaderContainer {
-    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 18rem;
-    width: 60vw;
-    max-width: 100rem;
-    border-radius: $default-border-radius-small;
+    border-radius: $default-border-radius;
     text-align: center;
-
-    @media only screen and (max-width: $bp-large) {
-      //Spacing
-      // height: 20vh;
-      width: 70vw;
-    }
-    @media only screen and (max-width: $bp-medium) {
-      //Spacing
-      height: 11rem;
-      width: 80vw;
-    }
-    @media only screen and (max-width: $bp-small) {
-      //Spacing
-      width: 90vw;
-    }
   }
 
   &Header {
     color: white;
-    font-size: 10rem;
-    font-weight: 800;
+    font-size: 20rem;
+    font-weight: 300;
     line-height: 1.6;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-largest) {
       //Spacing
-      font-size: 8rem;
+      font-size: 14rem;
     }
     @media only screen and (max-width: $bp-medium) {
       //Spacing
-      font-size: 5rem;
+      font-size: 12rem;
     }
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      font-size: 4rem;
+      font-size: 6rem;
     }
   }
   &Subheader {
-    color: white;
-    font-size: 3rem;
+    color: $color-grey-light;
+    font-size: 5rem;
     font-weight: 400;
     line-height: 1.8;
-    padding-bottom: 3rem;
+    font-style: italic;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-largest) {
       //Spacing
-      padding-bottom: 2rem;
-      font-size: 2.6rem;
+      font-size: 4rem;
     }
     @media only screen and (max-width: $bp-medium) {
       //Spacing
-      padding-bottom: 1rem;
-
-      font-size: 2rem;
+      // padding-bottom: 3rem;
+      font-size: 3rem;
     }
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
   }
 }
 .stateSelector {
   margin: 10rem auto auto;
+  border-radius: $default-border-radius;
+  border: 1px solid $color-grey;
+  box-shadow: $default-box-shadow;
 
   @media only screen and (max-width: $bp-large) {
     //Spacing
@@ -106,28 +88,32 @@
   }
 
   select {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: $color-grey-dark;
+
     color: white;
     font-size: 2rem;
-    font-weight: 600;
     border: none;
     padding: 1rem 2rem;
     width: 50rem;
-    border-radius: $default-border-radius-small;
+    border-radius: $default-border-radius;
     margin: 0 auto;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
-      width: 70vw;
+      width: 60vw;
       margin: 0 auto;
     }
     @media only screen and (max-width: $bp-medium) {
       //Spacing
-      width: 80vw;
+      width: 70vw;
     }
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      width: 90vw;
+      width: 80vw;
+
+      font-size: 1.8rem;
     }
   }
 }
@@ -138,6 +124,10 @@
     gap: 2rem 2rem;
     flex-wrap: wrap;
     margin: 10rem 0;
+
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      gap: 6rem;
+    }
   }
 
   &Card {
@@ -177,26 +167,26 @@
         margin: 0 auto;
         padding: 1rem 1rem 0;
         text-align: center;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         font-weight: 800;
         color: white;
       }
       &Cost {
         margin: 0 auto;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: lightgray;
       }
       &Contact {
         margin: 0 auto;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: lightgray;
       }
       &Hours {
         margin: 0 auto;
         text-align: center;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         font-weight: 400;
         color: lightgray;
 
@@ -214,7 +204,7 @@
 
       width: 100%;
       backface-visibility: hidden;
-      border-radius: $default-border-radius-small;
+      border-radius: $default-border-radius;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
@@ -236,7 +226,6 @@
           rgba(40, 40, 40, 0.95),
           rgba(10, 10, 10, 0.95)
         );
-
         &Left {
           width: 60%;
           padding: 1rem 1rem 3rem;
@@ -277,14 +266,16 @@
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       height: auto;
-      border-radius: $default-border-radius-small;
-      background-color: rgb(40, 40, 40);
-      box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+      border-radius: $default-border-radius;
+      background-color: $color-grey-dark;
+      box-shadow: $default-box-shadow;
+      max-width: 60rem;
 
       &Side {
         height: auto;
         position: relative;
         box-shadow: none;
+        transition: none;
 
         &Front {
           margin-bottom: -9rem;
@@ -296,14 +287,15 @@
           clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%);
           background-color: rgb(40, 40, 40);
           width: 100%;
-          border-radius: 0 0 $default-border-radius-small
-            $default-border-radius-small;
+          border-radius: 0 0 $default-border-radius $default-border-radius;
 
           &Left {
             width: 50%;
+            padding: 2rem 0;
           }
           &Right {
             width: 50%;
+            padding: 2rem 0;
           }
         }
       }

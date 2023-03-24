@@ -15,12 +15,34 @@
 html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; overflow-x: hidden; scroll-behavior: smooth; }
 @media only screen and (max-width: 112.5em) { html { font-size: 50%; } }
 
-body { background-color: #181818; font-family: 'Monaco', 'Open Sans', sans-serif; line-height: 1.6; width: 100vw; overflow-x: hidden; }
+body { background-color: #181818; font-family: 'Montserrat', serif; line-height: 1.6; width: 100vw; overflow-x: hidden; }
 
 li { list-style: none; }
 
 a { text-decoration: none; }
 
-::-moz-selection { background-color: #3a5a40; color: #fff; }
+::-moz-selection { background-color: #1d3557; color: #fff; }
 
-::selection { background-color: #3a5a40; color: #fff; }
+::selection { background-color: #1d3557; color: #fff; }
+
+/*-- -------------------------- -->
+<---         Animations         -->
+<--- -------------------------- -*/
+@-webkit-keyframes wiggle { 0%,
+  7% { -webkit-transform: rotateZ(0); transform: rotateZ(0); }
+  15% { -webkit-transform: rotateZ(-15deg); transform: rotateZ(-15deg); }
+  20% { -webkit-transform: rotateZ(10deg); transform: rotateZ(10deg); }
+  25% { -webkit-transform: rotateZ(-10deg); transform: rotateZ(-10deg); }
+  30% { -webkit-transform: rotateZ(6deg); transform: rotateZ(6deg); }
+  35% { -webkit-transform: rotateZ(-4deg); transform: rotateZ(-4deg); }
+  40%,
+  100% { -webkit-transform: rotateZ(0); transform: rotateZ(0); } }
+@keyframes wiggle { 0%,
+  7% { -webkit-transform: rotateZ(0); transform: rotateZ(0); }
+  15% { -webkit-transform: rotateZ(-15deg); transform: rotateZ(-15deg); }
+  20% { -webkit-transform: rotateZ(10deg); transform: rotateZ(10deg); }
+  25% { -webkit-transform: rotateZ(-10deg); transform: rotateZ(-10deg); }
+  30% { -webkit-transform: rotateZ(6deg); transform: rotateZ(6deg); }
+  35% { -webkit-transform: rotateZ(-4deg); transform: rotateZ(-4deg); }
+  40%,
+  100% { -webkit-transform: rotateZ(0); transform: rotateZ(0); } }

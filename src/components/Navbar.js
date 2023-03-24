@@ -11,11 +11,9 @@ export const Navbar = () => {
         aria-label='Top of page link'
         className={styles.headerLogo}
         target='_parent'
-      >
-        <span>Home</span>
-      </Link>
+      ></Link>
 
-      <nav className={styles.headerBox}>
+      <nav>
         <ul id='navigation' className={styles.header__nav}>
           <li className={styles.header__navItem}>
             <Link href='/about' target='_self' aria-label='Link to About Page'>

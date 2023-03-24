@@ -3,18 +3,19 @@
 .header {
   //Display
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
   //Spacing
   position: fixed;
   width: 100%;
   z-index: 200;
 
+  border-bottom: 1px solid $color-grey-light;
+
   //Font Styling
   text-decoration: none;
 
   //Color Styling
-  background-color: $background-color-dark;
+  background-color: $color-grey-dark;
 
   //Animation
   transition: box-shadow 0.2s;
@@ -26,48 +27,61 @@
 
   &Logo {
     margin: auto 3rem;
-    padding: 1rem;
-    width: 4rem;
-    height: 4rem;
 
-    background-image: url('../../public/logo.png');
+    //Color Styling
+    width: 8.1rem;
+    height: 6rem;
+
+    background-image: url('../../public/logo-name-transparent.png');
     background-size: contain;
     background-repeat: no-repeat;
 
-    //Font Styling
-    font-size: 2rem;
-    font-weight: 600;
-
-    //Animations
-    transition: all 0.3s;
-
-    //Color Styling
-    color: white;
-
     &:hover {
-      transform: scale(1.1);
+      animation: wiggle 1s linear;
     }
 
-    span {
-      font-size: 1.8rem;
-      margin: auto -1.8rem;
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      height: 4rem;
+      width: 5.8rem;
     }
-  }
 
-  &Box {
-    //Display
-    display: flex;
-    flex-direction: row-reverse;
-
-    //Spacing
-    width: 100%;
+    @keyframes wiggle {
+      0%,
+      14% {
+        transform: rotateZ(0);
+      }
+      30% {
+        transform: rotateZ(-13deg);
+      }
+      40% {
+        transform: rotateZ(8deg);
+      }
+      50% {
+        transform: rotateZ(-8deg);
+      }
+      60% {
+        transform: rotateZ(4deg);
+      }
+      65% {
+        transform: rotateZ(-2deg);
+      }
+      80% {
+        transform: rotateZ(0);
+      }
+    }
   }
 
   &__nav {
     //Display
     display: flex;
     align-items: center;
-    height: 6rem;
+    height: 7rem;
+
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      height: 5rem;
+    }
 
     & * {
       & button {
@@ -97,7 +111,7 @@
         transition: all 0.1s;
 
         //Color Styling
-        color: white;
+        color: $color-grey-light;
 
         // Hover Lines
         &:before {
@@ -113,7 +127,7 @@
           border-bottom: 3px solid $color-primary;
 
           //Animations
-          transition: width 0.3s;
+          transition: width 0.4s;
         }
 
         &:hover:before {
@@ -122,8 +136,16 @@
         }
 
         @media only screen and (max-width: $bp-medium) {
+          //Font Styling
+          font-size: 1.8rem;
+        }
+        @media only screen and (max-width: $bp-small) {
           //Spacing
-          margin-right: 3rem;
+          margin-right: 2rem;
+
+          //Font Styling
+          font-size: 1.6rem;
+          padding: 0.5rem 0;
         }
       }
     }

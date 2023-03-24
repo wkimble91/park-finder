@@ -10,7 +10,8 @@ export const Footer = () => {
           Thanks to the NPS for access to their free API
         </p>
         <p className={styles.footerCopyright}>
-          Designed and Hand Coded by Will Kimble{' '}
+          Designed and Hand Coded by{' '}
+          <a href='https://willkimble.com'>Will Kimble</a>{' '}
           <span>Copyright &copy; 2022 - Present</span>
         </p>
       </div>

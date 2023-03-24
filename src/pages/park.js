@@ -11,6 +11,8 @@ export default function SelectedPark({ selectedParkData }) {
     window.scrollTo(0, 0);
   }, [selectedParkData]);
 
+  console.log(selectedParkData);
+
   return (
     <>
       <Head>
@@ -31,8 +33,8 @@ export default function SelectedPark({ selectedParkData }) {
             <Image
               className={styles.parkImage}
               fill
-              quality={'70'}
-              src={selectedParkData.images[1].url}
+              quality={'80'}
+              src={selectedParkData.images[0].url}
               alt={`Image of ${selectedParkData.fullName}`}
             />
           </div>
@@ -54,11 +56,11 @@ export default function SelectedPark({ selectedParkData }) {
               {selectedParkData.addresses === undefined ? (
                 <p>No Address Proviced</p>
               ) : (
-                <p>
+                <a href={selectedParkData.directionsUrl}>
                   {selectedParkData.addresses[0].city +
                     ', ' +
                     selectedParkData.addresses[0].stateCode}
-                </p>
+                </a>
               )}
             </div>
             <div className={styles.parkInfoContainer}>
@@ -66,17 +68,23 @@ export default function SelectedPark({ selectedParkData }) {
               {selectedParkData.contacts.phoneNumbers[0] === undefined ? (
                 <p>no phone number available</p>
               ) : (
-                <p>{selectedParkData.contacts.phoneNumbers[0].phoneNumber}</p>
+                <a href='tel:{selectedParkData.directionsUrl}'>
+                  {selectedParkData.contacts.phoneNumbers[0].phoneNumber}
+                </a>
               )}
             </div>
           </div>
           <div className={styles.parkDetailsContainer}>
             <div className={styles.parkDescripton}>
-              <h1>About This Park</h1>
-              <h2>Description</h2>
-              <p>{selectedParkData.description}</p>
-              <h2>Climate</h2>
-              <p>{selectedParkData.weatherInfo}</p>
+              <h2>About This Park</h2>
+              <div className={styles.parkDescriptonContainer}>
+                <h3>Description</h3>
+                <p>{selectedParkData.description}</p>
+              </div>
+              <div className={styles.parkDescriptonContainer}>
+                <h3>Climate</h3>
+                <p>{selectedParkData.weatherInfo}</p>
+              </div>
             </div>
             <div className={styles.parkTodo}>
               <h2>Things To Do</h2>
