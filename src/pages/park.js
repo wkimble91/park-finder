@@ -33,7 +33,8 @@ export default function SelectedPark({ selectedParkData }) {
             <Image
               className={styles.parkImage}
               fill
-              quality={'80'}
+              quality={'90'}
+              priority
               src={selectedParkData.images[0].url}
               alt={`Image of ${selectedParkData.fullName}`}
             />
