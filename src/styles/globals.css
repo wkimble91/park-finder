@@ -21,9 +21,9 @@ li { list-style: none; }
 
 a { text-decoration: none; }
 
-::-moz-selection { background-color: #1d3557; color: #fff; }
+::-moz-selection { background-color: #d6d6d6; color: #000; }
 
-::selection { background-color: #1d3557; color: #fff; }
+::selection { background-color: #d6d6d6; color: #000; }
 
 /*-- -------------------------- -->
 <---         Animations         -->
