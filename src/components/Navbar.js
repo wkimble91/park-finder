@@ -16,11 +16,6 @@ export const Navbar = () => {
       <nav>
         <ul id='navigation' className={styles.header__nav}>
           <li className={styles.header__navItem}>
-            <Link href='/about' target='_self' aria-label='Link to About Page'>
-              About Us
-            </Link>
-          </li>
-          <li className={styles.header__navItem}>
             <a href='https://www.nps.gov/' target='_blank'>
               NPS Website
             </a>
