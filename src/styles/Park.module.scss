@@ -207,18 +207,22 @@
         font-size: 1.6rem;
         width: fit-content;
       }
+      &Error {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
   }
 
   &Error {
     display: block;
-    padding-top: 10rem;
+    padding-top: 40%;
     font-size: 8rem;
     color: white;
     margin: 0 auto;
     text-align: center;
     width: fit-content;
-    height: fit-content;
+    height: 95vh;
   }
 
   &Warnings {

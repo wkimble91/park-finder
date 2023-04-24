@@ -44,5 +44,6 @@
 @media only screen and (max-width: 37.5em) { .parkTodoList { grid-template-columns: 1fr 1fr; padding: 0 2rem 1rem; } }
 @media only screen and (max-width: 25em) { .parkTodoList { grid-template-columns: 1fr; } }
 .parkTodoListItem { font-size: 1.6rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-.parkError { display: block; padding-top: 10rem; font-size: 8rem; color: white; margin: 0 auto; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+.parkTodoListError { font-size: 2rem; text-align: center; }
+.parkError { display: block; padding-top: 40%; font-size: 8rem; color: white; margin: 0 auto; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 95vh; }
 .parkWarnings { font-size: 26px; font-weight: 400; }

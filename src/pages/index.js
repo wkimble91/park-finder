@@ -122,16 +122,29 @@ export default function Home({ setSelectedParkData }) {
                     className={`${styles.parkCardSide} ${styles.parkCardSideFront}`}
                   >
                     <div className={styles.parkCardImageContainer}>
-                      <Image
-                        className={styles.parkCardImage}
-                        alt={`Image of ${item.fullName}`}
-                        src={item.images[0].url}
-                        fill
-                        quality='40'
-                        sizes='(max-width: 900px) 94vw,
+                      {item.images.length !== 0 ? (
+                        <Image
+                          className={styles.parkCardImage}
+                          alt={`Image of ${item.fullName}`}
+                          src={item.images[0].url}
+                          fill
+                          quality='40'
+                          sizes='(max-width: 900px) 94vw,
                       (max-width: 1200px) 44vw,
                       28vw'
-                      />
+                        />
+                      ) : (
+                        <Image
+                          className={styles.parkCardImage}
+                          alt={`No Image Provided`}
+                          src='/No_Image.png'
+                          fill
+                          quality='40'
+                          sizes='(max-width: 900px) 94vw,
+                      (max-width: 1200px) 44vw,
+                      28vw'
+                        />
+                      )}
                     </div>
                     <h1 className={styles.parkCardName}>{item.name}</h1>
                   </div>

@@ -43,14 +43,25 @@ export default function SelectedPark({ selectedParkData }) {
       ) : (
         <div className={styles.park}>
           <div className={styles.parkImageContainer}>
-            <Image
-              className={styles.parkImage}
-              fill
-              quality={'90'}
-              priority
-              src={selectedParkData.images[0].url}
-              alt={`Image of ${selectedParkData.fullName}`}
-            />
+            {selectedParkData.images[0] === undefined ? (
+              <Image
+                className={styles.parkImage}
+                fill
+                quality={'100'}
+                priority
+                src='/No_Image.png'
+                alt={`No Image Provided`}
+              />
+            ) : (
+              <Image
+                className={styles.parkImage}
+                fill
+                quality={'90'}
+                priority
+                src={selectedParkData.images[0].url}
+                alt={`Image of ${selectedParkData.fullName}`}
+              />
+            )}
           </div>
           <h1 className={styles.parkName}>{selectedParkData.fullName}</h1>
           <div className={styles.parkInfo}>
@@ -67,7 +78,7 @@ export default function SelectedPark({ selectedParkData }) {
             <div className={styles.parkInfoContainer}>
               <h4>Location:</h4>
 
-              {selectedParkData.addresses === undefined ? (
+              {selectedParkData.addresses[0] === undefined ? (
                 <p>No Address Proviced</p>
               ) : (
                 <a href={selectedParkData.directionsUrl}>
@@ -124,7 +135,7 @@ export default function SelectedPark({ selectedParkData }) {
               <h2>Things To Do</h2>
 
               {selectedParkData.activities[0] == undefined ? (
-                <p>No listed activities</p>
+                <p className={styles.parkTodoListError}>No listed activities</p>
               ) : (
                 <ul className={styles.parkTodoList}>
                   {selectedParkData.activities.map((activity, index) => (
