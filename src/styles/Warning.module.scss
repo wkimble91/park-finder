@@ -1,0 +1,38 @@
+@mixin badge {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+.Warning {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: fit-content;
+  max-width: 800px;
+  text-align: center;
+
+  &_catagory {
+    &_closure {
+      @include badge;
+      background-color: darkred;
+    }
+    &_information {
+      @include badge;
+      background-color: darkgreen;
+    }
+    &_caution {
+      @include badge;
+      background-color: orangered;
+    }
+  }
+  &_title {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  &_description {
+    font-size: 13px;
+  }
+}

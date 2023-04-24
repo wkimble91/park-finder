@@ -1,0 +1,6 @@
+.Warning { margin: 0 auto; padding: 2rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; max-width: 800px; text-align: center; }
+.Warning_catagory_closure { font-size: 1.6rem; font-weight: 600; color: white; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; border-radius: 1rem; background-color: darkred; }
+.Warning_catagory_information { font-size: 1.6rem; font-weight: 600; color: white; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; border-radius: 1rem; background-color: darkgreen; }
+.Warning_catagory_caution { font-size: 1.6rem; font-weight: 600; color: white; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; border-radius: 1rem; background-color: orangered; }
+.Warning_title { font-size: 20px; font-weight: 800; }
+.Warning_description { font-size: 13px; }

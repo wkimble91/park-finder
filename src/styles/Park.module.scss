@@ -89,6 +89,7 @@
   &DetailsContainer {
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid white;
 
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
@@ -99,7 +100,8 @@
 
   &Descripton {
     color: white;
-    margin: 2rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
 
     width: 100vw;
     display: flex;
@@ -108,13 +110,14 @@
     flex-wrap: wrap;
 
     &Container {
-      width: 45vw;
+      width: 48vw;
       padding: 0 4rem 0;
 
       @media only screen and (max-width: $bp-small) {
         width: 90vw;
       }
       h3 {
+        text-align: center;
         font-size: 2.4rem;
         padding: 3rem 0 0.5rem;
 
@@ -138,7 +141,7 @@
 
     h2 {
       font-size: 5rem;
-      padding: 2rem 4rem 4rem;
+      padding: 0 4rem 4rem;
       text-align: center;
       width: 100vw;
       margin: 0 auto;
@@ -153,10 +156,12 @@
   }
 
   &Todo {
-    margin: 4rem;
+    margin: 4rem 0;
     padding: 2rem 0 10rem;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
+    border-top: 1px solid white;
+
     @media only screen and (max-width: $bp-medium) {
       padding: 0 1rem 8rem;
       margin: 0;
@@ -214,5 +219,10 @@
     text-align: center;
     width: fit-content;
     height: fit-content;
+  }
+
+  &Warnings {
+    font-size: 26px;
+    font-weight: 400;
   }
 }

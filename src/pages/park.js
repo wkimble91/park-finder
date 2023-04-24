@@ -1,18 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Warning from '@/components/Warning.js';
 import { Navbar } from '@/components/Navbar.js';
 import { Footer } from '@/components/Footer.js';
 import styles from '@/styles/Park.module.css';
+import axios from 'axios';
+
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 export default function SelectedPark({ selectedParkData }) {
+  const [parkWarnings, setParkWarnings] = useState([]);
+  const [loading, setLoading] = useState(false);
+  let warnings = [];
   useEffect(() => {
+    axios
+      .get(
+        `https://developer.nps.gov/api/v1/alerts?parkCode=${selectedParkData.parkCode}&api_key=${API_KEY}`
+      )
+      .then((response) => {
+        setParkWarnings(response.data);
+      });
     window.scrollTo(0, 0);
   }, [selectedParkData]);
 
-  console.log(selectedParkData);
-
+  warnings = parkWarnings.data;
   return (
     <>
       <Head>
@@ -72,6 +85,26 @@ export default function SelectedPark({ selectedParkData }) {
                 <a href='tel:{selectedParkData.directionsUrl}'>
                   {selectedParkData.contacts.phoneNumbers[0].phoneNumber}
                 </a>
+              )}
+            </div>
+          </div>
+          <div className={styles.parkInfo}>
+            <div className={styles.parkInfoContainer}>
+              <h4 className={styles.parkWarnings}>Park Warnings:</h4>
+              {warnings === undefined ? (
+                <p>No warnings</p>
+              ) : warnings.length === 0 ? (
+                <p>No warnings</p>
+              ) : (
+                warnings.map((warning, index) => (
+                  <Warning
+                    key={index}
+                    title={warning.title}
+                    description={warning.description}
+                    url={warning.url}
+                    catagory={warning.category}
+                  />
+                ))
               )}
             </div>
           </div>
