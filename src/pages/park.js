@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Warning from '@/components/Warning.js';
 import { Navbar } from '@/components/Navbar.js';
 import { Footer } from '@/components/Footer.js';
@@ -13,8 +14,14 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 export default function SelectedPark({ selectedParkData }) {
   const [parkWarnings, setParkWarnings] = useState([]);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
   let warnings = [];
   useEffect(() => {
+    // If no park is selected, redirect to home page
+    if (selectedParkData.length === 0) {
+      router.push('/');
+    }
+    // Get park warnings
     axios
       .get(
         `https://developer.nps.gov/api/v1/alerts?parkCode=${selectedParkData.parkCode}&api_key=${API_KEY}`
@@ -22,6 +29,7 @@ export default function SelectedPark({ selectedParkData }) {
       .then((response) => {
         setParkWarnings(response.data);
       });
+    // Scroll to top of page
     window.scrollTo(0, 0);
   }, [selectedParkData]);
 
@@ -222,7 +230,6 @@ export default function SelectedPark({ selectedParkData }) {
           <Footer />
         </div>
       )}
-      {/* <Footer /> */}
     </>
   );
 }
