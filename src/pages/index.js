@@ -107,20 +107,30 @@ export default function Home({ setSelectedParkData }) {
           {parkData.length > 0 &&
             parkData.map((item, index) => {
               return (
-                <Card
+                <Link
+                  replace={true}
+                  href={{
+                    pathname: '/park',
+                  }}
+                  className={styles.parkCard}
+                  data-testid='card'
+                  parkcode={item.parkCode}
                   key={index}
-                  index={index}
-                  images={item.images}
-                  item={item}
-                  name={item.name}
-                  fullName={item.fullName}
-                  parkCode={item.parkCode}
-                  entranceFees={item.entranceFees}
-                  emailAddresses={item.contacts.emailAddresses}
-                  phoneNumbers={item.contacts.phoneNumbers}
-                  operatingHours={item.operatingHours}
-                  onSelectedClick={onSelectedClick}
-                />
+                  onClick={() => onSelectedClick(item)}
+                >
+                  <Card
+                    key={index}
+                    index={index}
+                    images={item.images}
+                    name={item.name}
+                    fullName={item.fullName}
+                    parkCode={item.parkCode}
+                    entranceFees={item.entranceFees}
+                    emailAddresses={item.contacts.emailAddresses}
+                    phoneNumbers={item.contacts.phoneNumbers}
+                    operatingHours={item.operatingHours}
+                  />
+                </Link>
               );
             })}
         </div>

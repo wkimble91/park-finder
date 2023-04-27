@@ -129,4 +129,19 @@
       gap: 6rem;
     }
   }
+  &Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 30rem;
+    width: 28vw;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 44vw;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 94vw;
+    }
+  }
 }

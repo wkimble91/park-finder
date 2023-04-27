@@ -19,17 +19,7 @@ class Card extends Component {
   };
   render() {
     return (
-      <Link
-        replace={true}
-        href={{
-          pathname: '/park',
-        }}
-        className={styles.Card}
-        data-testid='card'
-        parkcode={this.props.parkCode}
-        key={this.props.index}
-        onClick={() => this.props.onSelectedClick(item)}
-      >
+      <div className={styles.Card}>
         <div className={`${styles.CardSide} ${styles.CardSideFront}`}>
           <div className={styles.CardImageContainer}>
             {this.props.images.length !== 0 ? (
@@ -58,7 +48,6 @@ class Card extends Component {
           </div>
           <h1 className={styles.CardName}>{this.props.name}</h1>
         </div>
-
         <div className={`${styles.CardSide} ${styles.CardSideBack}`}>
           <p className={styles.CardBackName}>{this.props.fullName}</p>
           <div className={styles.CardSideBackLeft}>
@@ -127,7 +116,7 @@ class Card extends Component {
             )}
           </div>
         </div>
-      </Link>
+      </div>
     );
   }
 }

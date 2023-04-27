@@ -29,3 +29,6 @@
 
 .parkContainer { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem 2rem; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10rem 0; }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) { .parkContainer { gap: 6rem; } }
+.parkCard { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; min-height: 30rem; width: 28vw; }
+@media only screen and (max-width: 75em) { .parkCard { width: 44vw; } }
+@media only screen and (max-width: 56.25em) { .parkCard { width: 94vw; } }
