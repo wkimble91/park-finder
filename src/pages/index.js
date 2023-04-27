@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar.js';
 import { Footer } from '@/components/Footer.js';
+import Card from '@/components/Card.js';
 import styles from '@/styles/Home.module.css';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
@@ -107,119 +107,20 @@ export default function Home({ setSelectedParkData }) {
           {parkData.length > 0 &&
             parkData.map((item, index) => {
               return (
-                <Link
-                  replace={true}
-                  href={{
-                    pathname: '/park',
-                  }}
-                  className={styles.parkCard}
-                  data-testid='card'
-                  parkcode={item.parkCode}
+                <Card
                   key={index}
-                  onClick={() => onSelectedClick(item)}
-                >
-                  <div
-                    className={`${styles.parkCardSide} ${styles.parkCardSideFront}`}
-                  >
-                    <div className={styles.parkCardImageContainer}>
-                      {item.images.length !== 0 ? (
-                        <Image
-                          className={styles.parkCardImage}
-                          alt={`Image of ${item.fullName}`}
-                          src={item.images[0].url}
-                          fill
-                          quality='40'
-                          sizes='(max-width: 900px) 94vw,
-                      (max-width: 1200px) 44vw,
-                      28vw'
-                        />
-                      ) : (
-                        <Image
-                          className={styles.parkCardImage}
-                          alt={`No Image Provided`}
-                          src='/No_Image.png'
-                          fill
-                          quality='40'
-                          sizes='(max-width: 900px) 94vw,
-                      (max-width: 1200px) 44vw,
-                      28vw'
-                        />
-                      )}
-                    </div>
-                    <h1 className={styles.parkCardName}>{item.name}</h1>
-                  </div>
-
-                  <div
-                    className={`${styles.parkCardSide} ${styles.parkCardSideBack}`}
-                  >
-                    <p className={styles.parkCardBackName}>{item.fullName}</p>
-                    <div className={styles.parkCardSideBackLeft}>
-                      {item.entranceFees[0] && (
-                        <p className={styles.parkCardBackCost}>
-                          <b>Entrance Fee:</b>{' '}
-                          {item.entranceFees[0].cost === '0.00'
-                            ? 'Free'
-                            : '$' + item.entranceFees[0].cost}
-                        </p>
-                      )}
-                      <div>
-                        {item.contacts.emailAddresses[0].emailAddress && (
-                          <p className={styles.parkCardBackContact}>
-                            <b>Email:</b>
-                            <br />
-                            {item.contacts.emailAddresses[0].emailAddress}
-                          </p>
-                        )}
-                        {item.contacts.phoneNumbers[0] && (
-                          <p className={styles.parkCardBackContact}>
-                            <b>Phone:</b>
-                            <br />
-                            {item.contacts.phoneNumbers[0].phoneNumber}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                    <div className={styles.parkCardSideBackRight}>
-                      {item.operatingHours[0] && (
-                        <div className={styles.parkCardBackHours}>
-                          <p>
-                            <b>Operating Hours:</b>
-                          </p>
-                          <ul>
-                            <li>
-                              <b>Sun:</b>{' '}
-                              {item.operatingHours[0].standardHours.sunday}
-                            </li>
-                            <li>
-                              <b>Mon:</b>{' '}
-                              {item.operatingHours[0].standardHours.monday}
-                            </li>
-                            <li>
-                              <b>Tues:</b>{' '}
-                              {item.operatingHours[0].standardHours.tuesday}
-                            </li>
-                            <li>
-                              <b>Wed:</b>{' '}
-                              {item.operatingHours[0].standardHours.wednesday}
-                            </li>
-                            <li>
-                              <b>Thur:</b>{' '}
-                              {item.operatingHours[0].standardHours.thursday}
-                            </li>
-                            <li>
-                              <b>Fri:</b>{' '}
-                              {item.operatingHours[0].standardHours.friday}
-                            </li>
-                            <li>
-                              <b>Sat:</b>{' '}
-                              {item.operatingHours[0].standardHours.saturday}
-                            </li>
-                          </ul>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </Link>
+                  index={index}
+                  images={item.images}
+                  item={item}
+                  name={item.name}
+                  fullName={item.fullName}
+                  parkCode={item.parkCode}
+                  entranceFees={item.entranceFees}
+                  emailAddresses={item.contacts.emailAddresses}
+                  phoneNumbers={item.contacts.phoneNumbers}
+                  operatingHours={item.operatingHours}
+                  onSelectedClick={onSelectedClick}
+                />
               );
             })}
         </div>

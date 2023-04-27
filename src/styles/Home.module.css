@@ -29,31 +29,3 @@
 
 .parkContainer { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem 2rem; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10rem 0; }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) { .parkContainer { gap: 6rem; } }
-.parkCard { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; min-height: 30rem; width: 28vw; }
-@media only screen and (max-width: 75em) { .parkCard { width: 44vw; } }
-@media only screen and (max-width: 56.25em) { .parkCard { width: 94vw; } }
-.parkCardName { margin: 0 auto; padding: 1rem 1rem 0; text-align: center; font-size: 1.8rem; color: white; z-index: 200; min-height: 5rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
-@media only screen and (max-width: 56.25em), only screen and (hover: none) { .parkCardName { display: none; } }
-.parkCardBackName { width: 100%; margin: 0 auto; padding: 1rem 1rem 0; text-align: center; font-size: 2.4rem; font-weight: 800; color: white; }
-.parkCardBackCost { margin: 0 auto; text-align: center; font-size: 1.8rem; color: lightgray; }
-.parkCardBackContact { margin: 0 auto; text-align: center; font-size: 1.6rem; color: lightgray; }
-.parkCardBackHours { margin: 0 auto; text-align: center; font-size: 1.6rem; font-weight: 400; color: lightgray; }
-.parkCardBackHours ul li { font-size: 1.6rem; line-height: 2.2rem; font-weight: 300; }
-.parkCardSide { -webkit-transition: all 0.8s ease; transition: all 0.8s ease; position: absolute; width: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: 1rem; overflow: hidden; -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-.parkCardSideFront { background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(20, 20, 20, 0.9)), to(rgba(10, 10, 10, 0.9))); background-image: linear-gradient(to right bottom, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.9)); }
-.parkCardSideBack { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-transform: rotateY(180deg); transform: rotateY(180deg); height: 100%; background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(40, 40, 40, 0.95)), to(rgba(10, 10, 10, 0.95))); background-image: linear-gradient(to right bottom, rgba(40, 40, 40, 0.95), rgba(10, 10, 10, 0.95)); }
-.parkCardSideBackLeft { width: 60%; padding: 1rem 1rem 3rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; word-wrap: break-word; }
-@media only screen and (max-width: 112.5em) { .parkCardSideBackLeft { width: 50%; } }
-.parkCardSideBackRight { width: 40%; padding-right: 1rem; }
-@media only screen and (max-width: 112.5em) { .parkCardSideBackRight { width: 50%; } }
-.parkCardImage { -o-object-fit: cover; object-fit: cover; background-size: cover; height: 100%; background-blend-mode: screen; -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); clip-path: ellipse(150% 100% at 50% 0%); }
-.parkCardImageContainer { height: 24rem; position: relative; overflow: hidden; }
-@media only screen and (max-width: 56.25em), only screen and (hover: none) { .parkCard { height: auto; border-radius: 1rem; background-color: #181818; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); max-width: 60rem; }
-  .parkCardSide { height: auto; position: relative; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: none; transition: none; }
-  .parkCardSideFront { margin-bottom: -9rem; }
-  .parkCardSideBack { padding: 7rem 0 1rem; -webkit-transform: rotateY(0); transform: rotateY(0); -webkit-clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%); clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%); background-color: #282828; width: 100%; border-radius: 0 0 1rem 1rem; }
-  .parkCardSideBackLeft { width: 50%; padding: 2rem 0; }
-  .parkCardSideBackRight { width: 50%; padding: 2rem 0; }
-  .parkCard:hover .parkCardSideFront { -webkit-transform: rotateY(0) !important; transform: rotateY(0) !important; } }
-.parkCard:hover .parkCardSideFront { -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); }
-.parkCard:hover .parkCardSideBack { -webkit-transform: rotateY(0); transform: rotateY(0); }

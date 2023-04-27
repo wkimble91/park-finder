@@ -1,0 +1,183 @@
+@import 'variables';
+.Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 30rem;
+  width: 28vw;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 44vw;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 94vw;
+  }
+
+  &Name {
+    margin: 0 auto;
+    padding: 1rem 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    z-index: 200;
+    min-height: 5rem;
+    height: fit-content;
+
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      display: none;
+    }
+  }
+
+  &Back {
+    &Name {
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem 1rem 0;
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: white;
+    }
+    &Cost {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.8rem;
+      color: lightgray;
+    }
+    &Contact {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.6rem;
+      color: lightgray;
+    }
+    &Hours {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: lightgray;
+
+      ul li {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &Side {
+    transition: all 0.8s ease;
+    position: absolute;
+
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: $default-border-radius;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+
+    &Front {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(20, 20, 20, 0.9),
+        rgba(10, 10, 10, 0.9)
+      );
+    }
+
+    &Back {
+      display: flex;
+      flex-wrap: wrap;
+      transform: rotateY(180deg);
+      height: 100%;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(40, 40, 40, 0.95),
+        rgba(10, 10, 10, 0.95)
+      );
+      &Left {
+        width: 60%;
+        padding: 1rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        word-wrap: break-word;
+
+        @media only screen and (max-width: $bp-largest) {
+          width: 50%;
+        }
+      }
+      &Right {
+        width: 40%;
+        padding-right: 1rem;
+
+        @media only screen and (max-width: $bp-largest) {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &Image {
+    object-fit: cover;
+    background-size: cover;
+    height: 100%;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: ellipse(150% 100% at 50% 0%);
+
+    &Container {
+      height: 24rem;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: $default-border-radius;
+    background-color: $color-grey-dark;
+    box-shadow: $default-box-shadow;
+    max-width: 60rem;
+
+    &Side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      transition: none;
+
+      &Front {
+        margin-bottom: -9rem;
+      }
+
+      &Back {
+        padding: 7rem 0 1rem;
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%);
+        background-color: rgb(40, 40, 40);
+        width: 100%;
+        border-radius: 0 0 $default-border-radius $default-border-radius;
+
+        &Left {
+          width: 50%;
+          padding: 2rem 0;
+        }
+        &Right {
+          width: 50%;
+          padding: 2rem 0;
+        }
+      }
+    }
+
+    &:hover &SideFront {
+      transform: rotateY(0) !important;
+    }
+  }
+
+  &:hover &SideFront {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &SideBack {
+    transform: rotateY(0);
+  }
+}
