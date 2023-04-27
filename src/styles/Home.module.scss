@@ -4,14 +4,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 5vh 6rem 0 6rem;
+  padding: 0 6rem;
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
-      rgba($color-grey-dark, 0.3),
-      rgba($color-grey-dark, 1)
+      rgba($color-grey-dark, 0.8) 0%,
+      rgba($color-grey-dark, 0) 20%,
+      rgba($color-grey-dark, 0) 80%,
+      rgba($color-grey-dark, 1) 100%
     ),
     url(../../public/hero.jpg);
+  background-color: $color-accent-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +29,7 @@
   }
 
   &HeaderContainer {
-    margin-top: 10rem;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,6 +84,11 @@
   border-radius: $default-border-radius;
   border: 1px solid $color-grey;
   box-shadow: $default-box-shadow;
+  transition: all 0.1s;
+  &:hover {
+    box-shadow: $default-box-shadow-hover;
+    scale: 1.02;
+  }
 
   @media only screen and (max-width: $bp-large) {
     //Spacing
@@ -123,7 +131,7 @@
     display: flex;
     gap: 2rem 2rem;
     flex-wrap: wrap;
-    margin: 10rem 0;
+    margin: 10rem 0 2rem;
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       gap: 6rem;

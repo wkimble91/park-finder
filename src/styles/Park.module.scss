@@ -1,8 +1,8 @@
 @import 'variables';
 
 .park {
-  padding-top: 5rem;
-  color: white;
+  position: inherit;
+  background-color: $color-background;
 
   &Image {
     object-fit: cover;
@@ -11,8 +11,30 @@
     &Container {
       position: relative;
       width: 100vw;
-      height: 65vh;
+      height: 80vh;
+      // margin-bottom: -66px;
       z-index: 1;
+      background-color: $color-grey-dark;
+    }
+  }
+  &Divider {
+    position: absolute;
+    bottom: 1;
+    left: 1;
+    width: 100%;
+    margin-top: -99px;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 100px;
+    }
+    &Fill {
+      fill: $color-background;
     }
   }
   &Name {
@@ -20,12 +42,13 @@
 
     color: white;
     font-size: 5rem;
-    margin: -4rem auto 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: $default-box-shadow;
+    margin: -50px auto 0;
+    background-color: $color-accent-dark;
+    opacity: 95%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
     width: fit-content;
     text-align: center;
-    padding: 0.5rem 4rem;
+    padding: 1rem 5rem;
     z-index: 2;
     border-radius: $default-border-radius;
 
@@ -47,10 +70,9 @@
     margin: 5rem auto;
     font-size: 2rem;
     text-align: center;
-    background-image: $color-grey-gradient;
+    background-color: $color-accent;
     border-radius: $default-border-radius;
-    box-shadow: $default-box-shadow;
-    border: 1px solid $color-grey-light;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 
     @media only screen and (max-width: $bp-large) {
       font-size: 1.6rem;
@@ -68,6 +90,17 @@
       color: white;
       padding: 3rem 4rem;
 
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 2rem;
+      }
+
       a {
         color: inherit;
         text-decoration: underline;
@@ -84,12 +117,36 @@
         padding: 1rem;
       }
     }
+    &Icon {
+      border: 3px solid white;
+      background-color: $color-accent-dark;
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      margin: 0 auto 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+
+      &Warning {
+        width: 6rem !important;
+        height: 6rem !important;
+      }
+
+      & svg {
+        margin: auto;
+        width: 5rem;
+        height: 5rem;
+
+        fill: white;
+      }
+    }
   }
 
   &DetailsContainer {
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid white;
 
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
@@ -99,9 +156,13 @@
   }
 
   &Descripton {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+
+    background-color: $color-accent;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
     color: white;
-    margin: 2rem 0;
-    padding: 2rem 0;
+    padding: 10rem 0;
 
     width: 100vw;
     display: flex;
@@ -111,7 +172,7 @@
 
     &Container {
       width: 48vw;
-      padding: 0 4rem 0;
+      padding: 0 6rem 0;
 
       @media only screen and (max-width: $bp-small) {
         width: 90vw;
@@ -119,7 +180,7 @@
       h3 {
         text-align: center;
         font-size: 2.4rem;
-        padding: 3rem 0 0.5rem;
+        padding: 1rem 0 0.5rem;
 
         @media only screen and (max-width: $bp-medium) {
           font-size: 2rem;
@@ -136,6 +197,28 @@
         @media only screen and (max-width: $bp-medium) {
           font-size: 1.6rem;
         }
+      }
+    }
+
+    &Icon {
+      border: 3px solid white;
+      background-color: $color-accent-dark;
+      border-radius: 50%;
+      width: 9rem;
+      height: 9rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+
+      & svg {
+        margin: auto;
+        width: 5rem;
+        height: 5rem;
+        position: relative;
+        display: block;
+        fill: white;
       }
     }
 
@@ -156,11 +239,9 @@
   }
 
   &Todo {
-    margin: 4rem 0;
-    padding: 2rem 0 10rem;
+    padding: 10rem 0;
     width: 100%;
     height: fit-content;
-    border-top: 1px solid white;
 
     @media only screen and (max-width: $bp-medium) {
       padding: 0 1rem 8rem;
@@ -168,12 +249,17 @@
     }
 
     h2 {
-      padding: 4rem 0 5rem;
+      padding: 1rem 5rem;
       text-align: center;
+      font-size: 4rem;
+      font-weight: 800;
       width: fit-content;
       margin: 0 auto;
-
-      font-size: 3rem;
+      border: 4px solid white;
+      color: white;
+      border-radius: $default-border-radius;
+      background-color: $color-accent;
+      box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
 
       @media only screen and (max-width: $bp-medium) {
         font-size: 2.8rem;
@@ -184,7 +270,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 1.5rem 6rem;
-      padding: 0 2rem 4rem;
+      padding: 4rem 2rem 4rem;
       margin: 0 auto;
       width: fit-content;
 
@@ -210,6 +296,13 @@
       &Error {
         font-size: 2rem;
         text-align: center;
+      }
+      &Icon {
+        display: inline-block;
+        fill: $color-accent-dark;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: auto 0.5rem auto 0;
       }
     }
   }

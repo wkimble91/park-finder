@@ -15,7 +15,7 @@
 html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; overflow-x: hidden; scroll-behavior: smooth; }
 @media only screen and (max-width: 112.5em) { html { font-size: 50%; } }
 
-body { background-color: #181818; font-family: 'Montserrat', serif; line-height: 1.6; width: 100vw; overflow-x: hidden; }
+body { background-color: #181818; font-family: 'Montserrat', serif; line-height: 1.6; width: 100vw; overflow-x: hidden; position: relative; }
 
 li { list-style: none; }
 

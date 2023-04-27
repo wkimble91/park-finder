@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import React, { useState } from 'react';
 import useFetchParkData from '@/services/useFetchParkData.js';
+import $ from 'jquery';
 
 export default function App({ Component, pageProps }) {
   const [parkData, setParkData] = useState(null);

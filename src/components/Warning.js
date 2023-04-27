@@ -3,6 +3,7 @@ import styles from '@/styles/Warning.module.css';
 
 class Warning extends Component {
   render() {
+    console.log(this.props.catagory);
     return (
       <div className={styles.Warning}>
         {/* CATAGORY */}
@@ -16,6 +17,10 @@ class Warning extends Component {
           </h2>
         ) : this.props.catagory === 'Caution' ? (
           <h2 className={styles.Warning_catagory_caution}>
+            {this.props.catagory}
+          </h2>
+        ) : this.props.catagory === 'Danger' ? (
+          <h2 className={styles.Warning_catagory_danger}>
             {this.props.catagory}
           </h2>
         ) : (

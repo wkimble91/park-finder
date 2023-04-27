@@ -5,25 +5,24 @@
   display: flex;
   justify-content: space-between;
   //Spacing
-  position: fixed;
   width: 100%;
+  height: 14rem;
+
+  position: absolute;
   z-index: 200;
-
-  border-bottom: 1px solid $color-grey-light;
-
   //Font Styling
   text-decoration: none;
 
   //Color Styling
-  background-color: $color-grey-dark;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-grey-dark, 0.8) 0%,
+    rgba($color-grey-dark, 0) 100%
+  );
 
   //Animation
   transition: box-shadow 0.2s;
-
-  @media only screen and (max-width: $bp-small) {
-    //Spacing
-    z-index: 10;
-  }
 
   &Logo {
     margin: 0.3rem 3rem 0;
@@ -102,7 +101,7 @@
       & Link {
         //Spacing
         margin-right: 3rem;
-        padding: 0.5rem 1rem;
+        padding: 1.4rem 2.6rem;
         position: relative;
 
         //Font Styling
@@ -114,6 +113,8 @@
 
         //Color Styling
         color: $color-grey-light;
+        background-color: $color-accent;
+        border-radius: 8px;
 
         // Hover Lines
         &:before {
@@ -123,10 +124,10 @@
           position: absolute;
           width: 0%;
           height: 1px;
-          bottom: 1px;
+          bottom: 7px;
 
           //Border Styling
-          border-bottom: 3px solid $color-accent;
+          border-bottom: 3px solid $color-accent-light;
 
           //Animations
           transition: width 0.4s;
@@ -147,7 +148,7 @@
 
           //Font Styling
           font-size: 1.6rem;
-          padding: 0.5rem 0;
+          padding: 1rem 2rem;
         }
       }
     }

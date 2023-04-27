@@ -7,9 +7,9 @@
 /*-- -------------------------- -->
 <---          Defaults          -->
 <--- -------------------------- -*/
-.footer { width: 100vw; padding: 2rem 3rem; background-color: #181818; }
+.footer { width: 100vw; height: 15rem; padding: 0 3rem; background-color: transparent; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0)), to(#181818)); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0) 0%, #181818 100%); }
 @media only screen and (max-width: 75em) { .footer { padding: 1rem; } }
-.footerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.4rem; color: white; }
+.footerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.8rem; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; height: 15rem; color: white; }
 @media only screen and (max-width: 75em) { .footerBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 @media only screen and (max-width: 56.25em) { .footerBox { font-size: 1.3rem; } }
 @media only screen and (max-width: 37.5em) { .footerBox { font-size: 1rem; } }

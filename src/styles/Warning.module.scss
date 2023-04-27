@@ -17,6 +17,10 @@
   &_catagory {
     &_closure {
       @include badge;
+      background-color: blueviolet;
+    }
+    &_danger {
+      @include badge;
       background-color: darkred;
     }
     &_information {

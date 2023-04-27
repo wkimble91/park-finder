@@ -7,10 +7,10 @@
 /*-- -------------------------- -->
 <---          Defaults          -->
 <--- -------------------------- -*/
-.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 5vh 6rem 0 6rem; height: 100vh; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.3)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.3), #181818), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 6rem; height: 100vh; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.8)), color-stop(20%, rgba(24, 24, 24, 0)), color-stop(80%, rgba(24, 24, 24, 0)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0) 20%, rgba(24, 24, 24, 0) 80%, #181818 100%), url(../../public/hero.jpg); background-color: #a3b18a; background-position: center; background-repeat: no-repeat; background-size: cover; }
 @media only screen and (max-width: 75em) { .hero { padding: 4rem 4rem 0; } }
 @media only screen and (max-width: 56.25em) { .hero { padding: 0rem; } }
-.heroHeaderContainer { margin-top: 10rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 1rem; text-align: center; }
+.heroHeaderContainer { margin-top: 15rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 1rem; text-align: center; }
 .heroHeader { color: white; font-size: 20rem; font-weight: 300; line-height: 1.6; }
 @media only screen and (max-width: 112.5em) { .heroHeader { font-size: 14rem; } }
 @media only screen and (max-width: 56.25em) { .heroHeader { font-size: 12rem; } }
@@ -20,14 +20,15 @@
 @media only screen and (max-width: 56.25em) { .heroSubheader { font-size: 3rem; } }
 @media only screen and (max-width: 37.5em) { .heroSubheader { font-size: 2.2rem; } }
 
-.stateSelector { margin: 10rem auto auto; border-radius: 1rem; border: 1px solid #525252; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); }
+.stateSelector { margin: 10rem auto auto; border-radius: 1rem; border: 1px solid #525252; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.1s; transition: all 0.1s; }
+.stateSelector:hover { -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); scale: 1.02; }
 @media only screen and (max-width: 75em) { .stateSelector { margin: 4rem auto auto; } }
 .stateSelector select { background-color: #181818; color: white; font-size: 2rem; border: none; padding: 1rem 2rem; width: 50rem; border-radius: 1rem; margin: 0 auto; letter-spacing: 0.1rem; font-weight: 400; }
 @media only screen and (max-width: 75em) { .stateSelector select { width: 60vw; margin: 0 auto; } }
 @media only screen and (max-width: 56.25em) { .stateSelector select { width: 70vw; } }
 @media only screen and (max-width: 37.5em) { .stateSelector select { width: 80vw; font-size: 1.8rem; } }
 
-.parkContainer { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem 2rem; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10rem 0; }
+.parkContainer { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem 2rem; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10rem 0 2rem; }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) { .parkContainer { gap: 6rem; } }
 .parkCard { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; min-height: 30rem; width: 28vw; }
 @media only screen and (max-width: 75em) { .parkCard { width: 44vw; } }

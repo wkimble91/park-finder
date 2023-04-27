@@ -2,11 +2,15 @@
 <---       Color Schemes        -->
 <--- -------------------------- -*/
 
-$color-accent: #3b6986;
+$color-accent-light: #a3b18a;
+$color-accent: #588157;
+$color-accent-dark: #3a5a40;
 
 $color-grey-light: #d6d6d6;
 $color-grey: #525252;
 $color-grey-dark: #181818;
+
+$color-background: #dad7cd;
 
 $color-grey-gradient: linear-gradient(
   to bottom right,
@@ -31,3 +35,4 @@ $bp-smallest: 25em; //400px
 
 $default-border-radius: 1rem;
 $default-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+$default-box-shadow-hover: 4px 4px 8px rgba(0, 0, 0, 0.9);
