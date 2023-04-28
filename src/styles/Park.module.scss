@@ -57,6 +57,7 @@
     padding: 1rem 5rem;
     z-index: 2;
     border-radius: $default-border-radius;
+    text-shadow: 3px 3px 1px black;
 
     @media only screen and (max-width: $bp-large) {
       padding: 0.5rem 1rem;
@@ -80,6 +81,7 @@
     background-color: $color-accent;
     border-radius: $default-border-radius;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px black;
 
     @media only screen and (max-width: $bp-large) {
       font-size: 1.6rem;
@@ -111,6 +113,8 @@
       p {
         text-align: center;
         font-size: 2rem;
+        text-shadow: none;
+
         @media only screen and (max-width: $bp-small) {
           font-size: 1.4rem;
         }
@@ -119,6 +123,7 @@
       a {
         font-size: 2rem;
         text-align: center;
+        text-shadow: none;
         color: inherit;
         text-decoration: underline;
         text-underline-offset: 3px;
@@ -188,6 +193,7 @@
     background-color: $color-accent;
     border-radius: $default-border-radius;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px black;
 
     @media only screen and (max-width: $bp-large) {
       font-size: 1.6rem;
@@ -219,6 +225,7 @@
       p {
         text-align: center;
         font-size: 2rem;
+
         @media only screen and (max-width: $bp-small) {
           font-size: 1.4rem;
         }
@@ -305,6 +312,7 @@
     background-color: $color-accent;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
     color: white;
+
     padding: 10rem 0;
 
     width: 100vw;
@@ -329,6 +337,7 @@
         text-align: center;
         font-size: 2.4rem;
         padding: 1rem 0 0.5rem;
+        text-shadow: 1px 1px black;
 
         @media only screen and (max-width: $bp-medium) {
           font-size: 2rem;
@@ -376,6 +385,7 @@
       text-align: center;
       width: 100vw;
       margin: 0 auto;
+      text-shadow: 3px 3px 1px black;
 
       @media only screen and (max-width: $bp-large) {
         font-size: 4rem;
@@ -408,6 +418,7 @@
       border-radius: $default-border-radius;
       background-color: $color-accent;
       box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
+      text-shadow: 3px 3px 1px black;
 
       @media only screen and (max-width: $bp-medium) {
         padding: 1rem 3rem;

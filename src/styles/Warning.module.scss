@@ -6,6 +6,7 @@
   margin: 0 auto;
   padding: 0 1rem;
   border-radius: 1rem;
+  text-shadow: none !important;
 }
 .Warning {
   margin: 0 auto;
@@ -36,8 +37,10 @@
   &_title {
     font-size: 20px;
     font-weight: 800;
+    text-shadow: 1px 1px black;
   }
   &_description {
     font-size: 13px;
+    text-shadow: none;
   }
 }
