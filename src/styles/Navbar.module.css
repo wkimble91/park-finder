@@ -32,7 +32,7 @@
 @media only screen and (max-width: 75em) { .header__nav * button { margin-right: 3rem; } }
 @media only screen and (max-width: 37.5em) { .header__nav * button { margin-right: 0; margin-left: 0; } }
 .header__nav * a, .header__nav * Link { margin-right: 3rem; padding: 1.4rem 2.6rem; position: relative; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: #d6d6d6; border-radius: 8px; }
-.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 8px; border-bottom: 5px solid #a3b18a; -webkit-transition: width 0.4s; transition: width 0.4s; }
-.header__nav * a:hover:before, .header__nav * Link:hover:before { width: 30%; }
+.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 9px; border-bottom: 3px solid #a3b18a; -webkit-transition: width 0.4s; transition: width 0.4s; }
+.header__nav * a:hover:before, .header__nav * Link:hover:before { width: 24%; }
 @media only screen and (max-width: 56.25em) { .header__nav * a, .header__nav * Link { font-size: 1.8rem; } }
 @media only screen and (max-width: 37.5em) { .header__nav * a, .header__nav * Link { margin-right: 2rem; font-size: 1.6rem; padding: 1rem 2rem; } }

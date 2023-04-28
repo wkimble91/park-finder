@@ -124,10 +124,10 @@
           position: absolute;
           width: 0%;
           height: 1px;
-          bottom: 8px;
+          bottom: 9px;
 
           //Border Styling
-          border-bottom: 5px solid $color-accent-light;
+          border-bottom: 3px solid $color-accent-light;
 
           //Animations
           transition: width 0.4s;
@@ -135,7 +135,7 @@
 
         &:hover:before {
           //Spacing
-          width: 30%;
+          width: 24%;
         }
 
         @media only screen and (max-width: $bp-medium) {
