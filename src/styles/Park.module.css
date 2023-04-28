@@ -24,7 +24,9 @@
 .parkInfoContainer { margin: auto 0; color: white; padding: 3rem 4rem; }
 .parkInfoContainer h4 { font-size: 1.8rem; font-weight: 800; text-align: center; }
 .parkInfoContainer p { text-align: center; font-size: 2rem; }
-.parkInfoContainer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+@media only screen and (max-width: 37.5em) { .parkInfoContainer p { font-size: 1.4rem; } }
+.parkInfoContainer a { font-size: 2rem; text-align: center; color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+@media only screen and (max-width: 37.5em) { .parkInfoContainer a { font-size: 1.4rem; } }
 @media only screen and (max-width: 56.25em) { .parkInfoContainer { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; -ms-flex-item-align: center; align-self: center; margin: 1rem; padding: 2rem 4rem; } }
 @media only screen and (max-width: 37.5em) { .parkInfoContainer { padding: 1rem; } }
 .parkInfoIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 8rem; height: 8rem; margin: 0 auto 1.4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); }
