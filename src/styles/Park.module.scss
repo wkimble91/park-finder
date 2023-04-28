@@ -91,6 +91,7 @@
       margin: auto 0;
       color: white;
       padding: 3rem 4rem;
+      min-width: 30rem;
 
       h4 {
         font-size: 1.8rem;
@@ -122,9 +123,11 @@
         align-self: center;
         margin: 1rem;
         padding: 2rem 4rem;
+        min-width: 20rem;
       }
       @media only screen and (max-width: $bp-small) {
         padding: 1rem;
+        min-width: 10rem;
       }
     }
     &Icon {
