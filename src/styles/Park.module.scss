@@ -26,12 +26,18 @@
     overflow: hidden;
     line-height: 0;
     z-index: 2;
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: calc(-30px + 2px);
+    }
 
     & svg {
       position: relative;
       display: block;
       width: calc(100% + 1.3px);
       height: 150px;
+      @media only screen and (max-width: $bp-medium) {
+        height: 30px;
+      }
     }
     &Fill {
       fill: $color-background;
@@ -42,7 +48,7 @@
 
     color: white;
     font-size: 5rem;
-    margin: -90px auto 0;
+    margin: -60px auto 0;
     background-color: $color-accent-dark;
     opacity: 95%;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
@@ -57,6 +63,7 @@
     }
     @media only screen and (max-width: $bp-medium) {
       font-size: 4rem;
+      margin: -40px auto 0;
     }
     @media only screen and (max-width: $bp-smallest) {
       font-size: 3rem;
@@ -79,6 +86,8 @@
     }
     @media only screen and (max-width: $bp-medium) {
       width: 80vw;
+      min-width: fit-content;
+
       font-size: 1.4rem;
     }
     @media only screen and (max-width: $bp-smallest) {
@@ -92,7 +101,7 @@
       color: white;
       padding: 3rem 4rem;
       min-width: 30rem;
-
+      white-space: nowrap;
       h4 {
         font-size: 1.8rem;
         font-weight: 800;
@@ -119,15 +128,123 @@
       }
 
       @media only screen and (max-width: $bp-medium) {
-        width: fit-content;
+        width: 33%;
         align-self: center;
         margin: 1rem;
         padding: 2rem 4rem;
-        min-width: 20rem;
+        min-width: 0;
       }
       @media only screen and (max-width: $bp-small) {
         padding: 1rem;
-        min-width: 10rem;
+      }
+    }
+    &Icon {
+      border: 3px solid white;
+      background-color: $color-accent-dark;
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      margin: 0 auto 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7);
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 7rem;
+        height: 7rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 6rem;
+        height: 6rem;
+      }
+
+      & svg {
+        margin: auto;
+        width: 5rem;
+        height: 5rem;
+
+        fill: white;
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 4rem;
+          height: 4rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  &Warning {
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem auto;
+    font-size: 2rem;
+    text-align: center;
+    background-color: $color-accent;
+    border-radius: $default-border-radius;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 80vw;
+      min-width: fit-content;
+
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      width: 90vw;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &Container {
+      margin: auto 0;
+      color: white;
+      padding: 3rem 4rem;
+      min-width: 30rem;
+      white-space: nowrap;
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 2rem;
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.4rem;
+        }
+      }
+
+      a {
+        font-size: 2rem;
+        text-align: center;
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.4rem;
+        }
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 80vw;
+        align-self: center;
+        margin: 1rem;
+        padding: 2rem 4rem;
+        min-width: 0;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 1rem;
+        width: 90vw;
       }
     }
     &Icon {

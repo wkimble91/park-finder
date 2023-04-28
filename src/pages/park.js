@@ -85,7 +85,6 @@ export default function SelectedPark({ selectedParkData }) {
             </svg>
           </div>
           <h1 className={styles.parkName}>{selectedParkData.fullName}</h1>
-
           <div className={styles.parkInfo}>
             <div className={styles.parkInfoContainer}>
               <div className={styles.parkInfoIcon}>
@@ -143,8 +142,8 @@ export default function SelectedPark({ selectedParkData }) {
               )}
             </div>
           </div>
-          <div className={styles.parkInfo}>
-            <div className={styles.parkInfoContainer}>
+          <div className={styles.parkWarning}>
+            <div className={styles.parkWarningContainer}>
               <div className={styles.parkInfoIcon}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
