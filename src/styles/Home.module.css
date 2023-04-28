@@ -11,11 +11,11 @@
 @media only screen and (max-width: 75em) { .hero { padding: 4rem 4rem 0; } }
 @media only screen and (max-width: 56.25em) { .hero { padding: 0rem; } }
 .heroHeaderContainer { margin-top: 15rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 1rem; text-align: center; }
-.heroHeader { color: white; font-size: 20rem; font-weight: 300; line-height: 1.6; }
+.heroHeader { color: white; font-size: 20rem; font-weight: 300; line-height: 1.6; text-shadow: 4px 4px 2px black; }
 @media only screen and (max-width: 112.5em) { .heroHeader { font-size: 14rem; } }
 @media only screen and (max-width: 56.25em) { .heroHeader { font-size: 12rem; } }
 @media only screen and (max-width: 37.5em) { .heroHeader { font-size: 6rem; } }
-.heroSubheader { color: #d6d6d6; font-size: 5rem; font-weight: 400; line-height: 1.8; font-style: italic; }
+.heroSubheader { color: #d6d6d6; font-size: 5rem; font-weight: 400; line-height: 1.8; font-style: italic; text-shadow: 2px 2px 1px black; }
 @media only screen and (max-width: 112.5em) { .heroSubheader { font-size: 4rem; } }
 @media only screen and (max-width: 56.25em) { .heroSubheader { font-size: 3rem; } }
 @media only screen and (max-width: 37.5em) { .heroSubheader { font-size: 2.2rem; } }

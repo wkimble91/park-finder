@@ -113,7 +113,7 @@
 
         //Color Styling
         color: $color-grey-light;
-        background-color: $color-accent;
+        // background-color: $color-accent;
         border-radius: 8px;
 
         // Hover Lines
@@ -124,10 +124,10 @@
           position: absolute;
           width: 0%;
           height: 1px;
-          bottom: 7px;
+          bottom: 8px;
 
           //Border Styling
-          border-bottom: 3px solid $color-accent-light;
+          border-bottom: 5px solid $color-accent-light;
 
           //Animations
           transition: width 0.4s;
