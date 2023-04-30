@@ -15,11 +15,11 @@
 .parkDivider svg { position: relative; display: block; width: calc(100% + 1.3px); height: 150px; }
 @media only screen and (max-width: 56.25em) { .parkDivider svg { height: 30px; } }
 .parkDividerFill { fill: #dad7cd; }
-.parkName { position: relative; color: white; font-size: 5rem; margin: -60px auto 0; background-color: #3a5a40; opacity: 95%; -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7); box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7); width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; text-align: center; padding: 1rem 5rem; z-index: 2; border-radius: 1rem; text-shadow: 3px 3px 1px black; }
+.parkName { position: relative; color: white; font-size: 5rem; margin: -60px auto 0; background-color: #3a5a40; opacity: 95%; -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; text-align: center; padding: 1rem 5rem; z-index: 2; border-radius: 1rem; text-shadow: 3px 3px 1px black; }
 @media only screen and (max-width: 75em) { .parkName { padding: 0.5rem 1rem; } }
 @media only screen and (max-width: 56.25em) { .parkName { font-size: 4rem; margin: -40px auto 0; } }
 @media only screen and (max-width: 25em) { .parkName { font-size: 3rem; } }
-.parkInfo { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin: 5rem auto; font-size: 2rem; text-align: center; background-color: #588157; border-radius: 1rem; -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); text-shadow: 1px 1px black; }
+.parkInfo { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin: 5rem auto; font-size: 2rem; text-align: center; background-color: #588157; border-radius: 1rem; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); text-shadow: 1px 1px black; }
 @media only screen and (max-width: 75em) { .parkInfo { font-size: 1.6rem; } }
 @media only screen and (max-width: 56.25em) { .parkInfo { width: 80vw; min-width: -webkit-fit-content; min-width: -moz-fit-content; min-width: fit-content; font-size: 1.4rem; } }
 @media only screen and (max-width: 25em) { .parkInfo { width: 90vw; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
@@ -31,13 +31,13 @@
 @media only screen and (max-width: 37.5em) { .parkInfoContainer a { font-size: 1.4rem; } }
 @media only screen and (max-width: 56.25em) { .parkInfoContainer { width: 33%; -ms-flex-item-align: center; align-self: center; margin: 1rem; padding: 2rem 4rem; min-width: 0; } }
 @media only screen and (max-width: 37.5em) { .parkInfoContainer { padding: 1rem; } }
-.parkInfoIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 8rem; height: 8rem; margin: 0 auto 1.4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); }
+.parkInfoIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 8rem; height: 8rem; margin: 0 auto 1.4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .parkInfoIcon { width: 7rem; height: 7rem; } }
 @media only screen and (max-width: 25em) { .parkInfoIcon { width: 6rem; height: 6rem; } }
 .parkInfoIcon svg { margin: auto; width: 5rem; height: 5rem; fill: white; }
 @media only screen and (max-width: 56.25em) { .parkInfoIcon svg { width: 4rem; height: 4rem; } }
 @media only screen and (max-width: 25em) { .parkInfoIcon svg { width: 3rem; height: 3rem; } }
-.parkWarning { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin: 5rem auto; font-size: 2rem; text-align: center; background-color: #588157; border-radius: 1rem; -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); text-shadow: 1px 1px black; }
+.parkWarning { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin: 5rem auto; font-size: 2rem; text-align: center; background-color: #588157; border-radius: 1rem; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); text-shadow: 1px 1px black; }
 @media only screen and (max-width: 75em) { .parkWarning { font-size: 1.6rem; } }
 @media only screen and (max-width: 56.25em) { .parkWarning { width: 80vw; min-width: -webkit-fit-content; min-width: -moz-fit-content; min-width: fit-content; font-size: 1.4rem; } }
 @media only screen and (max-width: 25em) { .parkWarning { width: 90vw; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
@@ -49,7 +49,7 @@
 @media only screen and (max-width: 37.5em) { .parkWarningContainer a { font-size: 1.4rem; } }
 @media only screen and (max-width: 56.25em) { .parkWarningContainer { width: 80vw; -ms-flex-item-align: center; align-self: center; margin: 1rem; padding: 2rem 4rem; min-width: 0; } }
 @media only screen and (max-width: 25em) { .parkWarningContainer { padding: 1rem; width: 90vw; } }
-.parkWarningIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 8rem; height: 8rem; margin: 0 auto 1.4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); }
+.parkWarningIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 8rem; height: 8rem; margin: 0 auto 1.4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .parkWarningIcon { width: 7rem; height: 7rem; } }
 @media only screen and (max-width: 25em) { .parkWarningIcon { width: 6rem; height: 6rem; } }
 .parkWarningIcon svg { margin: auto; width: 5rem; height: 5rem; fill: white; }
@@ -57,7 +57,7 @@
 @media only screen and (max-width: 25em) { .parkWarningIcon svg { width: 3rem; height: 3rem; } }
 .parkDetailsContainer { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 @media only screen and (max-width: 56.25em) { .parkDetailsContainer { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
-.parkDescripton { border-top: 4px solid white; border-bottom: 4px solid white; background-color: #588157; -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); color: white; padding: 10rem 0; width: 100vw; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.parkDescripton { border-top: 4px solid white; border-bottom: 4px solid white; background-color: #588157; -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7); box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7); color: white; padding: 10rem 0; width: 100vw; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 @media only screen and (max-width: 37.5em) { .parkDescripton { padding: 10rem 0 5rem; } }
 .parkDescriptonContainer { width: 48vw; padding: 0 6rem 0; }
 @media only screen and (max-width: 37.5em) { .parkDescriptonContainer { width: 90vw; margin-bottom: 5rem; } }
@@ -65,14 +65,14 @@
 @media only screen and (max-width: 56.25em) { .parkDescriptonContainer h3 { font-size: 2rem; } }
 .parkDescriptonContainer p { font-size: 1.8rem; text-indent: 2rem; line-height: 1.8; margin: 1rem 0 2rem; }
 @media only screen and (max-width: 56.25em) { .parkDescriptonContainer p { font-size: 1.6rem; } }
-.parkDescriptonIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 9rem; height: 9rem; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.7); }
+.parkDescriptonIcon { border: 3px solid white; background-color: #3a5a40; border-radius: 50%; width: 9rem; height: 9rem; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); }
 .parkDescriptonIcon svg { margin: auto; width: 5rem; height: 5rem; position: relative; display: block; fill: white; }
 .parkDescripton h2 { font-size: 5rem; padding: 0 4rem 4rem; text-align: center; width: 100vw; margin: 0 auto; text-shadow: 3px 3px 1px black; }
 @media only screen and (max-width: 75em) { .parkDescripton h2 { font-size: 4rem; } }
 @media only screen and (max-width: 37.5em) { .parkDescripton h2 { font-size: 3rem; } }
 .parkTodo { padding: 10rem 0; width: 100%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 @media only screen and (max-width: 56.25em) { .parkTodo { padding: 4rem 1rem 8rem; margin: 0; } }
-.parkTodo h2 { padding: 1rem 5rem; text-align: center; font-size: 4rem; font-weight: 800; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; border: 4px solid white; color: white; border-radius: 1rem; background-color: #588157; -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7); text-shadow: 3px 3px 1px black; }
+.parkTodo h2 { padding: 1rem 5rem; text-align: center; font-size: 4rem; font-weight: 800; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; color: white; border-radius: 1rem; background-color: #588157; -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); text-shadow: 3px 3px 1px black; }
 @media only screen and (max-width: 56.25em) { .parkTodo h2 { padding: 1rem 3rem; font-size: 2.8rem; } }
 .parkTodoList { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1.5rem 6rem; padding: 4rem 2rem 4rem; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 @media only screen and (max-width: 112.5em) { .parkTodoList { grid-template-columns: 1fr 1fr 1fr; } }
@@ -80,7 +80,7 @@
 @media only screen and (max-width: 37.5em) { .parkTodoList { grid-template-columns: 1fr 1fr; padding: 4rem 2rem 1rem; } }
 @media only screen and (max-width: 25em) { .parkTodoList { grid-template-columns: 1fr; } }
 .parkTodoListItem { font-size: 1.8rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-.parkTodoListError { font-size: 2rem; text-align: center; }
+.parkTodoListError { font-size: 2rem; font-weight: 600; text-align: center; padding: 4rem 2rem 4rem; margin: 0 auto; }
 .parkTodoListIcon { display: inline-block; fill: #3a5a40; width: 1.6rem; height: 1.6rem; margin: auto 0.5rem auto 0; }
 .parkError { display: block; padding-top: 35vh; font-size: 8rem; color: white; margin: 0 auto; text-align: center; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 95vh; }
 .parkWarnings { font-size: 26px; font-weight: 400; }
