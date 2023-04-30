@@ -113,7 +113,7 @@ export default function SelectedPark({ selectedParkData }) {
               </div>
               <h4>Location:</h4>
               {selectedParkData.addresses[0] === undefined ? (
-                <p>No Address Proviced</p>
+                <p>No Address Provided</p>
               ) : (
                 <a target='_blank' href={selectedParkData.directionsUrl}>
                   {selectedParkData.addresses[0].city +
