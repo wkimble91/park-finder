@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Carousel } from 'react-bootstrap';
 import Warning from '@/components/Warning.js';
 import { Navbar } from '@/components/Navbar.js';
 import { Footer } from '@/components/Footer.js';
@@ -13,7 +14,6 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 export default function SelectedPark({ selectedParkData }) {
   const [parkWarnings, setParkWarnings] = useState([]);
-  const [loading, setLoading] = useState(false);
   const router = useRouter();
   let warnings = [];
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function SelectedPark({ selectedParkData }) {
                 src='/No_Image.png'
                 alt={`No Image Provided`}
               />
-            ) : (
+            ) : selectedParkData.images.length <= 1 ? (
               <Image
                 className={styles.parkImage}
                 fill
@@ -69,6 +69,25 @@ export default function SelectedPark({ selectedParkData }) {
                 src={selectedParkData.images[0].url}
                 alt={`Image of ${selectedParkData.fullName}`}
               />
+            ) : (
+              <Carousel className={styles.parkImageContainer}>
+                {selectedParkData.images.map((image, index) => (
+                  <Carousel.Item
+                    key={index}
+                    interval={8000}
+                    className={styles.parkImageContainer}
+                  >
+                    <Image
+                      className={styles.parkImage}
+                      fill
+                      unoptimized
+                      priority
+                      src={image.url}
+                      alt={image.altText}
+                    />
+                  </Carousel.Item>
+                ))}
+              </Carousel>
             )}
           </div>
           <div className={styles.parkDivider}>
