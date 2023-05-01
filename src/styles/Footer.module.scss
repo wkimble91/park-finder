@@ -6,9 +6,11 @@
   height: fit-content;
   padding: 2rem 3rem;
 
+  //Color Styling
   background-color: $color-grey-dark;
 
   @media only screen and (max-width: $bp-large) {
+    //Spacing
     padding: 1rem;
   }
 
@@ -16,21 +18,23 @@
     //Display
     display: flex;
     justify-content: space-between;
+
     //Font Styling
     font-size: 1.8rem;
     align-items: flex-end;
     font-weight: 200;
-    // height: 20rem;
 
     //Color Styling
     color: white;
 
     @media only screen and (max-width: $bp-large) {
-      height: 18rem;
       //Display
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
+
+      //Spacing
+      height: 18rem;
     }
     @media only screen and (max-width: $bp-medium) {
       //Font Styling
@@ -44,6 +48,7 @@
     }
 
     a {
+      //Font Styling
       text-decoration: underline;
       color: inherit;
     }

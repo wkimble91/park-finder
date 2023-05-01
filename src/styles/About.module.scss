@@ -1,11 +1,16 @@
 @import 'variables';
 .hero {
+  //Display
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  //Spacing
   padding: 5vh 6rem;
   height: 110vh;
+
+  //Image Styling
   background-image: linear-gradient(
       to bottom,
       rgba(#30362f, 0),
@@ -26,21 +31,29 @@
   }
 
   &HeaderContainer {
-    background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 10rem;
+    //Display
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    //Spacing
+    margin-top: 10rem;
     height: 18rem;
     width: 60vw;
     max-width: 100rem;
-    border-radius: $default-border-radius;
+
+    //Font Styling
     text-align: center;
+
+    //Color Styling
+    background-color: rgba(0, 0, 0, 0.4);
+
+    //Border Styling
+    border-radius: $default-border-radius;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
-      // height: 20vh;
       width: 70vw;
     }
     @media only screen and (max-width: $bp-medium) {
@@ -55,10 +68,13 @@
   }
 
   &Header {
-    color: white;
+    //Font Styling
     font-size: 10rem;
     font-weight: 800;
     line-height: 1.6;
+
+    //Color Styling
+    color: white;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing

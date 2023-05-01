@@ -1,11 +1,16 @@
 @import 'variables';
 .hero {
+  //Display
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  //Spacing
   padding: 0 6rem;
-  height: 105vh;
+  height: 110vh;
+
+  //Image Styling
   background-image: linear-gradient(
       to bottom,
       rgba($color-grey-dark, 0.8) 0%,
@@ -14,7 +19,6 @@
       rgba($color-grey-dark, 1) 100%
     ),
     url(../../public/hero.jpg);
-  background-color: $color-accent-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,67 +33,89 @@
   }
 
   &HeaderContainer {
-    margin-top: 15rem;
+    //Display
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: $default-border-radius;
+
+    //Spacing
+    margin-top: 15rem;
+
+    //Font Styling
     text-align: center;
+
+    //Border Styling
+    border-radius: $default-border-radius;
   }
 
   &Header {
-    color: white;
+    //Font Styling
     font-size: 20rem;
     font-weight: 300;
     line-height: 1.6;
-    text-shadow: 4px 4px 2px black;
+    text-shadow: 3px 3px 1px black;
+
+    //Color Styling
+    color: white;
 
     @media only screen and (max-width: $bp-largest) {
-      //Spacing
+      //Font Styling
       font-size: 14rem;
     }
     @media only screen and (max-width: $bp-medium) {
-      //Spacing
+      //Font Styling
       font-size: 12rem;
     }
     @media only screen and (max-width: $bp-small) {
-      //Spacing
+      //Font Styling
       font-size: 6rem;
     }
   }
   &Subheader {
-    color: $color-grey-light;
+    //Font Styling
     font-size: 5rem;
     font-weight: 400;
     line-height: 1.8;
     font-style: italic;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 1px 1px 2px black;
+
+    //Color Styling
+    color: white;
+    opacity: 0.6;
 
     @media only screen and (max-width: $bp-largest) {
-      //Spacing
+      //Font Styling
       font-size: 4rem;
     }
     @media only screen and (max-width: $bp-medium) {
-      //Spacing
-      // padding-bottom: 3rem;
+      //Font Styling
       font-size: 3rem;
     }
     @media only screen and (max-width: $bp-small) {
-      //Spacing
+      //Font Styling
       font-size: 2.2rem;
     }
   }
 }
 .stateSelector {
+  //Spacing
   margin: 10rem auto auto;
+
+  //Border Styling
   border-radius: $default-border-radius;
   border: 1px solid $color-grey;
   box-shadow: $default-box-shadow;
+
+  //Animations
   transition: all 0.1s;
+
   &:hover {
-    box-shadow: $default-box-shadow-hover;
+    //Spacing
     scale: 1.02;
+
+    //Border Styling
+    box-shadow: $default-box-shadow-hover;
   }
 
   @media only screen and (max-width: $bp-large) {
@@ -98,17 +124,23 @@
   }
 
   select {
-    background-color: $color-grey-dark;
-
-    color: white;
-    font-size: 2rem;
-    border: none;
+    //Spacing
+    margin: 0 auto;
     padding: 1rem 2rem;
     width: 50rem;
-    border-radius: $default-border-radius;
-    margin: 0 auto;
+
+    //Font Styling
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: 400;
+
+    //Color Styling
+    background-color: $color-grey-dark;
+    color: white;
+
+    //Border Styling
+    border: none;
+    border-radius: $default-border-radius;
 
     @media only screen and (max-width: $bp-large) {
       //Spacing
@@ -123,6 +155,7 @@
       //Spacing
       width: 80vw;
 
+      //Font Styling
       font-size: 1.8rem;
     }
   }
@@ -130,27 +163,36 @@
 
 .park {
   &Container {
+    //Display
     display: flex;
     gap: 2rem 2rem;
     flex-wrap: wrap;
+
+    //Spacing
     margin: 10rem 0 2rem;
 
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      //Display
       gap: 6rem;
     }
   }
   &Card {
-    position: relative;
+    //Display
     display: flex;
     flex-direction: column;
+
+    //Spacing
+    position: relative;
     margin: 0 auto;
     min-height: 30rem;
     width: 28vw;
 
     @media only screen and (max-width: $bp-large) {
+      //Spacing
       width: 44vw;
     }
     @media only screen and (max-width: $bp-medium) {
+      //Spacing
       width: 94vw;
     }
   }

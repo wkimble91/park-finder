@@ -6,41 +6,56 @@
 *,
 *::before,
 *::after {
+  //Spacing
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
+  //Spacing
   box-sizing: border-box;
-  font-size: 62.5%; //1rem = 10px
   overflow-x: hidden;
+
+  //Animations
   scroll-behavior: smooth;
 
+  //Font Styling
+  font-size: 62.5%; //1rem = 10px
+
   @media only screen and (max-width: $bp-largest) {
+    //Font Styling
     font-size: 50%; //1rem = 8px
   }
 }
 
 body {
-  background-color: $color-grey-dark;
-  font-family: 'Montserrat', serif;
-  line-height: 1.6;
+  //Spacing
+  position: relative;
   width: 100vw;
   overflow-x: hidden;
-  position: relative;
+
+  //Font Styling
+  font-family: 'Montserrat', serif;
+  line-height: 1.6;
+
+  //Color Styling
+  background-color: $color-grey-dark;
 }
 
 li {
+  //Font Styling
   list-style: none;
 }
 
 a {
+  //Font Styling
   text-decoration: none;
 }
 
 //Changes highlight coloring
 ::selection {
+  //Color Styling
   background-color: $color-grey-light;
   color: #000;
 }
@@ -74,3 +89,16 @@ a {
     transform: rotateZ(0);
   }
 }
+
+/*-- -------------------------- -->
+<---       Comment order        -->
+<--- -------------------------- -*/
+//Mixin
+//Parent
+//Display
+//Spacing
+//Font Styling
+//Color Styling
+//Image Styling
+//Border Styling
+//Animations

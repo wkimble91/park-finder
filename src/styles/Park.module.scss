@@ -1,181 +1,263 @@
 @import 'variables';
 
 .park {
+  //Spacing
   position: inherit;
+
+  //Color Styling
   background-color: $color-background;
 
   &Image {
-    object-fit: cover;
+    //Spacing
     z-index: 1;
 
+    //Image Styling
+    object-fit: cover;
+
     &Container {
+      //Spacing
       position: relative;
       width: 100vw;
       height: 80vh;
-      // margin-bottom: -66px;
       z-index: 1;
+
+      //Color Styling
       background-color: $color-grey-dark;
+
+      & a span {
+        //Display
+        scale: 3;
+
+        //Color Styling
+        background-color: rgba(0, 0, 0, 0.6);
+
+        //Border Styling
+        border-radius: 3px;
+      }
     }
   }
   &Divider {
+    //Spacing
     position: absolute;
     bottom: 1;
     left: 1;
     width: 100%;
-    margin-top: calc(-150px + 2px);
+    margin-top: calc(-50px + 2px);
     overflow: hidden;
-    line-height: 0;
     z-index: 2;
+
     @media only screen and (max-width: $bp-medium) {
-      margin-top: calc(-30px + 2px);
+      //Spacing
+      margin-top: calc(-20px + 2px);
     }
 
     & svg {
-      position: relative;
+      //Display
       display: block;
+
+      //Spacing
+      position: relative;
       width: calc(100% + 1.3px);
-      height: 150px;
+      height: 50px;
+
       @media only screen and (max-width: $bp-medium) {
-        height: 30px;
+        //Spacing
+        height: 20px;
       }
     }
     &Fill {
+      //Color Styling
       fill: $color-background;
     }
   }
   &Name {
+    //Spacing
     position: relative;
-
-    color: white;
-    font-size: 5rem;
     margin: -60px auto 0;
-    background-color: $color-accent-dark;
-    opacity: 95%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
-    width: fit-content;
-    text-align: center;
     padding: 1rem 5rem;
+    width: fit-content;
+    max-width: 80vw;
     z-index: 2;
-    border-radius: $default-border-radius;
-    text-shadow: 3px 3px 1px black;
 
-    @media only screen and (max-width: $bp-large) {
-      padding: 0.5rem 1rem;
-    }
+    //Font Styling
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+
+    //Color Styling
+    background-color: $color-accent-dark;
+    color: white;
+    opacity: 98%;
+
+    //Border Styling
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    border-radius: $default-border-radius;
+
     @media only screen and (max-width: $bp-medium) {
-      font-size: 4rem;
+      //Spacing
+      padding: 0.5rem 1rem;
       margin: -40px auto 0;
+
+      //Font Styling
+      font-size: 4rem;
     }
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
+      //Font Styling
       font-size: 3rem;
     }
   }
 
   &Info {
-    width: fit-content;
+    //Display
     display: flex;
     justify-content: space-around;
+
+    //Spacing
+    width: fit-content;
     margin: 5rem auto;
+
+    //Font Styling
     font-size: 2rem;
     text-align: center;
-    background-color: $color-accent;
-    border-radius: $default-border-radius;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     text-shadow: 1px 1px black;
 
+    //Color Styling
+    background-color: $color-accent;
+
+    //Border Styling
+    border-radius: $default-border-radius;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
     @media only screen and (max-width: $bp-large) {
+      //Font Styling
       font-size: 1.6rem;
     }
     @media only screen and (max-width: $bp-medium) {
+      //Spacing
       width: 80vw;
       min-width: fit-content;
 
+      //Font Styling
       font-size: 1.4rem;
     }
     @media only screen and (max-width: $bp-smallest) {
-      width: 90vw;
+      //Display
       flex-wrap: wrap;
       justify-content: center;
+
+      //Spacing
+      width: 90vw;
     }
 
     &Container {
+      //Spacing
       margin: auto 0;
-      color: white;
       padding: 3rem 4rem;
       min-width: 30rem;
+
+      //Font Styling
       white-space: nowrap;
+
+      //Color Styling
+      color: white;
+
       h4 {
+        //Font Styling
         font-size: 1.8rem;
         font-weight: 800;
         text-align: center;
       }
 
       p {
-        text-align: center;
+        //Font Styling
         font-size: 2rem;
+        text-align: center;
         text-shadow: none;
 
         @media only screen and (max-width: $bp-small) {
+          //Font Styling
           font-size: 1.4rem;
         }
       }
 
       a {
+        //Font Styling
         font-size: 2rem;
         text-align: center;
         text-shadow: none;
-        color: inherit;
         text-decoration: underline;
         text-underline-offset: 3px;
+
+        //Color Styling
+        color: inherit;
+
         @media only screen and (max-width: $bp-small) {
+          //Font Styling
           font-size: 1.4rem;
         }
       }
 
       @media only screen and (max-width: $bp-medium) {
-        width: 33%;
+        //Display
         align-self: center;
+
+        //Spacing
+        width: 33%;
         margin: 1rem;
         padding: 2rem 4rem;
         min-width: 0;
       }
       @media only screen and (max-width: $bp-small) {
+        //Spacing
         padding: 1rem;
       }
     }
     &Icon {
-      border: 3px solid white;
-      background-color: $color-accent-dark;
-      border-radius: 50%;
-      width: 8rem;
-      height: 8rem;
-      margin: 0 auto 1.4rem;
+      //Display
       display: flex;
       justify-content: center;
       align-items: center;
+
+      //Spacing
+      width: 8rem;
+      height: 8rem;
+      margin: 0 auto 1.4rem;
+
+      //Color Styling
+      background-color: $color-accent-dark;
+
+      //Border Styling
+      border: 3px solid white;
+      border-radius: 50%;
       box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 
       @media only screen and (max-width: $bp-medium) {
+        //Spacing
         width: 7rem;
         height: 7rem;
       }
       @media only screen and (max-width: $bp-smallest) {
+        //Spacing
         width: 6rem;
         height: 6rem;
       }
 
       & svg {
+        //Spacing
         margin: auto;
         width: 5rem;
         height: 5rem;
 
+        //Color Styling
         fill: white;
 
         @media only screen and (max-width: $bp-medium) {
+          //Spacing
           width: 4rem;
           height: 4rem;
         }
         @media only screen and (max-width: $bp-smallest) {
+          //Spacing
           width: 3rem;
           height: 3rem;
         }
@@ -184,109 +266,155 @@
   }
 
   &Warning {
-    width: fit-content;
+    //Display
     display: flex;
     justify-content: space-around;
+
+    //Spacing
+    width: fit-content;
     margin: 5rem auto;
+
+    //Font Styling
     font-size: 2rem;
     text-align: center;
-    background-color: $color-accent;
-    border-radius: $default-border-radius;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     text-shadow: 1px 1px black;
 
+    //Color Styling
+    background-color: $color-accent;
+
+    //Border Styling
+    border-radius: $default-border-radius;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
     @media only screen and (max-width: $bp-large) {
+      //Font Styling
       font-size: 1.6rem;
     }
     @media only screen and (max-width: $bp-medium) {
+      //Spacing
       width: 80vw;
       min-width: fit-content;
 
+      //Font Styling
       font-size: 1.4rem;
     }
     @media only screen and (max-width: $bp-smallest) {
-      width: 90vw;
+      //Display
       flex-wrap: wrap;
       justify-content: center;
+
+      //Spacing
+      width: 90vw;
     }
 
     &Container {
+      //Spacing
       margin: auto 0;
-      color: white;
       padding: 3rem 4rem;
       min-width: 30rem;
+
+      //Font Styling
       white-space: nowrap;
+
+      //Color Styling
+      color: white;
+
       h4 {
+        //Font Styling
         font-size: 1.8rem;
         font-weight: 800;
         text-align: center;
       }
 
       p {
+        //Font Styling
         text-align: center;
         font-size: 2rem;
 
         @media only screen and (max-width: $bp-small) {
+          //Font Styling
           font-size: 1.4rem;
         }
       }
 
       a {
+        //Font Styling
         font-size: 2rem;
         text-align: center;
-        color: inherit;
         text-decoration: underline;
         text-underline-offset: 3px;
+
+        //Color Styling
+        color: inherit;
+
         @media only screen and (max-width: $bp-small) {
+          //Font Styling
           font-size: 1.4rem;
         }
       }
 
       @media only screen and (max-width: $bp-medium) {
-        width: 80vw;
+        //Display
         align-self: center;
+
+        //Spacing
+        width: 80vw;
         margin: 1rem;
         padding: 2rem 4rem;
         min-width: 0;
       }
       @media only screen and (max-width: $bp-smallest) {
+        //Spacing
         padding: 1rem;
         width: 90vw;
       }
     }
     &Icon {
-      border: 3px solid white;
-      background-color: $color-accent-dark;
-      border-radius: 50%;
-      width: 8rem;
-      height: 8rem;
-      margin: 0 auto 1.4rem;
+      //Display
       display: flex;
       justify-content: center;
       align-items: center;
+
+      //Spacing
+      width: 8rem;
+      height: 8rem;
+      margin: 0 auto 1.4rem;
+
+      //Color Styling
+      background-color: $color-accent-dark;
+
+      //Border Styling
+      border: 3px solid white;
+      border-radius: 50%;
       box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 
       @media only screen and (max-width: $bp-medium) {
+        //Spacing
         width: 7rem;
         height: 7rem;
       }
       @media only screen and (max-width: $bp-smallest) {
+        //Spacing
         width: 6rem;
         height: 6rem;
       }
 
       & svg {
+        //Spacing
         margin: auto;
         width: 5rem;
         height: 5rem;
 
+        //Color Styling
         fill: white;
 
         @media only screen and (max-width: $bp-medium) {
+          //Spacing
           width: 4rem;
           height: 4rem;
         }
         @media only screen and (max-width: $bp-smallest) {
+          //Spacing
           width: 3rem;
           height: 3rem;
         }
@@ -295,10 +423,12 @@
   }
 
   &DetailsContainer {
+    //Display
     display: flex;
     flex-wrap: wrap;
 
     @media only screen and (max-width: $bp-medium) {
+      //Display
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -306,182 +436,248 @@
   }
 
   &Descripton {
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-
-    background-color: $color-accent;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
-    color: white;
-
-    padding: 10rem 0;
-
-    width: 100vw;
+    //Display
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
 
+    //Spacing
+    padding: 10rem 0;
+    width: 100vw;
+
+    //Color Styling
+    background-color: $color-accent;
+    color: white;
+
+    //Border Styling
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+
     @media only screen and (max-width: $bp-small) {
+      //Spacing
       padding: 10rem 0 5rem;
     }
 
     &Container {
+      //Spacing
       width: 48vw;
       padding: 0 6rem 0;
 
       @media only screen and (max-width: $bp-small) {
+        //Spacing
         width: 90vw;
         margin-bottom: 5rem;
       }
+
       h3 {
+        //Spacing
+        padding: 1rem 0 0.5rem;
+
+        //Font Styling
         text-align: center;
         font-size: 2.4rem;
-        padding: 1rem 0 0.5rem;
         text-shadow: 1px 1px black;
 
         @media only screen and (max-width: $bp-medium) {
+          //Font Styling
           font-size: 2rem;
         }
       }
 
       p {
-        font-size: 1.8rem;
-
-        text-indent: 2rem;
-        line-height: 1.8;
+        //Spacing
         margin: 1rem 0 2rem;
 
+        //Font Styling
+        font-size: 1.8rem;
+        text-indent: 2rem;
+        line-height: 1.8;
+
         @media only screen and (max-width: $bp-medium) {
+          //Font Styling
           font-size: 1.6rem;
         }
       }
     }
 
     &Icon {
-      border: 3px solid white;
-      background-color: $color-accent-dark;
-      border-radius: 50%;
-      width: 9rem;
-      height: 9rem;
-      margin: 0 auto;
+      //Display
       display: flex;
       justify-content: center;
       align-items: center;
+
+      //Spacing
+      width: 9rem;
+      height: 9rem;
+      margin: 0 auto;
+
+      //Color Styling
+      background-color: $color-accent-dark;
+
+      //Border Styling
+      border: 3px solid white;
+      border-radius: 50%;
       box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 
       & svg {
+        //Display
+        display: block;
+
+        //Spacing
+        position: relative;
         margin: auto;
         width: 5rem;
         height: 5rem;
-        position: relative;
-        display: block;
+
+        //Color Styling
         fill: white;
       }
     }
 
     h2 {
-      font-size: 5rem;
-      padding: 0 4rem 4rem;
-      text-align: center;
+      //Spacing
       width: 100vw;
       margin: 0 auto;
-      text-shadow: 3px 3px 1px black;
+      padding: 0 4rem 4rem;
+
+      //Font Styling
+      font-size: 5rem;
+      text-align: center;
+      text-shadow: 2px 2px 1px black;
 
       @media only screen and (max-width: $bp-large) {
+        //Font Styling
         font-size: 4rem;
       }
       @media only screen and (max-width: $bp-small) {
+        //Font Styling
         font-size: 3rem;
       }
     }
   }
 
   &Todo {
+    //Spacing
     padding: 10rem 0;
     width: 100%;
     height: fit-content;
 
     @media only screen and (max-width: $bp-medium) {
+      //Spacing
       padding: 4rem 1rem 8rem;
       margin: 0;
     }
 
     h2 {
+      //Spacing
       padding: 1rem 5rem;
+      margin: 0 auto;
+      width: fit-content;
+
+      //Font Styling
       text-align: center;
       font-size: 4rem;
       font-weight: 800;
-      width: fit-content;
-      margin: 0 auto;
-      // border: 4px solid white;
-      color: white;
-      border-radius: $default-border-radius;
-      background-color: $color-accent;
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
       text-shadow: 3px 3px 1px black;
 
+      //Color Styling
+      color: white;
+      background-color: $color-accent;
+
+      //Border Styling
+      border-radius: $default-border-radius;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+
       @media only screen and (max-width: $bp-medium) {
+        //Spacing
         padding: 1rem 3rem;
+
+        //Font Styling
         font-size: 2.8rem;
       }
     }
 
     &List {
+      //Display
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 1.5rem 6rem;
+
+      //Spacing
       padding: 4rem 2rem 4rem;
       margin: 0 auto;
       width: fit-content;
 
       @media only screen and (max-width: $bp-largest) {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-      @media only screen and (max-width: $bp-large) {
+        //Display
         gap: 0.5rem 6rem;
-      }
-      @media only screen and (max-width: $bp-small) {
         grid-template-columns: 1fr 1fr;
+
+        //Spacing
         padding: 4rem 2rem 1rem;
       }
-      @media only screen and (max-width: $bp-smallest) {
+      @media only screen and (max-width: $bp-medium) {
+        //Display
         grid-template-columns: 1fr;
       }
 
       &Item {
-        font-size: 1.8rem;
+        //Spacing
         width: fit-content;
+
+        //Font Styling
+        font-size: 1.8rem;
+        white-space: nowrap;
       }
+
       &Error {
+        //Spacing
+        padding: 4rem 2rem 4rem;
+        margin: 0 auto;
+
+        //Font Styling
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
-        padding: 4rem 2rem 4rem;
-        margin: 0 auto;
       }
+
       &Icon {
+        //Display
         display: inline-block;
-        fill: $color-accent-dark;
+
+        //Spacing
         width: 1.6rem;
         height: 1.6rem;
         margin: auto 0.5rem auto 0;
+
+        //Color Styling
+        fill: $color-accent-dark;
       }
     }
   }
 
   &Error {
+    //Display
     display: block;
-    padding-top: 35vh;
-    font-size: 8rem;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
+
+    //Spacing
     width: fit-content;
     height: 95vh;
+    margin: 0 auto;
+    padding-top: 35vh;
+
+    //Font Styling
+    font-size: 8rem;
+    text-align: center;
+
+    //Color Styling
+    color: white;
   }
 
   &Warnings {
+    //Font Styling
     font-size: 26px;
     font-weight: 400;
   }

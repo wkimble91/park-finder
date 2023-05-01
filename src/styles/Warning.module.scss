@@ -1,45 +1,69 @@
 @mixin badge {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: white;
+  //Spacing
   width: fit-content;
   margin: 0 auto;
   padding: 0 1rem;
-  border-radius: 1rem;
+
+  //Font Styling
+  font-size: 1.6rem;
+  font-weight: 600;
   text-shadow: none !important;
+
+  //Color Styling
+  color: white;
+
+  //Border Styling
+  border-radius: 1rem;
 }
 .Warning {
+  //Spacing
   margin: 0 auto;
   padding: 2rem 0;
   width: fit-content;
   max-width: 800px;
+
+  //Font Styling
   text-align: center;
   white-space: normal;
 
   &_catagory {
     &_closure {
+      //Mixin
       @include badge;
+
+      //Color Styling
       background-color: blueviolet;
     }
     &_danger {
+      //Mixin
       @include badge;
+
+      //Color Styling
       background-color: darkred;
     }
     &_information {
+      //Mixin
       @include badge;
+
+      //Color Styling
       background-color: darkgreen;
     }
     &_caution {
+      //Mixin
       @include badge;
+
+      //Color Styling
       background-color: orangered;
     }
   }
   &_title {
+    //Font Styling
     font-size: 20px;
     font-weight: 800;
     text-shadow: 1px 1px black;
   }
   &_description {
+    //Font Styling
     font-size: 13px;
     text-shadow: none;
   }

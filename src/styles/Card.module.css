@@ -10,26 +10,26 @@
 .Card { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; min-height: 30rem; width: 28vw; }
 @media only screen and (max-width: 75em) { .Card { width: 44vw; } }
 @media only screen and (max-width: 56.25em) { .Card { width: 94vw; } }
-.CardName { margin: 0 auto; padding: 1rem 1rem 0; text-align: center; font-size: 1.8rem; color: white; z-index: 200; min-height: 5rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+.CardName { margin: 0 auto; padding: 1rem 1rem 0; min-height: 5rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; z-index: 200; text-align: center; font-size: 1.8rem; font-weight: 600; color: white; }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) { .CardName { display: none; } }
-.CardBackName { width: 100%; margin: 0 auto; padding: 1rem 1rem 0; text-align: center; font-size: 2.4rem; font-weight: 800; color: white; }
+.CardBackName { width: 100%; margin: 0 auto; padding: 1rem 1rem 0; font-size: 2.4rem; text-align: center; font-weight: 800; color: white; }
 .CardBackCost { margin: 0 auto; text-align: center; font-size: 1.8rem; color: lightgray; }
 .CardBackContact { margin: 0 auto; text-align: center; font-size: 1.6rem; color: lightgray; }
 .CardBackHours { margin: 0 auto; text-align: center; font-size: 1.6rem; font-weight: 400; color: lightgray; }
 .CardBackHours ul li { font-size: 1.6rem; line-height: 2.2rem; font-weight: 300; }
-.CardSide { -webkit-transition: all 0.8s ease; transition: all 0.8s ease; position: absolute; width: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: 1rem; overflow: hidden; -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+.CardSide { position: absolute; width: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; overflow: hidden; -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); border-radius: 12px; -webkit-transition: all 0.8s ease; transition: all 0.8s ease; }
 .CardSideFront { background-image: -webkit-gradient(linear, left top, right bottom, from(#1e1e1e), to(#0a0a0a)); background-image: linear-gradient(to right bottom, #1e1e1e, #0a0a0a); }
-.CardSideBack { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-transform: rotateY(180deg); transform: rotateY(180deg); height: 100%; background-image: -webkit-gradient(linear, left top, right bottom, from(#282828), to(#141414)); background-image: linear-gradient(to right bottom, #282828, #141414); }
-.CardSideBackLeft { width: 60%; padding: 1rem 1rem 3rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; word-wrap: break-word; }
+.CardSideBack { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 100%; -webkit-transform: rotateY(180deg); transform: rotateY(180deg); background-image: -webkit-gradient(linear, left top, right bottom, from(#282828), to(#141414)); background-image: linear-gradient(to right bottom, #282828, #141414); }
+.CardSideBackLeft { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 60%; padding: 1rem 1rem 3rem; word-wrap: break-word; }
 @media only screen and (max-width: 112.5em) { .CardSideBackLeft { width: 50%; } }
 .CardSideBackRight { width: 40%; padding-right: 1rem; }
 @media only screen and (max-width: 112.5em) { .CardSideBackRight { width: 50%; } }
-.CardImage { -o-object-fit: cover; object-fit: cover; background-size: cover; height: 100%; background-blend-mode: screen; -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); clip-path: ellipse(150% 100% at 50% 0%); }
+.CardImage { height: 100%; -o-object-fit: cover; object-fit: cover; background-size: cover; background-blend-mode: screen; -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); clip-path: ellipse(150% 100% at 50% 0%); }
 .CardImageContainer { height: 24rem; position: relative; overflow: hidden; }
-@media only screen and (max-width: 56.25em), only screen and (hover: none) { .Card { height: auto; border-radius: 1rem; background-color: #181818; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); max-width: 60rem; }
+@media only screen and (max-width: 56.25em), only screen and (hover: none) { .Card { height: auto; max-width: 60rem; background-color: #181818; border-radius: 12px; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); }
   .CardSide { height: auto; position: relative; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: none; transition: none; }
   .CardSideFront { margin-bottom: -9rem; }
-  .CardSideBack { padding: 7rem 0 1rem; -webkit-transform: rotateY(0); transform: rotateY(0); -webkit-clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%); clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%); background-color: #282828; width: 100%; border-radius: 0 0 1rem 1rem; }
+  .CardSideBack { width: 100%; padding: 7rem 0 1rem; background-color: #282828; border-radius: 0 0 12px 12px; -webkit-clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%); clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%); -webkit-transform: rotateY(0); transform: rotateY(0); }
   .CardSideBackLeft { width: 50%; padding: 2rem 0; }
   .CardSideBackRight { width: 50%; padding: 2rem 0; }
   .Card:hover .CardSideFront { -webkit-transform: rotateY(0) !important; transform: rotateY(0) !important; } }
