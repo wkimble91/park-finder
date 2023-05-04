@@ -1,29 +1,21 @@
-/*-- -------------------------- -->
-<---       Color Schemes        -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---        Breakpoints         -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---          Defaults          -->
-<--- -------------------------- -*/
-.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 6rem; height: 110vh; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.8)), color-stop(20%, rgba(24, 24, 24, 0)), color-stop(80%, rgba(24, 24, 24, 0)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0) 20%, rgba(24, 24, 24, 0) 80%, #181818 100%), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
+.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 6rem; height: 110vh; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.8)), color-stop(30%, rgba(24, 24, 24, 0.4)), color-stop(80%, rgba(24, 24, 24, 0.3)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0.4) 30%, rgba(24, 24, 24, 0.3) 80%, #181818 100%), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
 @media only screen and (max-width: 75em) { .hero { padding: 4rem 4rem 0; } }
 @media only screen and (max-width: 56.25em) { .hero { padding: 0rem; } }
 .heroHeaderContainer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 15rem; text-align: center; border-radius: 12px; }
-.heroHeader { font-size: 20rem; font-weight: 300; line-height: 1.6; text-shadow: 3px 3px 1px black; color: white; }
-@media only screen and (max-width: 112.5em) { .heroHeader { font-size: 14rem; } }
-@media only screen and (max-width: 56.25em) { .heroHeader { font-size: 12rem; } }
-@media only screen and (max-width: 37.5em) { .heroHeader { font-size: 6rem; } }
-.heroSubheader { font-size: 5rem; font-weight: 400; line-height: 1.8; font-style: italic; text-shadow: 1px 1px 2px black; color: white; opacity: 0.6; }
+@media only screen and (max-width: 56.25em) { .heroHeaderContainer { margin-top: 20vh; } }
+.heroHeader { font-size: 20rem; font-weight: 300; line-height: 1.6; text-shadow: 5px 5px 1px black; color: white; }
+@media only screen and (max-width: 112.5em) { .heroHeader { font-size: 14rem; text-shadow: 4px 4px 1px black; } }
+@media only screen and (max-width: 56.25em) { .heroHeader { font-size: 12rem; text-shadow: 3px 3px 1px black; } }
+@media only screen and (max-width: 37.5em) { .heroHeader { font-size: 6rem; text-shadow: 2px 2px 1px black; } }
+.heroSubheader { font-size: 5rem; font-weight: 400; line-height: 1.8; font-style: italic; text-shadow: 2px 2px 2px black; color: white; opacity: 0.8; }
 @media only screen and (max-width: 112.5em) { .heroSubheader { font-size: 4rem; } }
 @media only screen and (max-width: 56.25em) { .heroSubheader { font-size: 3rem; } }
 @media only screen and (max-width: 37.5em) { .heroSubheader { font-size: 2.2rem; } }
 
-.stateSelector { margin: 10rem auto auto; border-radius: 12px; border: 1px solid #525252; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.1s; transition: all 0.1s; }
-.stateSelector:hover { scale: 1.02; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); }
+.stateSelector { margin: 10rem auto auto; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.1s; transition: all 0.1s; }
+.stateSelector:hover { scale: 1.01; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); }
 @media only screen and (max-width: 75em) { .stateSelector { margin: 4rem auto auto; } }
-.stateSelector select { margin: 0 auto; padding: 1rem 2rem; width: 50rem; font-size: 2rem; letter-spacing: 0.1rem; font-weight: 400; background-color: #181818; color: white; border: none; border-radius: 12px; }
+.stateSelector select { margin: 0 auto; padding: 1rem 2rem; width: 50rem; font-size: 2rem; letter-spacing: 0.1rem; font-weight: 400; background-color: #181818; color: white; border: none; }
 @media only screen and (max-width: 75em) { .stateSelector select { width: 60vw; margin: 0 auto; } }
 @media only screen and (max-width: 56.25em) { .stateSelector select { width: 70vw; } }
 @media only screen and (max-width: 37.5em) { .stateSelector select { width: 80vw; font-size: 1.8rem; } }

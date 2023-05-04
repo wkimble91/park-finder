@@ -35,6 +35,9 @@
 
       //Spacing
       height: 18rem;
+
+      //Font Styling
+      text-align: center;
     }
     @media only screen and (max-width: $bp-medium) {
       //Font Styling
@@ -50,9 +53,17 @@
     a {
       //Font Styling
       text-decoration: underline;
+      text-underline-offset: 2px;
 
       //Color Styling
       color: inherit;
+    }
+
+    span {
+      @media only screen and (max-width: $bp-large) {
+        //Display
+        display: block;
+      }
     }
   }
 

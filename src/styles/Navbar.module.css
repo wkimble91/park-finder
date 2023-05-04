@@ -1,14 +1,5 @@
-/*-- -------------------------- -->
-<---       Color Schemes        -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---        Breakpoints         -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---          Defaults          -->
-<--- -------------------------- -*/
 .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; height: 14rem; position: absolute; z-index: 200; text-decoration: none; background-color: transparent; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.8)), to(rgba(24, 24, 24, 0))); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0) 100%); -webkit-transition: -webkit-box-shadow 0.2s; transition: -webkit-box-shadow 0.2s; transition: box-shadow 0.2s; transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
-.headerLogo { margin: 0.3rem 3rem 0; width: 10rem; height: 8rem; background-image: url("../../public/logo-name-transparent.png"); background-size: contain; background-repeat: no-repeat; }
+.headerLogo { margin: 1rem 3rem 0; width: 10rem; height: 8rem; background-image: url("../../public/logo-name-transparent.png"); background-size: contain; background-repeat: no-repeat; }
 .headerLogo:hover { -webkit-animation: wiggle 1s linear; animation: wiggle 1s linear; }
 @media only screen and (max-width: 37.5em) { .headerLogo { margin: 0.3rem 1rem 0; width: 8rem; height: 6.5rem; } }
 @-webkit-keyframes wiggle { 0%,

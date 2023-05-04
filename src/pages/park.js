@@ -117,7 +117,7 @@ export default function SelectedPark({ selectedParkData }) {
               </div>
               <h4>Price:</h4>
               {selectedParkData.entranceFees[0] === undefined ? (
-                <p>No price available</p>
+                <p>No Price Provided</p>
               ) : selectedParkData.entranceFees[0].cost === '0.00' ? (
                 <p>Free</p>
               ) : (
@@ -153,9 +153,11 @@ export default function SelectedPark({ selectedParkData }) {
               </div>
               <h4>Phone:</h4>
               {selectedParkData.contacts.phoneNumbers[0] === undefined ? (
-                <p>no phone number available</p>
+                <p>No Phone Number Provided</p>
               ) : (
-                <a href='tel:{selectedParkData.directionsUrl}'>
+                <a
+                  href={`tel:${selectedParkData.contacts.phoneNumbers[0].phoneNumber}`}
+                >
                   {selectedParkData.contacts.phoneNumbers[0].phoneNumber}
                 </a>
               )}
