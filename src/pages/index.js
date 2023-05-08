@@ -134,8 +134,8 @@ export default function Home({ setSelectedParkData }) {
               );
             })}
         </div>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

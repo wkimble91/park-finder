@@ -49,7 +49,7 @@ export default function SelectedPark({ selectedParkData }) {
           Please select a park
         </Link>
       ) : (
-        <div className={styles.park}>
+        <main className={styles.park}>
           <div className={styles.parkImageContainer}>
             {selectedParkData.images[0] === undefined ? (
               <Image
@@ -248,7 +248,7 @@ export default function SelectedPark({ selectedParkData }) {
             </div>
           </div>
           <Footer />
-        </div>
+        </main>
       )}
     </>
   );

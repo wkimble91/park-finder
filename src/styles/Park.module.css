@@ -1,12 +1,3 @@
-/*-- -------------------------- -->
-<---       Color Schemes        -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---        Breakpoints         -->
-<--- -------------------------- -*/
-/*-- -------------------------- -->
-<---          Defaults          -->
-<--- -------------------------- -*/
 .park { position: inherit; background-color: #dad7cd; }
 .parkImage { z-index: 1; -o-object-fit: cover; object-fit: cover; }
 .parkImageContainer { position: relative; width: 100vw; height: 80vh; z-index: 1; background-color: #181818; }
