@@ -6,7 +6,7 @@
 .heroHeader { font-size: 20rem; font-weight: 300; line-height: 1.6; text-shadow: 5px 5px 1px black; color: white; }
 @media only screen and (max-width: 112.5em) { .heroHeader { font-size: 14rem; text-shadow: 4px 4px 1px black; } }
 @media only screen and (max-width: 56.25em) { .heroHeader { font-size: 12rem; text-shadow: 3px 3px 1px black; } }
-@media only screen and (max-width: 37.5em) { .heroHeader { font-size: 8rem; text-shadow: 2px 2px 1px black; } }
+@media only screen and (max-width: 37.5em) { .heroHeader { font-size: 6rem; text-shadow: 2px 2px 1px black; } }
 .heroSubheader { font-size: 5rem; font-weight: 400; line-height: 1.8; font-style: italic; text-shadow: 2px 2px 2px black; color: white; opacity: 0.8; }
 @media only screen and (max-width: 112.5em) { .heroSubheader { font-size: 4rem; } }
 @media only screen and (max-width: 56.25em) { .heroSubheader { font-size: 3rem; } }

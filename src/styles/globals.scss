@@ -21,7 +21,12 @@ html {
   scroll-behavior: smooth;
 
   //Font Styling
-  font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+  font-size: 62.5%; //1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    //Font Styling
+    font-size: 50%; //1rem = 8px
+  }
 }
 
 body {
