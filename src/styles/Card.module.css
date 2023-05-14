@@ -1,6 +1,6 @@
 .Card { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; min-height: 30rem; width: 28vw; }
-@media only screen and (max-width: 75em) { .Card { width: 44vw; } }
-@media only screen and (max-width: 56.25em) { .Card { width: 94vw; } }
+@media only screen and (max-width: 112.5em) { .Card { width: 44vw; } }
+@media only screen and (max-width: 75em) { .Card { width: 94vw; } }
 .CardName { margin: 0 auto; padding: 1rem 1rem 0; min-height: 5rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; z-index: 200; text-align: center; font-size: 1.8rem; font-weight: 600; color: white; }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) { .CardName { display: none; } }
 .CardBackName { width: 100%; margin: 0 auto; padding: 1rem 1rem 0; font-size: 2.4rem; text-align: center; font-weight: 800; color: white; }

@@ -4,7 +4,6 @@
 *, *::before, *::after { margin: 0; padding: 0; -webkit-box-sizing: inherit; box-sizing: inherit; }
 
 html { -webkit-box-sizing: border-box; box-sizing: border-box; overflow-x: hidden; scroll-behavior: smooth; font-size: 62.5%; }
-@media only screen and (max-width: 112.5em) { html { font-size: 50%; } }
 
 body { position: relative; width: 100vw; overflow-x: hidden; font-family: 'Montserrat', serif; line-height: 1.6; background-color: #181818; }
 
