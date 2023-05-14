@@ -1,4 +1,5 @@
 @import 'variables';
+
 .hero {
   //Display
   display: flex;
@@ -48,7 +49,7 @@
     //Border Styling
     border-radius: $default-border-radius;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       //Spacing
       margin-top: 20vh;
     }
@@ -66,17 +67,17 @@
 
     @media only screen and (max-width: $bp-largest) {
       //Font Styling
-      font-size: 14rem;
+      font-size: 16rem;
       text-shadow: 4px 4px 1px black;
     }
     @media only screen and (max-width: $bp-medium) {
       //Font Styling
-      font-size: 12rem;
+      font-size: 14rem;
       text-shadow: 3px 3px 1px black;
     }
     @media only screen and (max-width: $bp-small) {
       //Font Styling
-      font-size: 6rem;
+      font-size: 10rem;
       text-shadow: 2px 2px 1px black;
     }
   }
@@ -92,17 +93,13 @@
     color: white;
     opacity: 0.8;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-large) {
       //Font Styling
       font-size: 4rem;
     }
-    @media only screen and (max-width: $bp-medium) {
-      //Font Styling
-      font-size: 3rem;
-    }
     @media only screen and (max-width: $bp-small) {
       //Font Styling
-      font-size: 2.2rem;
+      font-size: 3rem;
     }
   }
 }
@@ -124,11 +121,6 @@
     box-shadow: $default-box-shadow-hover;
   }
 
-  @media only screen and (max-width: $bp-large) {
-    //Spacing
-    margin: 4rem auto auto;
-  }
-
   select {
     //Spacing
     margin: 0 auto;
@@ -136,7 +128,7 @@
     width: 50rem;
 
     //Font Styling
-    font-size: 2rem;
+    font-size: 4rem;
     letter-spacing: 0.1rem;
     font-weight: 400;
 
@@ -147,16 +139,16 @@
     //Border Styling
     border: none;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-largest) {
       //Spacing
       width: 60vw;
       margin: 0 auto;
     }
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       //Spacing
       width: 70vw;
     }
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
       //Spacing
       width: 80vw;
 
