@@ -153,10 +153,12 @@
       //Spacing
       margin: auto 0;
       padding: 3rem 4rem;
+      width: fit-content;
       min-width: 30rem;
 
       //Font Styling
       white-space: nowrap;
+      text-align: center;
 
       //Color Styling
       color: white;
@@ -478,9 +480,13 @@
         //Font Styling
         text-align: center;
         font-size: 2.4rem;
+        font-weight: 600;
         text-shadow: 1px 1px black;
 
         @media only screen and (max-width: $bp-medium) {
+          //Spacing
+          padding: 2rem 0 0.5rem;
+
           //Font Styling
           font-size: 2rem;
         }
@@ -544,12 +550,17 @@
 
       //Font Styling
       font-size: 5rem;
+      font-weight: 600;
       text-align: center;
-      text-shadow: 2px 2px 1px black;
+      text-shadow: 2px 2px 2px black;
 
       @media only screen and (max-width: $bp-large) {
         //Font Styling
         font-size: 4rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        //Spacing
+        padding: 0 4rem 6rem;
       }
       @media only screen and (max-width: $bp-small) {
         //Font Styling
