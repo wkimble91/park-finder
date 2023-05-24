@@ -10,21 +10,18 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 export default function Home({ setSelectedParkData }) {
   const [parkData, setParkData] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   const onSelectedClick = (item) => {
     setSelectedParkData(item);
   };
 
   const handleChange = async (e) => {
-    setLoading(true);
     setParkData([]);
     const res = await fetch(
       `https://developer.nps.gov/api/v1/parks?limit=50&stateCode=${e}&api_key=${API_KEY}`
     );
     const data = await res.json();
     setParkData(data.data);
-    setLoading(false);
   };
 
   return (
