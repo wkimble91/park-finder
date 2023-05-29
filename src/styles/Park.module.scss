@@ -589,8 +589,8 @@
 
       //Font Styling
       text-align: center;
-      font-size: 4rem;
-      font-weight: 800;
+      font-size: 5rem;
+      font-weight: 600;
       text-shadow: 3px 3px 1px black;
 
       //Color Styling
@@ -617,17 +617,16 @@
       gap: 1.5rem 6rem;
 
       //Spacing
-      padding: 4rem 2rem 4rem;
+      padding: 8rem 2rem 4rem;
       margin: 0 auto;
       width: fit-content;
 
       @media only screen and (max-width: $bp-largest) {
         //Display
-        gap: 1rem 6rem;
         grid-template-columns: 1fr 1fr;
 
         //Spacing
-        padding: 4rem 2rem 1rem;
+        padding: 6rem 2rem 1rem;
       }
       @media only screen and (max-width: $bp-medium) {
         //Display
