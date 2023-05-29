@@ -67,10 +67,10 @@
 .parkTodo h2 { padding: 1rem 5rem; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; text-align: center; font-size: 4rem; font-weight: 800; text-shadow: 3px 3px 1px black; color: white; background-color: #588157; border-radius: 12px; -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .parkTodo h2 { padding: 1rem 3rem; font-size: 2.8rem; } }
 .parkTodoList { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem 6rem; padding: 4rem 2rem 4rem; margin: 0 auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-@media only screen and (max-width: 112.5em) { .parkTodoList { gap: 0.5rem 6rem; grid-template-columns: 1fr 1fr; padding: 4rem 2rem 1rem; } }
+@media only screen and (max-width: 112.5em) { .parkTodoList { gap: 1rem 6rem; grid-template-columns: 1fr 1fr; padding: 4rem 2rem 1rem; } }
 @media only screen and (max-width: 56.25em) { .parkTodoList { grid-template-columns: 1fr; } }
-.parkTodoListItem { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; font-size: 1.8rem; white-space: nowrap; }
+.parkTodoListItem { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 2rem; font-weight: 600; white-space: nowrap; padding: 4px 12px; border-radius: 7px; background-color: #588157; color: white; -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); text-shadow: 1px 1px 1px black; }
 .parkTodoListError { padding: 4rem 2rem 4rem; margin: 0 auto; font-size: 2rem; font-weight: 600; text-align: center; }
-.parkTodoListIcon { display: inline-block; width: 1.6rem; height: 1.6rem; margin: auto 0.5rem auto 0; fill: #3a5a40; }
+.parkTodoListIcon { display: inline-block; width: 1.8rem; height: 1.8rem; margin: auto 1rem auto 0; fill: white; -webkit-box-shadow: 1px 1px 2px black; box-shadow: 1px 1px 2px black; }
 .parkError { display: block; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 95vh; margin: 0 auto; padding-top: 35vh; font-size: 8rem; text-align: center; color: white; }
 .parkWarnings { font-size: 26px; font-weight: 400; }

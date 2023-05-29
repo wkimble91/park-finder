@@ -623,7 +623,7 @@
 
       @media only screen and (max-width: $bp-largest) {
         //Display
-        gap: 0.5rem 6rem;
+        gap: 1rem 6rem;
         grid-template-columns: 1fr 1fr;
 
         //Spacing
@@ -637,10 +637,20 @@
       &Item {
         //Spacing
         width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         //Font Styling
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-weight: 600;
         white-space: nowrap;
+        padding: 4px 12px;
+        border-radius: 7px;
+        background-color: $color-accent;
+        color: white;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        text-shadow: 1px 1px 1px black;
       }
 
       &Error {
@@ -659,12 +669,13 @@
         display: inline-block;
 
         //Spacing
-        width: 1.6rem;
-        height: 1.6rem;
-        margin: auto 0.5rem auto 0;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: auto 1rem auto 0;
 
         //Color Styling
-        fill: $color-accent-dark;
+        fill: white;
+        box-shadow: 1px 1px 2px black;
       }
     }
   }
