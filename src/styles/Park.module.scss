@@ -638,7 +638,7 @@
         font-size: 2rem;
         font-weight: 600;
         white-space: nowrap;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 0px 0px 3px black;
 
         //Color Styling
         background-color: $color-accent;
@@ -668,7 +668,7 @@
 
         //Color Styling
         fill: white;
-        box-shadow: 1px 1px 2px black;
+        box-shadow: 0px 0px 2px black;
       }
     }
   }
