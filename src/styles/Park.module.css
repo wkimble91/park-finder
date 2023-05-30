@@ -53,7 +53,7 @@
 @media only screen and (max-width: 37.5em) { .parkDescriptonContainer { width: 90vw; margin-bottom: 5rem; } }
 .parkDescriptonContainer h3 { padding: 1rem 0 0.5rem; text-align: center; font-size: 2.6rem; font-weight: 600; text-shadow: 1px 1px black; }
 @media only screen and (max-width: 56.25em) { .parkDescriptonContainer h3 { padding: 2rem 0 0.5rem; font-size: 2rem; } }
-.parkDescriptonContainer p { margin: 1rem 0 2rem; text-indent: 2rem; font-size: 1.8rem; line-height: 1.8; }
+.parkDescriptonContainer p { margin: 1rem 0 2rem; text-indent: 2rem; font-size: 2rem; font-weight: 400; line-height: 1.8; }
 @media only screen and (max-width: 56.25em) { .parkDescriptonContainer p { font-size: 1.6rem; } }
 .parkDescriptonIcon { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 9rem; height: 9rem; margin: 0 auto; background-color: #3a5a40; border: 3px solid white; border-radius: 50%; -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7); }
 .parkDescriptonIcon svg { display: block; position: relative; margin: auto; width: 5rem; height: 5rem; fill: white; }
