@@ -1,7 +1,8 @@
-.Warning { margin: 0 auto; padding: 2rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; max-width: 800px; text-align: center; white-space: normal; }
-.Warning_catagory_closure { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; font-size: 1.6rem; font-weight: 600; text-shadow: none !important; color: white; border-radius: 1rem; background-color: blueviolet; }
-.Warning_catagory_danger { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; font-size: 1.6rem; font-weight: 600; text-shadow: none !important; color: white; border-radius: 1rem; background-color: darkred; }
-.Warning_catagory_information { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; font-size: 1.6rem; font-weight: 600; text-shadow: none !important; color: white; border-radius: 1rem; background-color: darkgreen; }
-.Warning_catagory_caution { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0 1rem; font-size: 1.6rem; font-weight: 600; text-shadow: none !important; color: white; border-radius: 1rem; background-color: orangered; }
-.Warning_title { font-size: 20px; font-weight: 800; text-shadow: 1px 1px black; }
-.Warning_description { font-size: 13px; text-shadow: none; }
+.Warning { margin: 2rem auto; padding: 2rem 2rem 1rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; max-width: 100rem; background-color: #3a5a40; border-radius: 12px; -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7); box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7); text-align: center; white-space: normal; }
+.Warning_catagory_closure { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: auto; padding: 0.1rem 1rem; font-size: 1.8rem; font-weight: 600; text-shadow: none; color: white; border-radius: 12px; background-color: blueviolet; }
+.Warning_catagory_danger { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: auto; padding: 0.1rem 1rem; font-size: 1.8rem; font-weight: 600; text-shadow: none; color: white; border-radius: 12px; background-color: darkred; }
+.Warning_catagory_information { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: auto; padding: 0.1rem 1rem; font-size: 1.8rem; font-weight: 600; text-shadow: none; color: white; border-radius: 12px; background-color: blue; }
+.Warning_catagory_caution { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: auto; padding: 0.1rem 1rem; font-size: 1.8rem; font-weight: 600; text-shadow: none; color: white; border-radius: 12px; background-color: orangered; }
+.Warning_title { padding: 1rem 0; display: inline-block; text-align: center; font-size: 2.6rem; font-weight: 600; text-shadow: 1px 1px black; }
+@media only screen and (max-width: 56.25em) { .Warning_title { padding: 2rem 0 0.5rem; font-size: 2rem; } }
+.Warning_description { font-size: 2rem; font-weight: 400; text-shadow: none; }

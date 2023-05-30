@@ -8,27 +8,27 @@ class Warning extends Component {
       <div className={styles.Warning}>
         {/* CATAGORY */}
         {this.props.catagory === 'Park Closure' ? (
-          <h2 className={styles.Warning_catagory_closure}>
+          <p className={styles.Warning_catagory_closure}>
             {this.props.catagory}
-          </h2>
+          </p>
         ) : this.props.catagory === 'Information' ? (
-          <h2 className={styles.Warning_catagory_information}>
+          <p className={styles.Warning_catagory_information}>
             {this.props.catagory}
-          </h2>
+          </p>
         ) : this.props.catagory === 'Caution' ? (
-          <h2 className={styles.Warning_catagory_caution}>
+          <p className={styles.Warning_catagory_caution}>
             {this.props.catagory}
-          </h2>
+          </p>
         ) : this.props.catagory === 'Danger' ? (
-          <h2 className={styles.Warning_catagory_danger}>
+          <p className={styles.Warning_catagory_danger}>
             {this.props.catagory}
-          </h2>
+          </p>
         ) : (
-          <h2 className={styles.Warning_catagory}>{this.props.catagory}</h2>
+          <p className={styles.Warning_catagory}>{this.props.catagory}</p>
         )}
         {/* TITLE */}
         {this.props.url === '' ? (
-          <p className={styles.Warning_title}>{this.props.title}</p>
+          <h5 className={styles.Warning_title}>{this.props.title}</h5>
         ) : (
           <a
             target='_blank'

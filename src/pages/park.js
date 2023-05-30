@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Carousel } from 'react-bootstrap';
-import Warning from '@/components/Warning.js';
 import { Navbar } from '@/components/Navbar.js';
 import { Footer } from '@/components/Footer.js';
 import styles from '@/styles/Park.module.css';
+import Warning from '@/components/Warning.js';
 import axios from 'axios';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
@@ -177,7 +177,7 @@ export default function SelectedPark({ selectedParkData }) {
                   <path d='M16 22c-1.105 0-2-0.895-2-2v-6c0-1.105 0.895-2 2-2s2 0.895 2 2v6c0 1.105-0.895 2-2 2z'></path>
                 </svg>
               </div>
-              <h4 className={styles.parkWarnings}>Park Warnings:</h4>
+              <h4 className={styles.parkWarningTitle}>Park Warnings:</h4>
               {warnings === undefined ? (
                 <p>No warnings</p>
               ) : warnings.length === 0 ? (

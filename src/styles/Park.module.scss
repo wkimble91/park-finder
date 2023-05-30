@@ -80,7 +80,8 @@
     z-index: 2;
 
     //Font Styling
-    font-size: 5rem;
+    font-size: 5.5rem;
+    font-weight: 600;
     text-align: center;
     text-shadow: 2px 2px 1px black;
 
@@ -99,11 +100,11 @@
       margin: -40px auto 0;
 
       //Font Styling
-      font-size: 4rem;
+      font-size: 4.5rem;
     }
     @media only screen and (max-width: $bp-small) {
       //Font Styling
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -117,9 +118,7 @@
     margin: 5rem auto;
 
     //Font Styling
-    font-size: 2rem;
     text-align: center;
-    text-shadow: 1px 1px black;
 
     //Color Styling
     background-color: $color-accent;
@@ -165,9 +164,10 @@
 
       h4 {
         //Font Styling
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 800;
         text-align: center;
+        text-shadow: 1px 1px black;
       }
 
       p {
@@ -277,7 +277,8 @@
     margin: 5rem auto;
 
     //Font Styling
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 800;
     text-align: center;
     text-shadow: 1px 1px black;
 
@@ -321,38 +322,14 @@
       //Color Styling
       color: white;
 
-      h4 {
-        //Font Styling
-        font-size: 1.8rem;
-        font-weight: 800;
-        text-align: center;
-      }
-
-      p {
-        //Font Styling
-        text-align: center;
-        font-size: 2rem;
-
-        @media only screen and (max-width: $bp-small) {
-          //Font Styling
-          font-size: 1.4rem;
-        }
-      }
-
       a {
         //Font Styling
-        font-size: 2rem;
         text-align: center;
         text-decoration: underline;
         text-underline-offset: 3px;
 
         //Color Styling
         color: inherit;
-
-        @media only screen and (max-width: $bp-small) {
-          //Font Styling
-          font-size: 1.4rem;
-        }
       }
 
       @media only screen and (max-width: $bp-medium) {
@@ -371,6 +348,20 @@
         width: 90vw;
       }
     }
+
+    &Title {
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px black;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 2.5rem;
+      }
+    }
+
     &Icon {
       //Display
       display: flex;
@@ -455,7 +446,7 @@
     //Border Styling
     border-top: 4px solid white;
     border-bottom: 4px solid white;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
 
     @media only screen and (max-width: $bp-small) {
       //Spacing
@@ -479,7 +470,7 @@
 
         //Font Styling
         text-align: center;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         font-weight: 600;
         text-shadow: 1px 1px black;
 
@@ -497,8 +488,8 @@
         margin: 1rem 0 2rem;
 
         //Font Styling
-        font-size: 1.8rem;
         text-indent: 2rem;
+        font-size: 1.8rem;
         line-height: 1.8;
 
         @media only screen and (max-width: $bp-medium) {
@@ -591,7 +582,7 @@
       text-align: center;
       font-size: 5rem;
       font-weight: 600;
-      text-shadow: 3px 3px 1px black;
+      text-shadow: 2px 2px 2px black;
 
       //Color Styling
       color: white;
@@ -639,17 +630,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 4px 12px;
+        border-radius: 7px;
 
         //Font Styling
         font-size: 2rem;
         font-weight: 600;
         white-space: nowrap;
-        padding: 4px 12px;
-        border-radius: 7px;
+        text-shadow: 1px 1px 1px black;
+
+        //Color Styling
         background-color: $color-accent;
         color: white;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        text-shadow: 1px 1px 1px black;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
       }
 
       &Error {
@@ -695,11 +688,5 @@
 
     //Color Styling
     color: white;
-  }
-
-  &Warnings {
-    //Font Styling
-    font-size: 26px;
-    font-weight: 400;
   }
 }

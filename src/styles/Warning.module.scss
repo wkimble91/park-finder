@@ -1,26 +1,30 @@
+@import 'variables';
 @mixin badge {
   //Spacing
   width: fit-content;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: auto;
+  padding: 0.1rem 1rem;
 
   //Font Styling
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  text-shadow: none !important;
+  text-shadow: none;
 
   //Color Styling
   color: white;
 
   //Border Styling
-  border-radius: 1rem;
+  border-radius: $default-border-radius;
 }
 .Warning {
   //Spacing
-  margin: 0 auto;
-  padding: 2rem 0;
+  margin: 2rem auto;
+  padding: 2rem 2rem 1rem;
   width: fit-content;
-  max-width: 800px;
+  max-width: 100rem;
+  background-color: $color-accent-dark;
+  border-radius: $default-border-radius;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 
   //Font Styling
   text-align: center;
@@ -46,7 +50,7 @@
       @include badge;
 
       //Color Styling
-      background-color: darkgreen;
+      background-color: blue;
     }
     &_caution {
       //Mixin
@@ -57,14 +61,28 @@
     }
   }
   &_title {
+    //Spacing
+    padding: 1rem 0;
+    display: inline-block;
+
     //Font Styling
-    font-size: 20px;
-    font-weight: 800;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
     text-shadow: 1px 1px black;
+
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      padding: 2rem 0 0.5rem;
+
+      //Font Styling
+      font-size: 2rem;
+    }
   }
   &_description {
     //Font Styling
-    font-size: 13px;
+    font-size: 2rem;
+    font-weight: 400;
     text-shadow: none;
   }
 }
