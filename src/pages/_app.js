@@ -1,6 +1,8 @@
 import '@/styles/globals.css';
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import useFetchParkData from '@/services/useFetchParkData.js';
 
 export default function App({ Component, pageProps }) {
@@ -19,6 +21,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
+      <Navbar />
       <Component
         allData={data}
         parkData={parkData}
@@ -27,6 +30,7 @@ export default function App({ Component, pageProps }) {
         setSelectedParkData={setSelectedParkData}
         selectedParkCode={selectedParkCode}
         setSelectedParkCode={setSelectedParkCode}
+        {...pageProps}
       />
     </>
   );

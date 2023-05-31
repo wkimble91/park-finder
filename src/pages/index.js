@@ -29,8 +29,6 @@ export default function Home({ setSelectedParkData }) {
       <Head>
         <title>Park Finder | Home</title>
       </Head>
-      <Navbar />
-
       <main className={styles.hero}>
         <div className={styles.heroHeaderContainer}>
           <h1 className={styles.heroHeader}>Park Finder</h1>

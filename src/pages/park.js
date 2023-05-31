@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Carousel } from 'react-bootstrap';
-import { Navbar } from '@/components/Navbar.js';
 import { Footer } from '@/components/Footer.js';
 import styles from '@/styles/Park.module.css';
 import Warning from '@/components/Warning.js';
@@ -43,7 +42,6 @@ export default function SelectedPark({ selectedParkData }) {
           <title>Park Finder | {selectedParkData.name}</title>
         )}
       </Head>
-      <Navbar />
       {selectedParkData.length === 0 ? (
         <Link href={'/'} className={styles.parkError}>
           Please select a park

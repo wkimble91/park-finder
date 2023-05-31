@@ -1,9 +1,8 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '@/styles/Navbar.module.css';
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <header className={styles.header}>
       <Link
@@ -31,3 +30,5 @@ export const Navbar = () => {
     </header>
   );
 };
+
+export default Navbar;
