@@ -3,7 +3,6 @@ import styles from '@/styles/Warning.module.css';
 
 class Warning extends Component {
   render() {
-    console.log(this.props.catagory);
     return (
       <div className={styles.Warning}>
         {/* CATAGORY */}
