@@ -84,7 +84,6 @@ export default function About() {
         >
           <span>Gates of the Arctic National Park</span>
         </Link>
-        padding: 2rem;
       </main>
       <Footer />
     </>
