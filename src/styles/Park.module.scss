@@ -16,7 +16,7 @@
       //Spacing
       position: relative;
       width: 100vw;
-      height: calc(80vh - 6rem);
+      height: 80vh;
       z-index: 1;
 
       //Color Styling
@@ -85,7 +85,7 @@
     //Font Styling
     font-family: 'Playfair', serif;
     font-weight: 900;
-    font-size: clamp(6rem, 13vw, 11rem);
+    font-size: clamp(5.5rem, 3.5vw, 11rem);
     text-align: center;
     text-shadow: $text-outline-dark;
     //Color Styling

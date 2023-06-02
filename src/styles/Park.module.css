@@ -1,13 +1,13 @@
 .park { position: relative; }
 .parkImage { z-index: 1; -o-object-fit: cover; object-fit: cover; }
-.parkImageContainer { position: relative; width: 100vw; height: calc(80vh - 6rem); z-index: 1; background-color: #181818; }
+.parkImageContainer { position: relative; width: 100vw; height: 80vh; z-index: 1; background-color: #181818; }
 .parkImageContainer a span { scale: 3; background-color: rgba(0, 0, 0, 0.6); border-radius: 3px; }
 .parkDivider { position: absolute; bottom: 1; left: 1; z-index: 2; width: 100%; margin-top: calc(-50px + 2px); overflow: hidden; }
 @media only screen and (max-width: 56.25em) { .parkDivider { margin-top: calc(-20px + 2px); } }
 .parkDivider svg { display: block; position: relative; width: calc(100% + 1.3px); height: 50px; }
 @media only screen and (max-width: 56.25em) { .parkDivider svg { height: 20px; } }
 .parkDividerFill { fill: #181818; }
-.parkName { position: absolute; margin: -180px auto 0; padding: 0 5vw 0; width: 100%; z-index: 2; font-family: 'Playfair', serif; font-weight: 900; font-size: clamp(6rem, 13vw, 11rem); text-align: center; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white; }
+.parkName { position: absolute; margin: -180px auto 0; padding: 0 5vw 0; width: 100%; z-index: 2; font-family: 'Playfair', serif; font-weight: 900; font-size: clamp(5.5rem, 3.5vw, 11rem); text-align: center; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: white; }
 @media only screen and (max-width: 56.25em) { .parkName { padding: 0.5rem 1rem; margin: -200px auto 100px; } }
 .parkInfo { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 20vh; margin: 0 auto; text-align: center; }
 @media only screen and (max-width: 56.25em) { .parkInfo { width: 100vw; min-width: -webkit-fit-content; min-width: -moz-fit-content; min-width: fit-content; } }
