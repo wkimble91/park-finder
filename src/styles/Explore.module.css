@@ -3,11 +3,8 @@
 @media only screen and (max-width: 56.25em) { .explore { padding: 0rem; } }
 .exploreHeaderContainer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 15rem; text-align: center; border-radius: 4px; }
 @media only screen and (max-width: 56.25em) { .exploreHeaderContainer { margin-top: 20vh; } }
-.exploreHeader { font-size: 12rem; font-weight: 600; line-height: 1.6; padding: 1.5rem 5rem; color: white; text-shadow: 3px 3px 2px black; border-radius: 1rem; }
-@media only screen and (max-width: 112.5em) { .exploreHeader { font-size: 14rem; } }
-@media only screen and (max-width: 56.25em) { .exploreHeader { font-size: 12rem; } }
-@media only screen and (max-width: 37.5em) { .exploreHeader { font-size: 6rem; } }
-.explore > span { position: absolute; top: 0; left: 0; color: rgba(255, 255, 255, 0.6); font-size: 1.4rem; margin: 95vh 0 0 2rem; }
+.exploreHeader { font-size: clamp(6rem, 8vw, 14rem); font-weight: 600; line-height: 1.6; padding: 1.5rem 5rem; color: white; text-shadow: 3px 3px 2px black; border-radius: 1rem; }
+.explore > span { position: absolute; margin: 95vh 0 0 2rem; top: 0; left: 0; font-size: 1.4rem; color: rgba(255, 255, 255, 0.6); }
 
 .stateSelector { margin: 10rem auto auto; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.1s; transition: all 0.1s; }
 .stateSelector:hover { scale: 1.01; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); }

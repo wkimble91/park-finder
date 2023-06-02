@@ -57,7 +57,7 @@
 
   &Header {
     //Font Styling
-    font-size: 12rem;
+    font-size: clamp(6rem, 8vw, 14rem);
     font-weight: 600;
     line-height: 1.6;
     padding: 1.5rem 5rem;
@@ -66,31 +66,22 @@
     color: white;
     text-shadow: 3px 3px 2px black;
 
+    //Border Styling
     border-radius: 1rem;
-
-    @media only screen and (max-width: $bp-largest) {
-      //Font Styling
-      font-size: 14rem;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      //Font Styling
-      font-size: 12rem;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      //Font Styling
-      font-size: 6rem;
-    }
   }
 
   &>span {
+    //Spacing
     position: absolute;
+    margin: 95vh 0 0 2rem;
     top: 0;
     left: 0;
-    color: rgba(255, 255, 255, .6);
+
+    //Font Styling
     font-size: 1.4rem;
-    margin: 95vh 0 0 2rem;
+
+    //Color Styling
+    color: rgba(255, 255, 255, .6);
   }
 }
 
