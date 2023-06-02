@@ -47,6 +47,7 @@
 .parkDescriptonItem h3 { position: relative; padding: 2rem 0; text-align: left; font-size: 5rem; font-weight: 400; }
 @media only screen and (max-width: 56.25em) { .parkDescriptonItem h3 { padding: 2rem 0 2rem; font-size: 2rem; } }
 .parkDescriptonItem h3:before { content: ''; position: absolute; width: 30%; height: 3px; bottom: 10px; left: 0; background-color: #aa8b56; }
+@media only screen and (max-width: 56.25em) { .parkDescriptonItem h3:before { width: 20%; height: 2px; } }
 .parkDescriptonItem p { margin: 2rem 0; text-indent: 2rem; font-size: 2rem; font-weight: 400; line-height: 1.8; }
 @media only screen and (max-width: 56.25em) { .parkDescriptonItem p { font-size: 1.6rem; } }
 .parkTodo { padding: 10rem 0; width: 100%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }

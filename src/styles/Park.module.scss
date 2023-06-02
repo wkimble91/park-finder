@@ -440,6 +440,12 @@
 
           //Border Styling
           background-color: $color-accent-light;
+
+          @media only screen and (max-width: $bp-medium) {
+            //Spacing
+            width: 20%;
+            height: 2px;
+          }
         }
       }
 
