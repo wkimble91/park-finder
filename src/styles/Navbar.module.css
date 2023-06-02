@@ -1,7 +1,8 @@
-.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; height: 14rem; position: absolute; z-index: 200; text-decoration: none; background-color: transparent; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.8)), to(rgba(24, 24, 24, 0))); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0) 100%); -webkit-transition: -webkit-box-shadow 0.2s; transition: -webkit-box-shadow 0.2s; transition: box-shadow 0.2s; transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
-.headerLogo { margin: 1rem 3rem 0; width: 10rem; height: 8rem; background-image: url("../../public/logo-name-transparent.png"); background-size: contain; background-repeat: no-repeat; }
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 6rem; z-index: 200; text-decoration: none; background-color: #181818; -webkit-transition: -webkit-box-shadow 0.2s; transition: -webkit-box-shadow 0.2s; transition: box-shadow 0.2s; transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
+@media only screen and (min-width: 75em) { .header { margin: 0 auto; max-width: 200rem; } }
+.headerLogo { margin: 0.5rem 3rem; width: 7.5rem; height: 5rem; background-image: url("../../public/logo-name.png"); background-size: contain; background-repeat: no-repeat; }
 .headerLogo:hover { -webkit-animation: wiggle 1s linear; animation: wiggle 1s linear; }
-@media only screen and (max-width: 37.5em) { .headerLogo { margin: 0.3rem 1rem 0; width: 8rem; height: 6.5rem; } }
+@media only screen and (max-width: 37.5em) { .headerLogo { margin: 0.5rem 2rem; width: 7.5rem; height: 5rem; } }
 @-webkit-keyframes wiggle { 0%,
       14% { -webkit-transform: rotateZ(0); transform: rotateZ(0); }
   30% { -webkit-transform: rotateZ(-13deg); transform: rotateZ(-13deg); }
@@ -18,12 +19,11 @@
   60% { -webkit-transform: rotateZ(4deg); transform: rotateZ(4deg); }
   65% { -webkit-transform: rotateZ(-2deg); transform: rotateZ(-2deg); }
   80% { -webkit-transform: rotateZ(0); transform: rotateZ(0); } }
-.header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 8rem; }
-@media only screen and (max-width: 37.5em) { .header__nav { height: 6.5rem; } }
+.header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0; }
 @media only screen and (max-width: 75em) { .header__nav * button { margin-right: 3rem; } }
 @media only screen and (max-width: 37.5em) { .header__nav * button { margin-right: 0; margin-left: 0; } }
-.header__nav * a, .header__nav * Link { margin-right: 3rem; padding: 1.4rem 2.6rem; position: relative; font-size: 2rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: #d6d6d6; border-radius: 8px; }
-.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 9px; border-bottom: 3px solid #a3b18a; -webkit-transition: width 0.4s; transition: width 0.4s; }
+.header__nav * a, .header__nav * Link { margin-right: 1rem; padding: 1.4rem 2.6rem; position: relative; font-size: 1.6rem; font-weight: 600; -webkit-transition: all 0.1s; transition: all 0.1s; color: #d6d6d6; border-radius: 8px; }
+.header__nav * a:before, .header__nav * Link:before { content: ''; position: absolute; width: 0%; height: 1px; bottom: 9px; border-bottom: 2px solid #aa8b56; -webkit-transition: width 0.4s; transition: width 0.4s; }
 .header__nav * a:hover:before, .header__nav * Link:hover:before { width: 24%; }
 @media only screen and (max-width: 56.25em) { .header__nav * a, .header__nav * Link { font-size: 1.8rem; } }
-@media only screen and (max-width: 37.5em) { .header__nav * a, .header__nav * Link { margin-right: 2rem; font-size: 1.6rem; padding: 1rem 2rem; } }
+@media only screen and (max-width: 37.5em) { .header__nav * a, .header__nav * Link { margin-right: 0.5rem; font-size: 1.6rem; padding: 1rem 1.5rem; } }

@@ -11,7 +11,6 @@ export default function Document() {
           name='description'
           content='Website for finding local national parks and information about them'
         />
-
         {/* --- Favicons --- */}
         <link
           rel='apple-touch-icon'
@@ -32,12 +31,15 @@ export default function Document() {
         />
         <link rel='icon' href='/favicon.ico' />
         <link rel='manifest' href='site.webmanifest' />
-
         {/* --- Fonts --- */}
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
           href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap'
+          rel='stylesheet'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Playfair:wght@900&display=swap'
           rel='stylesheet'
         />
         {/* --- Bootstrap CSS for Carousel --- */}

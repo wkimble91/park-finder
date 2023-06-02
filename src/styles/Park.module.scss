@@ -2,11 +2,9 @@
 
 .park {
   //Spacing
-  position: inherit;
+  position: relative;
 
-  //Color Styling
-  background-color: $color-background;
-
+  // CAROUSEL OF IMAGES PROVIDED BY NPS API
   &Image {
     //Spacing
     z-index: 1;
@@ -18,7 +16,7 @@
       //Spacing
       position: relative;
       width: 100vw;
-      height: 80vh;
+      height: calc(80vh - 6rem);
       z-index: 1;
 
       //Color Styling
@@ -36,16 +34,19 @@
       }
     }
   }
+
+  // CURVED SVG BELOW THE IMAGE
   &Divider {
     //Spacing
     position: absolute;
     bottom: 1;
     left: 1;
+    z-index: 2;
     width: 100%;
     margin-top: calc(-50px + 2px);
     overflow: hidden;
-    z-index: 2;
 
+    // DECREASES CURVE FOR SMALLER SCREENS
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       margin-top: calc(-20px + 2px);
@@ -65,49 +66,39 @@
         height: 20px;
       }
     }
+
     &Fill {
       //Color Styling
       fill: $color-background;
     }
   }
+
+  // FLOATING PARK TITLE
   &Name {
     //Spacing
-    position: relative;
-    margin: -60px auto 0;
-    padding: 1rem 5rem;
-    width: fit-content;
-    max-width: 80vw;
+    position: absolute;
+    margin: -180px auto 0;
+    padding: 0 5vw 0;
+    width: 100%;
     z-index: 2;
 
     //Font Styling
-    font-size: 5.5rem;
-    font-weight: 600;
+    font-family: 'Playfair', serif;
+    font-weight: 900;
+    font-size: clamp(6rem, 13vw, 11rem);
     text-align: center;
-    text-shadow: 2px 2px 1px black;
-
+    text-shadow: $text-outline-dark;
     //Color Styling
-    background-color: $color-accent-dark;
     color: white;
-    opacity: 98%;
-
-    //Border Styling
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
-    border-radius: $default-border-radius;
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       padding: 0.5rem 1rem;
-      margin: -40px auto 0;
-
-      //Font Styling
-      font-size: 4.5rem;
-    }
-    @media only screen and (max-width: $bp-small) {
-      //Font Styling
-      font-size: 3.5rem;
+      margin: -200px auto 100px;
     }
   }
 
+  // PRICE, LOCATION, AND PHONE INFO
   &Info {
     //Display
     display: flex;
@@ -115,45 +106,30 @@
 
     //Spacing
     width: fit-content;
-    margin: 5rem auto;
+    height: 20vh;
+    margin: 0 auto;
 
     //Font Styling
     text-align: center;
 
-    //Color Styling
-    background-color: $color-accent;
-
-    //Border Styling
-    border-radius: $default-border-radius;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-
-    @media only screen and (max-width: $bp-large) {
-      //Font Styling
-      font-size: 1.6rem;
-    }
     @media only screen and (max-width: $bp-medium) {
       //Spacing
-      width: 80vw;
+      width: 100vw;
       min-width: fit-content;
-
-      //Font Styling
-      font-size: 1.4rem;
     }
+
     @media only screen and (max-width: $bp-smallest) {
       //Display
       flex-wrap: wrap;
       justify-content: center;
-
-      //Spacing
-      width: 90vw;
     }
 
-    &Container {
+    &Item {
       //Spacing
       margin: auto 0;
       padding: 3rem 4rem;
       width: fit-content;
-      min-width: 30rem;
+      min-width: 35rem;
 
       //Font Styling
       white-space: nowrap;
@@ -161,43 +137,8 @@
 
       //Color Styling
       color: white;
+      text-shadow: 1px 1px 1px black;
 
-      h4 {
-        //Font Styling
-        font-size: 2rem;
-        font-weight: 800;
-        text-align: center;
-        text-shadow: 1px 1px black;
-      }
-
-      p {
-        //Font Styling
-        font-size: 2rem;
-        text-align: center;
-        text-shadow: none;
-
-        @media only screen and (max-width: $bp-small) {
-          //Font Styling
-          font-size: 1.4rem;
-        }
-      }
-
-      a {
-        //Font Styling
-        font-size: 2rem;
-        text-align: center;
-        text-shadow: none;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-
-        //Color Styling
-        color: inherit;
-
-        @media only screen and (max-width: $bp-small) {
-          //Font Styling
-          font-size: 1.4rem;
-        }
-      }
 
       @media only screen and (max-width: $bp-medium) {
         //Display
@@ -206,62 +147,57 @@
         //Spacing
         width: 33%;
         margin: 1rem;
-        padding: 2rem 4rem;
+        padding: 2rem 0;
         min-width: 0;
       }
+
       @media only screen and (max-width: $bp-small) {
         //Spacing
         padding: 1rem;
       }
-    }
-    &Icon {
-      //Display
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-      //Spacing
-      width: 8rem;
-      height: 8rem;
-      margin: 0 auto 1.4rem;
-
-      //Color Styling
-      background-color: $color-accent-dark;
-
-      //Border Styling
-      border: 3px solid white;
-      border-radius: 50%;
-      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
-
-      @media only screen and (max-width: $bp-medium) {
-        //Spacing
-        width: 7rem;
-        height: 7rem;
-      }
-      @media only screen and (max-width: $bp-smallest) {
-        //Spacing
-        width: 6rem;
-        height: 6rem;
+      h4 {
+        //Font Styling
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: center;
       }
 
-      & svg {
+      p {
         //Spacing
-        margin: auto;
-        width: 5rem;
-        height: 5rem;
+        margin: 0;
+        padding: 0;
+
+        //Font Styling
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        text-shadow: none;
+        text-shadow: 1px 1px 1px black;
+
+        @media only screen and (max-width: $bp-small) {
+          //Font Styling
+          font-size: 1.6rem;
+        }
+      }
+
+      a {
+        //Font Styling
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        text-shadow: none;
+        text-decoration: underline;
+        text-decoration-color: $color-accent-light;
+        text-underline-offset: 3px;
 
         //Color Styling
-        fill: white;
+        color: inherit;
+        text-shadow: 1px 1px 1px black;
 
-        @media only screen and (max-width: $bp-medium) {
-          //Spacing
-          width: 4rem;
-          height: 4rem;
-        }
-        @media only screen and (max-width: $bp-smallest) {
-          //Spacing
-          width: 3rem;
-          height: 3rem;
+        @media only screen and (max-width: $bp-small) {
+          //Font Styling
+          font-size: 1.6rem;
         }
       }
     }
@@ -274,33 +210,14 @@
 
     //Spacing
     width: fit-content;
-    margin: 5rem auto;
+    margin: 0 auto 5rem;
 
-    //Font Styling
-    font-size: 2.4rem;
-    font-weight: 800;
-    text-align: center;
-    text-shadow: 1px 1px black;
-
-    //Color Styling
-    background-color: $color-accent;
-
-    //Border Styling
-    border-radius: $default-border-radius;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-
-    @media only screen and (max-width: $bp-large) {
-      //Font Styling
-      font-size: 1.6rem;
-    }
     @media only screen and (max-width: $bp-medium) {
       //Spacing
       width: 80vw;
       min-width: fit-content;
-
-      //Font Styling
-      font-size: 1.4rem;
     }
+
     @media only screen and (max-width: $bp-smallest) {
       //Display
       flex-wrap: wrap;
@@ -312,7 +229,6 @@
 
     &Container {
       //Spacing
-      margin: auto 0;
       padding: 3rem 4rem;
       min-width: 30rem;
 
@@ -322,43 +238,20 @@
       //Color Styling
       color: white;
 
-      a {
-        //Font Styling
-        text-align: center;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-
-        //Color Styling
-        color: inherit;
-      }
-
       @media only screen and (max-width: $bp-medium) {
         //Display
         align-self: center;
 
         //Spacing
-        width: 80vw;
+        width: 95vw;
         margin: 1rem;
         padding: 2rem 4rem;
         min-width: 0;
       }
+
       @media only screen and (max-width: $bp-smallest) {
         //Spacing
         padding: 1rem;
-        width: 90vw;
-      }
-    }
-
-    &Title {
-      font-size: 3.5rem;
-      font-weight: 600;
-      text-shadow: 1px 1px 1px black;
-
-      @media only screen and (max-width: $bp-medium) {
-        font-size: 3rem;
-      }
-      @media only screen and (max-width: $bp-smallest) {
-        font-size: 2.5rem;
       }
     }
 
@@ -386,6 +279,7 @@
         width: 7rem;
         height: 7rem;
       }
+
       @media only screen and (max-width: $bp-smallest) {
         //Spacing
         width: 6rem;
@@ -406,6 +300,7 @@
           width: 4rem;
           height: 4rem;
         }
+
         @media only screen and (max-width: $bp-smallest) {
           //Spacing
           width: 3rem;
@@ -413,20 +308,25 @@
         }
       }
     }
-  }
 
-  &DetailsContainer {
-    //Display
-    display: flex;
-    flex-wrap: wrap;
+    &Title {
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-align: center;
 
-    @media only screen and (max-width: $bp-medium) {
-      //Display
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      color: white;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 2.5rem;
+      }
     }
   }
+
+
 
   &Descripton {
     //Display
@@ -436,27 +336,85 @@
     flex-wrap: wrap;
 
     //Spacing
-    padding: 10rem 0;
     width: 100vw;
+    position: relative;
+    z-index: 1;
 
     //Color Styling
-    background-color: $color-accent;
     color: white;
 
     //Border Styling
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 
     @media only screen and (max-width: $bp-small) {
       //Spacing
       padding: 10rem 0 5rem;
     }
 
+    &Image {
+      object-fit: cover;
+      overflow: hidden;
+      height: 6rem;
+    }
+
     &Container {
+      //Display
+      display: flex;
+      flex-wrap: wrap;
+
+      @media only screen and (max-width: $bp-medium) {
+        //Display
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    }
+
+    h2 {
       //Spacing
-      width: 48vw;
-      padding: 0 6rem 0;
+      width: 100vw;
+      margin: 0 auto;
+      padding: 5rem 4rem;
+      z-index: 2;
+
+      //Font Styling
+      font-size: clamp(6rem, 10vw, 8rem);
+      font-weight: 400;
+      text-align: center;
+      text-shadow: 2px 2px 1px black;
+
+
+      @media only screen and (max-width: $bp-large) {
+        //Font Styling
+        // font-size: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        //Spacing
+        padding: 0 4rem 6rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        //Font Styling
+        // font-size: 3rem;
+      }
+    }
+
+    &Item {
+      //Spacing
+      width: 45vw;
+      height: fit-content;
+      padding: 3rem;
+      margin: 4rem 0 8rem;
+      z-index: 2;
+
+      background-color: $color-background;
+      box-shadow: 2px 2px 4px black;
+
 
       @media only screen and (max-width: $bp-small) {
         //Spacing
@@ -465,27 +423,41 @@
       }
 
       h3 {
+        position: relative;
         //Spacing
-        padding: 1rem 0 0.5rem;
+        padding: 2rem 0;
 
         //Font Styling
-        text-align: center;
-        font-size: 2.6rem;
-        font-weight: 600;
-        text-shadow: 1px 1px black;
+        text-align: left;
+        font-size: 5rem;
+        font-weight: 400;
 
         @media only screen and (max-width: $bp-medium) {
           //Spacing
-          padding: 2rem 0 0.5rem;
+          padding: 2rem 0 2rem;
 
           //Font Styling
           font-size: 2rem;
+        }
+
+        &:before {
+          content: '';
+
+          //Spacing
+          position: absolute;
+          width: 30%;
+          height: 3px;
+          bottom: 10px;
+          left: 0;
+
+          //Border Styling
+          background-color: $color-accent-light;
         }
       }
 
       p {
         //Spacing
-        margin: 1rem 0 2rem;
+        margin: 2rem 0;
 
         //Font Styling
         text-indent: 2rem;
@@ -497,66 +469,6 @@
           //Font Styling
           font-size: 1.6rem;
         }
-      }
-    }
-
-    &Icon {
-      //Display
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      //Spacing
-      width: 9rem;
-      height: 9rem;
-      margin: 0 auto;
-
-      //Color Styling
-      background-color: $color-accent-dark;
-
-      //Border Styling
-      border: 3px solid white;
-      border-radius: 50%;
-      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
-
-      & svg {
-        //Display
-        display: block;
-
-        //Spacing
-        position: relative;
-        margin: auto;
-        width: 5rem;
-        height: 5rem;
-
-        //Color Styling
-        fill: white;
-      }
-    }
-
-    h2 {
-      //Spacing
-      width: 100vw;
-      margin: 0 auto;
-      padding: 0 4rem 4rem;
-
-      //Font Styling
-      font-size: 5rem;
-      font-weight: 600;
-      text-align: center;
-      text-shadow: 2px 2px 2px black;
-
-      @media only screen and (max-width: $bp-large) {
-        //Font Styling
-        font-size: 4rem;
-      }
-      @media only screen and (max-width: $bp-medium) {
-        //Spacing
-        padding: 0 4rem 6rem;
-      }
-      @media only screen and (max-width: $bp-small) {
-        //Font Styling
-        font-size: 3rem;
       }
     }
   }
@@ -575,23 +487,19 @@
 
     h2 {
       //Spacing
-      padding: 1rem 5rem;
-      margin: 0 auto;
+      margin: 1rem auto 5rem;
       width: fit-content;
+      position: relative;
 
       //Font Styling
       text-align: center;
-      font-size: 5rem;
+      font-size: 7rem;
       font-weight: 600;
-      text-shadow: 2px 2px 2px black;
 
       //Color Styling
       color: white;
-      background-color: $color-accent;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
-      //Border Styling
-      border-radius: $default-border-radius;
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 
       @media only screen and (max-width: $bp-medium) {
         //Spacing
@@ -600,13 +508,27 @@
         //Font Styling
         font-size: 2.8rem;
       }
+
+      &:before {
+        content: '';
+
+        //Spacing
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+
+        //Border Styling
+        background-color: $color-accent-light;
+      }
     }
 
     &List {
       //Display
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 1.5rem 6rem;
+      gap: 0.8rem 6rem;
 
       //Spacing
       padding: 8rem 2rem 4rem;
@@ -620,6 +542,7 @@
         //Spacing
         padding: 6rem 2rem 1rem;
       }
+
       @media only screen and (max-width: $bp-medium) {
         //Display
         grid-template-columns: 1fr;
@@ -631,19 +554,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 4px 12px;
+        padding: 0 1rem;
         border-radius: 7px;
 
         //Font Styling
         font-size: 2rem;
         font-weight: 600;
-        white-space: nowrap;
-        text-shadow: 0px 0px 3px black;
 
         //Color Styling
-        background-color: $color-accent;
         color: white;
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
       }
 
       &Error {
@@ -667,8 +586,7 @@
         margin: auto 1rem auto 0;
 
         //Color Styling
-        fill: white;
-        box-shadow: 0px 0px 2px black;
+        fill: $color-accent-light;
       }
     }
   }

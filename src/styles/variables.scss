@@ -2,21 +2,30 @@
 // -----------Color Schemes----------- //
 // ----------------------------------- //
 
-$color-accent-light: #a3b18a;
-$color-accent: #588157;
-$color-accent-dark: #3a5a40;
+$color-accent-light: #aa8b56;
+$color-accent: #4e6c50;
+$color-accent-dark: #395144;
 
 $color-grey-light: #d6d6d6;
 $color-grey: #525252;
 $color-grey-dark: #181818;
 
-$color-background: #dad7cd;
+$color-background: #181818;
 
-$color-grey-gradient: linear-gradient(
-  to bottom right,
+$color-grey-gradient: linear-gradient(to bottom right,
   rgba(40, 40, 40, 1),
-  rgba(20, 20, 20, 1)
-);
+  rgba(20, 20, 20, 1));
+
+$text-outline-dark: -1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+
+$text-outline-white: -1px -1px 0 #fff,
+1px -1px 0 #fff,
+-1px 1px 0 #fff,
+1px 1px 0 #fff;
+
 
 // --------------------------------- //
 // -----------Breakpoints----------- //
@@ -32,6 +41,4 @@ $bp-smallest: 25em; //400px
 // --------------Defaults------------- //
 // ----------------------------------- //
 
-$default-border-radius: 12px;
-$default-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
-$default-box-shadow-hover: 4px 4px 8px rgba(0, 0, 0, 0.9);
+$default-border-radius: 4px;

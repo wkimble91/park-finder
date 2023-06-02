@@ -1,4 +1,5 @@
 @import 'variables';
+
 @mixin badge {
   //Spacing
   width: fit-content;
@@ -14,62 +15,71 @@
   color: white;
 
   //Border Styling
-  border-radius: $default-border-radius;
+  border-radius: 8px;
+  border: 1px solid white;
 }
+
 .Warning {
   //Spacing
   margin: 2rem auto;
   padding: 2rem 2rem 1rem;
-  width: fit-content;
+  width: 100%;
   max-width: 100rem;
   background-color: $color-accent-dark;
   border-radius: $default-border-radius;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 
   //Font Styling
   text-align: center;
   white-space: normal;
 
+
+  // BADGES FOR EACH TYPE OF WARNING
   &_catagory {
     &_closure {
       //Mixin
       @include badge;
 
       //Color Styling
-      background-color: blueviolet;
+      background-color: #7678ed;
     }
+
     &_danger {
       //Mixin
       @include badge;
 
       //Color Styling
-      background-color: darkred;
+      background-color: #9a031e;
     }
+
     &_information {
       //Mixin
       @include badge;
 
       //Color Styling
-      background-color: blue;
+      background-color: #1a659e;
     }
+
     &_caution {
       //Mixin
       @include badge;
 
       //Color Styling
-      background-color: orangered;
+      background-color: #ff928b;
     }
   }
+
   &_title {
     //Spacing
-    padding: 1rem 0;
+    margin: 2rem 0 1.5rem;
     display: inline-block;
 
     //Font Styling
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
+    line-height: 1.2;
     font-weight: 600;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 0 1px black;
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
@@ -79,9 +89,19 @@
       font-size: 2rem;
     }
   }
+
+  // WHEN A WARNING HAS A URL ASSOCIATED WITH IT
+  a {
+    //Color Styling
+    text-decoration: underline;
+    text-decoration-color: $color-accent-light;
+    text-underline-offset: 3px;
+    color: inherit;
+  }
+
   &_description {
     //Font Styling
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-shadow: none;
   }

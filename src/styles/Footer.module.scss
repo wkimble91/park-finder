@@ -1,6 +1,10 @@
 @import 'variables';
 
 .footer {
+  //Display
+  display: flex;
+  justify-content: center;
+
   //Spacing
   width: 100vw;
   height: fit-content;
@@ -12,20 +16,36 @@
   @media only screen and (max-width: $bp-large) {
     //Spacing
     padding: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   &Box {
     //Display
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     //Font Styling
     font-size: 1.8rem;
-    align-items: flex-end;
     font-weight: 200;
+    width: 80%;
 
     //Color Styling
     color: white;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      //Font Styling
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      //Color Styling
+      color: inherit;
+    }
 
     @media only screen and (max-width: $bp-large) {
       //Display
@@ -33,30 +53,49 @@
       justify-content: flex-end;
       align-items: center;
 
-      //Spacing
-      height: 18rem;
-
       //Font Styling
       text-align: center;
     }
+
     @media only screen and (max-width: $bp-medium) {
       //Font Styling
       font-size: 1.3rem;
     }
   }
+
+  &Logo {
+    margin: 1rem 3rem;
+
+    //Color Styling
+    width: 6rem;
+    height: 6rem;
+
+    //Image Styling
+    background-image: url('../../public/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:hover {
+      animation: wiggle 1s linear;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      margin: 1rem 3rem 2rem;
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+
   &Copyright {
+    display: flex;
+    align-items: center;
+
     @media only screen and (max-width: $bp-large) {
       //Spacing
       padding: 0.5rem 0;
-    }
-
-    a {
-      //Font Styling
-      text-decoration: underline;
-      text-underline-offset: 2px;
-
-      //Color Styling
-      color: inherit;
+      flex-direction: column;
+      align-items: center;
     }
 
     span {

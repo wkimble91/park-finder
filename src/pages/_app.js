@@ -2,13 +2,12 @@ import '@/styles/globals.css';
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import useFetchParkData from '@/services/useFetchParkData.js';
 
 export default function App({ Component, pageProps }) {
   const [parkData, setParkData] = useState(null);
   const [selectedParkCode, setSelectedParkCode] = useState('');
-  const [selectedParkData, setSelectedParkData] = useState([]);
+  // const [selectedParkData, setSelectedParkData] = useState([]);
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
   const { data, error } = useFetchParkData(
     `https://developer.nps.gov/api/v1/parks?limit=500&api_key=${API_KEY}`
@@ -26,8 +25,8 @@ export default function App({ Component, pageProps }) {
         allData={data}
         parkData={parkData}
         setParkData={setParkData}
-        selectedParkData={selectedParkData}
-        setSelectedParkData={setSelectedParkData}
+        // selectedParkData={selectedParkData}
+        // setSelectedParkData={setSelectedParkData}
         selectedParkCode={selectedParkCode}
         setSelectedParkCode={setSelectedParkCode}
         {...pageProps}

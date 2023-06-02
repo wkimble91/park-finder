@@ -16,9 +16,9 @@ const Navbar = () => {
       <nav>
         <ul id='navigation' className={styles.header__nav}>
           <li className={styles.header__navItem}>
-            <a href='https://www.nps.gov/' target='_blank'>
-              NPS Website
-            </a>
+            <Link href='/'>Home</Link>
+            <Link href='/about'>About</Link>
+            <Link href='/explore'>Explore</Link>
           </li>
         </ul>
         <div id='header__hamburger' className={styles.header__hamburger}>

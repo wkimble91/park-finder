@@ -1,0 +1,198 @@
+@import 'variables';
+
+.explore {
+  //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  //Spacing
+  padding: 0 6rem;
+  height: calc(100vh + 8rem);
+
+  //Image Styling
+  background-image: linear-gradient(to bottom,
+      rgba($color-grey-dark, 0.35) 0%,
+      rgba($color-grey-dark, 0.35) 50%,
+      rgba($color-grey-dark, 1) 90%,
+      rgba($color-grey-dark, 1) 100%),
+    url(../../public/explore.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    padding: 4rem 4rem 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    //Spacing
+    padding: 0rem;
+  }
+
+  &HeaderContainer {
+    //Display
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //Spacing
+    margin-top: 15rem;
+
+    //Font Styling
+    text-align: center;
+
+    //Border Styling
+    border-radius: $default-border-radius;
+
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      margin-top: 20vh;
+    }
+  }
+
+  &Header {
+    //Font Styling
+    font-size: 12rem;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 1.5rem 5rem;
+
+    //Color Styling
+    color: white;
+    text-shadow: 3px 3px 2px black;
+
+    border-radius: 1rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      //Font Styling
+      font-size: 14rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      //Font Styling
+      font-size: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      //Font Styling
+      font-size: 6rem;
+    }
+  }
+
+  &>span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.4rem;
+    margin: 0 0 16rem 2rem;
+  }
+}
+
+.stateSelector {
+  //Spacing
+  margin: 10rem auto auto;
+
+  //Border Styling
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+
+  //Animations
+  transition: all 0.1s;
+
+  &:hover {
+    //Spacing
+    scale: 1.01;
+
+    //Border Styling
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    //Spacing
+    margin: 4rem auto auto;
+  }
+
+  select {
+    //Spacing
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 50rem;
+
+    //Font Styling
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+
+    //Color Styling
+    background-color: rgba($color-grey-dark, .95);
+    color: white;
+
+    //Border Styling
+    border: none;
+    border-radius: 2px;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      width: 60vw;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      width: 70vw;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      //Spacing
+      width: 80vw;
+
+      //Font Styling
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.park {
+  &Container {
+    //Display
+    display: flex;
+    gap: 2rem 2rem;
+    flex-wrap: wrap;
+
+    //Spacing
+    margin: 10rem 0 2rem;
+
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+      //Display
+      gap: 6rem;
+    }
+  }
+
+  &Card {
+    //Display
+    display: flex;
+    flex-direction: column;
+
+    //Spacing
+    position: relative;
+    margin: 0 auto;
+    min-height: 30rem;
+    width: 28vw;
+
+    @media only screen and (max-width: $bp-large) {
+      //Spacing
+      width: 44vw;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      width: 94vw;
+    }
+  }
+}

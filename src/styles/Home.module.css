@@ -1,27 +1,31 @@
-.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; padding: 0 6rem; height: 110vh; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.8)), color-stop(30%, rgba(24, 24, 24, 0.4)), color-stop(80%, rgba(24, 24, 24, 0.3)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.8) 0%, rgba(24, 24, 24, 0.4) 30%, rgba(24, 24, 24, 0.3) 80%, #181818 100%), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
-@media only screen and (max-width: 75em) { .hero { padding: 4rem 4rem 0; } }
-@media only screen and (max-width: 56.25em) { .hero { padding: 0rem; } }
-.heroHeaderContainer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 15rem; text-align: center; border-radius: 12px; }
-@media only screen and (max-width: 56.25em) { .heroHeaderContainer { margin-top: 20vh; } }
-.heroHeader { font-size: 20rem; font-weight: 300; line-height: 1.6; text-shadow: 5px 5px 1px black; color: white; }
-@media only screen and (max-width: 112.5em) { .heroHeader { font-size: 14rem; text-shadow: 4px 4px 1px black; } }
-@media only screen and (max-width: 56.25em) { .heroHeader { font-size: 12rem; text-shadow: 3px 3px 1px black; } }
-@media only screen and (max-width: 37.5em) { .heroHeader { font-size: 6rem; text-shadow: 2px 2px 1px black; } }
-.heroSubheader { font-size: 5rem; font-weight: 400; line-height: 1.8; font-style: italic; text-shadow: 2px 2px 2px black; color: white; opacity: 0.8; }
+.hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; padding: 0 10rem; min-height: calc(100vh - 6rem); height: 100%; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.2)), color-stop(85%, rgba(24, 24, 24, 0.2)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.2) 0%, rgba(24, 24, 24, 0.2) 85%, #181818 100%), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; }
+@media only screen and (max-width: 75em) { .hero { padding: 0 6rem; } }
+@media only screen and (max-width: 56.25em) { .hero { padding: 0 4rem; background-image: none; } }
+.heroContainer { min-height: calc(100vh - 6rem); max-width: 200rem; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+@media only screen and (max-width: 56.25em) { .heroContainer { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+.heroContainerLeft { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: auto; width: 60%; border-radius: 4px; }
+@media only screen and (max-width: 75em) { .heroContainerLeft { width: 54%; } }
+@media only screen and (max-width: 56.25em) { .heroContainerLeft { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100vw; min-height: calc(100vh - 6rem); padding: 4rem; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.2)), color-stop(85%, rgba(24, 24, 24, 0.2)), to(#181818)), url(../../public/hero.jpg); background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.2) 0%, rgba(24, 24, 24, 0.2) 85%, #181818 100%), url(../../public/hero.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; } }
+.heroContainerRight { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; gap: 3rem 0; height: 90%; min-height: calc(60vh - 6rem); width: 35%; }
+@media only screen and (max-width: 75em) { .heroContainerRight { width: 45%; } }
+@media only screen and (max-width: 56.25em) { .heroContainerRight { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 10rem; width: 100%; } }
+.heroHeader { font-size: clamp(8rem, 5vw, 20rem); font-weight: 400; text-shadow: 4px 4px 1px black; color: white; }
+@media only screen and (max-width: 112.5em) { .heroHeader { text-shadow: 3px 3px 1px black; } }
+@media only screen and (max-width: 37.5em) { .heroHeader { text-shadow: 2px 2px 1px black; } }
+.heroSubheader { font-size: 4rem; font-weight: 400; font-style: italic; text-shadow: 2px 2px 2px black; color: white; opacity: 0.8; }
 @media only screen and (max-width: 112.5em) { .heroSubheader { font-size: 4rem; } }
 @media only screen and (max-width: 56.25em) { .heroSubheader { font-size: 3rem; } }
 @media only screen and (max-width: 37.5em) { .heroSubheader { font-size: 2.2rem; } }
-
-.stateSelector { margin: 10rem auto auto; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.1s; transition: all 0.1s; }
-.stateSelector:hover { scale: 1.01; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); }
-@media only screen and (max-width: 75em) { .stateSelector { margin: 4rem auto auto; } }
-.stateSelector select { margin: 0 auto; padding: 1rem 2rem; width: 50rem; font-size: 2rem; letter-spacing: 0.1rem; font-weight: 400; background-color: #181818; color: white; border: none; }
-@media only screen and (max-width: 75em) { .stateSelector select { width: 60vw; margin: 0 auto; } }
-@media only screen and (max-width: 56.25em) { .stateSelector select { width: 70vw; } }
-@media only screen and (max-width: 37.5em) { .stateSelector select { width: 80vw; font-size: 1.8rem; } }
-
-.parkContainer { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem 2rem; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10rem 0 2rem; }
-@media only screen and (max-width: 56.25em), only screen and (hover: none) { .parkContainer { gap: 6rem; } }
-.parkCard { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; margin: 0 auto; min-height: 30rem; width: 28vw; }
-@media only screen and (max-width: 75em) { .parkCard { width: 44vw; } }
-@media only screen and (max-width: 56.25em) { .parkCard { width: 94vw; } }
+.heroButton { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: none; background-color: rgba(0, 0, 0, 0.8); color: white; font-size: 2.4rem; font-weight: 600; padding: 2rem 3rem; border-radius: .8rem; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; border: 2px solid white; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin-top: 10rem; }
+.heroButton span { margin-left: 5px; }
+@media only screen and (max-width: 112.5em) { .heroButton { font-size: 2.2rem; padding: 1.8rem 2.8rem; } }
+@media only screen and (max-width: 56.25em) { .heroButton { font-size: 2rem; padding: 1.6em 2.6rem; } }
+@media only screen and (max-width: 37.5em) { .heroButton { font-size: 1.8rem; padding: 1.4rem 2rem; } }
+.heroButtonSVG { margin-left: 2rem; display: inline-block; width: 2.5rem; height: 2.5rem; stroke-width: 0; stroke: white; fill: white; }
+@media only screen and (max-width: 56.25em) { .heroButtonSVG { width: 2rem; height: 2rem; } }
+.heroButton:hover { scale: 1.05; -webkit-transform: translateX(0.6rem); transform: translateX(0.6rem); color: white; }
+.heroCarousel { position: relative; z-index: 1; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+.heroCarouselTitle { position: absolute; z-index: 3; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
+.heroCarouselContainer { position: relative; z-index: 1; height: auto; width: 100%; max-width: 55rem; -webkit-box-shadow: 1px 1px 4px black; box-shadow: 1px 1px 4px black; }
+.hero > span { position: absolute; bottom: 0; left: 0; color: rgba(255, 255, 255, 0.4); font-size: 1.4rem; margin: 0 0 3rem 2rem; }
+@media only screen and (max-width: 56.25em) { .hero > span { top: 0; margin: 90vh 0 0 2rem; } }

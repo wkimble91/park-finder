@@ -1,28 +1,64 @@
 import Head from 'next/head';
-import { useState } from 'react';
 import Link from 'next/link';
-import { Navbar } from '@/components/Navbar.js';
+import Image from 'next/image';
 import { Footer } from '@/components/Footer.js';
-import Card from '@/components/Card.js';
+import { Carousel } from 'react-bootstrap';
 import styles from '@/styles/Home.module.css';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 export default function Home({ setSelectedParkData }) {
-  const [parkData, setParkData] = useState([]);
-
-  const onSelectedClick = (item) => {
-    setSelectedParkData(item);
-  };
-
-  const handleChange = async (e) => {
-    setParkData([]);
-    const res = await fetch(
-      `https://developer.nps.gov/api/v1/parks?limit=50&stateCode=${e}&api_key=${API_KEY}`
-    );
-    const data = await res.json();
-    setParkData(data.data);
-  };
+  const featuredParks1 = [
+    {
+      name: 'Great Smoky Mountains National Park',
+      image: '/featuredParks/GSM.jpg',
+      link: '/park?parkCode=grsm',
+    },
+    {
+      name: 'Grand Canyon National Park',
+      image: '/featuredParks/GC.jpg',
+      link: '/park?parkCode=grca',
+    },
+    {
+      name: 'Zion National Park',
+      image: '/featuredParks/ZNP.jpg',
+      link: '/park?parkCode=zion',
+    },
+  ];
+  const featuredParks2 = [
+    {
+      name: 'Rocky Mountains National Park',
+      image: '/featuredParks/RM.jpg',
+      link: '/park?parkCode=romo',
+    },
+    {
+      name: 'Acadia National Park',
+      image: '/featuredParks/ANP.jpg',
+      link: '/park?parkCode=acad',
+    },
+    {
+      name: 'Yosemite National Park',
+      image: '/featuredParks/YoNP.jpg',
+      link: '/park?parkCode=yose',
+    },
+  ];
+  const featuredParks3 = [
+    {
+      name: 'Yellowstone National Park',
+      image: '/featuredParks/YeNP.jpg',
+      link: '/park?parkCode=yell',
+    },
+    {
+      name: 'Joshua Tree National Park',
+      image: '/featuredParks/JT.jpg',
+      link: '/park?parkCode=jotr',
+    },
+    {
+      name: 'Glacier National Park',
+      image: '/featuredParks/GNP.jpg',
+      link: '/park?parkCode=glac',
+    },
+  ];
 
   return (
     <>
@@ -30,107 +66,112 @@ export default function Home({ setSelectedParkData }) {
         <title>Park Finder | Home</title>
       </Head>
       <main className={styles.hero}>
-        <div className={styles.heroHeaderContainer}>
-          <h1 className={styles.heroHeader}>Park Finder</h1>
-          <h2 className={styles.heroSubheader}>Not all who wander are lost</h2>
-        </div>
-        <div className={styles.stateSelector}>
-          <select
-            data-testid='dropDown'
-            onChange={(e) => handleChange(e.target.value)}
-            name='states'
-            id='states'
-            defaultValue={'none'}
-          >
-            <option value='none' disabled hidden>
-              Select a State
-            </option>
-            <option value='AL'>Alabama</option>
-            <option value='AK'>Alaska</option>
-            <option value='AZ'>Arizona</option>
-            <option value='AR'>Arkansas</option>
-            <option value='CA'>California</option>
-            <option value='CO'>Colorado</option>
-            <option value='CT'>Connecticut</option>
-            <option value='DE'>Delaware</option>
-            <option value='DC'>District Of Columbia</option>
-            <option value='FL'>Florida</option>
-            <option value='GA'>Georgia</option>
-            <option value='HI'>Hawaii</option>
-            <option value='ID'>Idaho</option>
-            <option value='IL'>Illinois</option>
-            <option value='IN'>Indiana</option>
-            <option value='IA'>Iowa</option>
-            <option value='KS'>Kansas</option>
-            <option value='KY'>Kentucky</option>
-            <option value='LA'>Louisiana</option>
-            <option value='ME'>Maine</option>
-            <option value='MD'>Maryland</option>
-            <option value='MA'>Massachusetts</option>
-            <option value='MI'>Michigan</option>
-            <option value='MN'>Minnesota</option>
-            <option value='MS'>Mississippi</option>
-            <option value='MO'>Missouri</option>
-            <option value='MT'>Montana</option>
-            <option value='NE'>Nebraska</option>
-            <option value='NV'>Nevada</option>
-            <option value='NH'>New Hampshire</option>
-            <option value='NJ'>New Jersey</option>
-            <option value='NM'>New Mexico</option>
-            <option value='NY'>New York</option>
-            <option value='NC'>North Carolina</option>
-            <option value='ND'>North Dakota</option>
-            <option value='OH'>Ohio</option>
-            <option value='OK'>Oklahoma</option>
-            <option value='OR'>Oregon</option>
-            <option value='PA'>Pennsylvania</option>
-            <option value='RI'>Rhode Island</option>
-            <option value='SC'>South Carolina</option>
-            <option value='SD'>South Dakota</option>
-            <option value='TN'>Tennessee</option>
-            <option value='TX'>Texas</option>
-            <option value='UT'>Utah</option>
-            <option value='VT'>Vermont</option>
-            <option value='VA'>Virginia</option>
-            <option value='WA'>Washington</option>
-            <option value='WV'>West Virginia</option>
-            <option value='WI'>Wisconsin</option>
-            <option value='WY'>Wyoming</option>
-          </select>
-        </div>
-        <div className={styles.parkContainer}>
-          {parkData.length > 0 &&
-            parkData.map((item, index) => {
-              return (
-                <Link
-                  replace={true}
-                  href={{
-                    pathname: '/park',
-                  }}
-                  className={styles.parkCard}
-                  data-testid='card'
-                  parkcode={item.parkCode}
+        <div className={styles.heroContainer}>
+          <div className={styles.heroContainerLeft}>
+            <div>
+              <h1 className={styles.heroHeader}>Park Finder</h1>
+              <h2 className={styles.heroSubheader}>
+                Not all who wander are lost
+              </h2>
+            </div>
+            <Link href='/explore' className={styles.heroButton}>
+              Find A Park <span>Near You</span>
+              <svg className={styles.heroButtonSVG}>
+                <use href='#icon-chevron-right-outline'>
+                  <symbol id='icon-chevron-right-outline' viewBox='0 0 24 24'>
+                    <path d='M10 20c-0.802 0-1.555-0.312-2.122-0.879-0.566-0.566-0.878-1.32-0.878-2.121s0.312-1.555 0.879-2.122l2.878-2.878-2.878-2.879c-0.567-0.566-0.879-1.32-0.879-2.121s0.312-1.555 0.879-2.122c1.133-1.132 3.109-1.133 4.243 0.001l7.121 7.121-7.122 7.121c-0.566 0.567-1.319 0.879-2.121 0.879zM10 6c-0.268 0-0.518 0.104-0.707 0.292-0.189 0.19-0.293 0.441-0.293 0.708s0.104 0.518 0.293 0.707l4.292 4.293-4.292 4.293c-0.189 0.189-0.293 0.439-0.293 0.707s0.104 0.518 0.293 0.707c0.378 0.379 1.037 0.378 1.414 0.001l5.708-5.708-5.708-5.707c-0.189-0.189-0.439-0.293-0.707-0.293z'></path>
+                  </symbol>
+                </use>
+              </svg>
+            </Link>
+          </div>
+          <div className={styles.heroContainerRight}>
+            <Carousel
+              fade
+              indicators={false}
+              className={styles.heroCarouselContainer}
+            >
+              {featuredParks1.map((park, index) => (
+                <Carousel.Item
                   key={index}
-                  onClick={() => onSelectedClick(item)}
+                  interval={7000}
+                  className={styles.heroCarouselContainer}
                 >
-                  <Card
-                    key={index}
-                    index={index}
-                    images={item.images}
-                    name={item.name}
-                    fullName={item.fullName}
-                    parkCode={item.parkCode}
-                    entranceFees={item.entranceFees}
-                    emailAddresses={item.contacts.emailAddresses}
-                    phoneNumbers={item.contacts.phoneNumbers}
-                    operatingHours={item.operatingHours}
-                  />
-                </Link>
-              );
-            })}
+                  <Link target='_blank' href={park.link}>
+                    <Image
+                      className={styles.heroCarousel}
+                      priority
+                      width='1000'
+                      height='450'
+                      src={park.image}
+                      alt={park.name}
+                    />
+                    <span className={styles.heroCarouselTitle}>
+                      {park.name}
+                    </span>
+                  </Link>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+            <Carousel
+              fade
+              indicators={false}
+              className={styles.heroCarouselContainer}
+            >
+              {featuredParks2.map((park, index) => (
+                <Carousel.Item
+                  key={index}
+                  interval={7000}
+                  className={styles.heroCarouselContainer}
+                >
+                  <Link target='_blank' href={park.link}>
+                    <Image
+                      className={styles.heroCarousel}
+                      priority
+                      width='1000'
+                      height='450'
+                      src={park.image}
+                      alt={park.name}
+                    />
+                    <span className={styles.heroCarouselTitle}>
+                      {park.name}
+                    </span>
+                  </Link>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+            <Carousel
+              fade
+              indicators={false}
+              className={styles.heroCarouselContainer}
+            >
+              {featuredParks3.map((park, index) => (
+                <Carousel.Item
+                  key={index}
+                  interval={7000}
+                  className={styles.heroCarouselContainer}
+                >
+                  <Link target='_blank' href={park.link}>
+                    <Image
+                      className={styles.heroCarousel}
+                      priority
+                      width='1000'
+                      height='450'
+                      src={park.image}
+                      alt={park.name}
+                    />
+                    <span className={styles.heroCarouselTitle}>
+                      {park.name}
+                    </span>
+                  </Link>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
         </div>
-        <Footer />
+        <span>Mount Rainer National Park</span>
       </main>
+      <Footer />
     </>
   );
 }
