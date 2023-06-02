@@ -8,7 +8,7 @@
   grid-gap: 4rem;
 
   //Spacing
-  padding: 12rem 6rem;
+  padding: 16rem 6rem;
   height: fit-content;
   min-height: calc(100vh - 6rem);
 
@@ -24,12 +24,12 @@
 
   @media only screen and (max-width: $bp-large) {
     //Spacing
-    padding: 4rem;
+    padding: 16rem 4rem;
   }
 
   @media only screen and (max-width: $bp-medium) {
     //Spacing
-    padding: 0rem;
+    padding: 6rem 0rem;
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr 1fr 1fr 1fr;
     grid-gap: 0;

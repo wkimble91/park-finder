@@ -24,21 +24,18 @@ export default function Park(parkData) {
   let parkInfo = parkData.parkData;
   let warnings = [];
 
-  useEffect(
-    (parkInfo) => {
-      axios
-        .get(
-          `https://developer.nps.gov/api/v1/alerts?parkCode=${parkInfo.parkCode}&api_key=${API_KEY}`
-        )
-        .then((response) => {
-          setParkWarnings(response.data);
-        });
+  useEffect(() => {
+    axios
+      .get(
+        `https://developer.nps.gov/api/v1/alerts?parkCode=${parkInfo.parkCode}&api_key=${API_KEY}`
+      )
+      .then((response) => {
+        setParkWarnings(response.data);
+      });
 
-      // Scroll to top of page
-      window.scrollTo(0, 0);
-    },
-    [parkData]
-  );
+    // Scroll to top of page
+    window.scrollTo(0, 0);
+  }, [parkData]);
   warnings = parkWarnings.data;
 
   return (
