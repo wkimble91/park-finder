@@ -10,7 +10,7 @@
 
   //Spacing
   padding: 0 6rem;
-  height: 110vh;
+  height: 120vh;
 
   //Image Styling
   background-image: linear-gradient(to bottom,
@@ -86,11 +86,11 @@
 
   &>span {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     color: rgba(255, 255, 255, .6);
     font-size: 1.4rem;
-    margin: 0 0 16rem 2rem;
+    margin: 95vh 0 0 2rem;
   }
 }
 
