@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Router from 'next/router';
 import { Carousel } from 'react-bootstrap';
 import { Footer } from '@/components/Footer.js';
 import styles from '@/styles/Park.module.css';
@@ -25,14 +26,20 @@ export default function Park(parkData) {
   let warnings = [];
 
   useEffect(() => {
-    axios
-      .get(
-        `https://developer.nps.gov/api/v1/alerts?parkCode=${parkInfo.parkCode}&api_key=${API_KEY}`
-      )
-      .then((response) => {
-        setParkWarnings(response.data);
-      });
+    if (parkInfo == null) {
+      Router.push('/explore');
+    } else {
+      axios
+        .get(
+          `https://developer.nps.gov/api/v1/alerts?parkCode=${parkInfo.parkCode}&api_key=${API_KEY}`
+        )
+        .then((response) => {
+          setParkWarnings(response.data);
+        });
+    }
+  }, []);
 
+  useEffect(() => {
     // Scroll to top of page
     window.scrollTo(0, 0);
   }, [parkData]);
