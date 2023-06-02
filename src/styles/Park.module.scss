@@ -354,7 +354,7 @@
 
     @media only screen and (max-width: $bp-small) {
       //Spacing
-      padding: 10rem 0 5rem;
+      padding: 5rem 0;
     }
 
     &Image {
@@ -382,30 +382,14 @@
       //Spacing
       width: 100vw;
       margin: 0 auto;
-      padding: 5rem 4rem;
+      padding: 4rem 4rem;
       z-index: 2;
 
       //Font Styling
-      font-size: clamp(6rem, 10vw, 8rem);
+      font-size: clamp(5rem, 6vw, 8rem);
       font-weight: 400;
       text-align: center;
       text-shadow: 2px 2px 1px black;
-
-
-      @media only screen and (max-width: $bp-large) {
-        //Font Styling
-        // font-size: 4rem;
-      }
-
-      @media only screen and (max-width: $bp-medium) {
-        //Spacing
-        padding: 0 4rem 6rem;
-      }
-
-      @media only screen and (max-width: $bp-small) {
-        //Font Styling
-        // font-size: 3rem;
-      }
     }
 
     &Item {
@@ -518,13 +502,17 @@
 
         //Spacing
         position: absolute;
-        width: 80%;
+        width: 40%;
         height: 3px;
         bottom: -10px;
         left: 0;
 
         //Border Styling
         background-color: $color-accent-light;
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 0%;
+        }
       }
     }
 
