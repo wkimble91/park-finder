@@ -1,18 +1,13 @@
-import Head from 'next/head';
 import { useState } from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { Footer } from '@/components/Footer.js';
 import Card from '@/components/Card.js';
 import styles from '@/styles/Explore.module.css';
 
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-
-export default function Explore({ setSelectedParkData }) {
+export default function Explore() {
   const [parkData, setParkData] = useState([]);
-
-  // const onSelectedClick = (item) => {
-  //   setSelectedParkData(item);
-  // };
+  const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
   const handleChange = async (e) => {
     setParkData([]);
@@ -107,7 +102,6 @@ export default function Explore({ setSelectedParkData }) {
                   data-testid='card'
                   parkcode={item.parkCode}
                   key={index}
-                  // onClick={() => onSelectedClick(item)}
                 >
                   <Card
                     key={index}

@@ -7,7 +7,7 @@ import styles from '@/styles/Home.module.css';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
-export default function Home({ setSelectedParkData }) {
+export default function Home() {
   const featuredParks1 = [
     {
       name: 'Great Smoky Mountains National Park',

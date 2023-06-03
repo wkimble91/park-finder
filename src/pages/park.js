@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Router from 'next/router';
 import { Carousel } from 'react-bootstrap';
 import { Footer } from '@/components/Footer.js';
-import styles from '@/styles/Park.module.css';
 import Warning from '@/components/Warning.js';
+import styles from '@/styles/Park.module.css';
 import axios from 'axios';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
@@ -26,7 +26,7 @@ export default function Park(parkData) {
   let warnings = [];
 
   useEffect(() => {
-    // CHECKS IF QUERY INFO IS PRESENT
+    // CHECKS IF QUERY STRING IS PRESENT
     if (parkInfo == null) {
       // IF NO QUERY STRING, PUSH TO EXPLORE
       Router.push('/explore');
