@@ -26,12 +26,12 @@ export default function Park(parkData) {
   let warnings = [];
 
   useEffect(() => {
-    // CHECKS IF QUERY STRING IS PRESENT
+    // CHECKS IF QUERY STRING GETS A RETURN FROM API CALL
     if (parkInfo == null) {
-      // IF NO QUERY STRING, PUSH TO EXPLORE
+      // IF NO RESPONSE, PUSH TO EXPLORE
       Router.push('/explore');
     } else {
-      // OTHERWISE GET PAGE API INFO
+      // OTHERWISE GET PAGE WARNING INFO
       axios
         .get(
           `https://developer.nps.gov/api/v1/alerts?parkCode=${parkInfo.parkCode}&api_key=${API_KEY}`
