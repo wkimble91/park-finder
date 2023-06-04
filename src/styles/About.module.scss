@@ -12,7 +12,7 @@
   height: fit-content;
   min-height: calc(100vh - 6rem);
 
-  //Image Styling
+  //Image 
   background-image: linear-gradient(to bottom,
       rgba($color-grey-dark, 0.4) 0%,
       rgba($color-grey-dark, 0.4) 80%,
@@ -28,43 +28,59 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
-    //Spacing
-    padding: 6rem 0rem;
+    //Display
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr 1fr 1fr 1fr;
     grid-gap: 0;
+
+    //Spacing
+    padding: 6rem 0rem;
   }
 
   &Box {
+    //Display
     grid-row: 1 / span 4;
     grid-column: 1 / span 1;
-    background-color: $color-grey-dark;
+
+    //Spacing
     width: 100%;
     max-width: 100rem;
     margin: auto;
     height: fit-content;
     padding: 3rem;
+
+    //Color
+    background-color: $color-grey-dark;
     box-shadow: 2px 2px 4px black;
 
     @media only screen and (max-width: $bp-medium) {
+      //Display
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+
       //Spacing
       margin: 6rem 4rem 2rem;
       width: auto;
-      grid-row: 1 / span 1;
-      grid-column: 1 / span 1;
     }
   }
 
   &Header {
+    //Display
     display: flex;
     align-items: center;
-    color: white;
-    font-size: 7rem;
+
+    //Spacing
     position: relative;
     margin-bottom: 6rem;
 
+    //Font
+    font-size: 7rem;
+
+    //Color
+    color: white;
+
     @media only screen and (max-width: $bp-medium) {
-      //Spacing
+      //Font
       font-size: 5rem;
     }
 
@@ -78,13 +94,14 @@
       bottom: -6px;
       left: 0;
 
-      //Border Styling
+      //Border 
       background-color: $color-accent-light;
 
       //Animations
       animation: 0.8s ease-in-out grow;
     }
 
+    //Animation for the line
     @keyframes grow {
       from {
         width: 0;
@@ -97,11 +114,16 @@
   }
 
   &Description {
-    color: white;
-    font-size: 2rem;
+    //Spacing
     padding: 2rem;
+
+    //Font
+    font-size: 2rem;
     text-indent: 2rem;
     line-height: 1.8;
+
+    //Color
+    color: white;
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
@@ -116,37 +138,50 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 2px 2px 3px black;
     margin: 4rem;
     max-width: 100rem;
 
+    //Color
+    box-shadow: 2px 2px 3px black;
+
     @media only screen and (max-width: $bp-medium) {
+      //Spacing
       width: auto;
       height: 15rem;
       margin: 2rem 4rem;
     }
 
     span:nth-of-type(1) {
+      //Spacing
       position: absolute;
       bottom: 0;
       right: 0;
-      color: rgba(white, .9);
+      padding: 0.1rem .6rem;
+      margin: 4.5rem 0;
+
+      //Font 
       font-size: 1.2rem;
       font-weight: 400;
-      margin: 4.5rem 0;
-      padding: 0.1rem .6rem;
+
+      //Color 
+      color: rgba(white, .9);
       background-color: rgba(0, 0, 0, 0.7);
     }
 
     span:nth-of-type(2) {
+      //Spacing
       position: absolute;
       bottom: 0;
       right: 0;
-      color: white;
+      padding: 0.3rem 1rem;
+      margin: 0.8rem 0;
+
+      //Font
       font-size: 1.6rem;
       font-weight: 600;
-      margin: 0.8rem 0;
-      padding: 0.3rem 1rem;
+
+      //Color 
+      color: white;
       background-color: rgba(0, 0, 0, 0.7);
     }
   }

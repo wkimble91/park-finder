@@ -9,7 +9,7 @@
     //Spacing
     z-index: 1;
 
-    //Image Styling
+    //Image 
     object-fit: cover;
 
     &Container {
@@ -19,17 +19,17 @@
       height: 80vh;
       z-index: 1;
 
-      //Color Styling
+      //Color 
       background-color: $color-grey-dark;
 
       & a span {
         //Display
         scale: 3;
 
-        //Color Styling
+        //Color 
         background-color: rgba(0, 0, 0, 0.6);
 
-        //Border Styling
+        //Border 
         border-radius: 3px;
       }
     }
@@ -68,7 +68,7 @@
     }
 
     &Fill {
-      //Color Styling
+      //Color 
       fill: $color-background;
     }
   }
@@ -82,13 +82,13 @@
     width: 100%;
     z-index: 2;
 
-    //Font Styling
+    //Font 
     font-family: 'Playfair', serif;
     font-weight: 900;
     font-size: clamp(5.5rem, 3.5vw, 11rem);
     text-align: center;
     text-shadow: $text-outline-dark;
-    //Color Styling
+    //Color 
     color: white;
 
     @media only screen and (max-width: $bp-medium) {
@@ -109,7 +109,7 @@
     height: 20vh;
     margin: 0 auto;
 
-    //Font Styling
+    //Font 
     text-align: center;
 
     @media only screen and (max-width: $bp-medium) {
@@ -131,11 +131,11 @@
       width: fit-content;
       min-width: 35rem;
 
-      //Font Styling
+      //Font 
       white-space: nowrap;
       text-align: center;
 
-      //Color Styling
+      //Color 
       color: white;
       text-shadow: 1px 1px 1px black;
 
@@ -157,7 +157,7 @@
       }
 
       h4 {
-        //Font Styling
+        //Font 
         font-size: 2.2rem;
         font-weight: 600;
         text-align: center;
@@ -168,7 +168,7 @@
         margin: 0;
         padding: 0;
 
-        //Font Styling
+        //Font 
         font-size: 2rem;
         line-height: 1.2;
         text-align: center;
@@ -176,13 +176,13 @@
         text-shadow: 1px 1px 1px black;
 
         @media only screen and (max-width: $bp-small) {
-          //Font Styling
+          //Font 
           font-size: 1.6rem;
         }
       }
 
       a {
-        //Font Styling
+        //Font 
         font-size: 2rem;
         line-height: 1.2;
         text-align: center;
@@ -191,12 +191,12 @@
         text-decoration-color: $color-accent-light;
         text-underline-offset: 3px;
 
-        //Color Styling
+        //Color 
         color: inherit;
         text-shadow: 1px 1px 1px black;
 
         @media only screen and (max-width: $bp-small) {
-          //Font Styling
+          //Font 
           font-size: 1.6rem;
         }
       }
@@ -232,10 +232,10 @@
       padding: 3rem 4rem;
       min-width: 30rem;
 
-      //Font Styling
+      //Font 
       white-space: nowrap;
 
-      //Color Styling
+      //Color 
       color: white;
 
       @media only screen and (max-width: $bp-medium) {
@@ -266,10 +266,10 @@
       height: 8rem;
       margin: 0 auto 1.4rem;
 
-      //Color Styling
+      //Color 
       background-color: $color-accent-dark;
 
-      //Border Styling
+      //Border 
       border: 3px solid white;
       border-radius: 50%;
       box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
@@ -292,7 +292,7 @@
         width: 5rem;
         height: 5rem;
 
-        //Color Styling
+        //Color 
         fill: white;
 
         @media only screen and (max-width: $bp-medium) {
@@ -344,10 +344,10 @@
     position: relative;
     z-index: 1;
 
-    //Color Styling
+    //Color 
     color: white;
 
-    //Border Styling
+    //Border 
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
@@ -385,7 +385,7 @@
       padding: 4rem 4rem;
       z-index: 2;
 
-      //Font Styling
+      //Font 
       font-size: clamp(5rem, 6vw, 8rem);
       font-weight: 400;
       text-align: center;
@@ -415,7 +415,7 @@
         //Spacing
         padding: 2rem 0;
 
-        //Font Styling
+        //Font 
         text-align: left;
         font-size: 5rem;
         font-weight: 400;
@@ -424,7 +424,7 @@
           //Spacing
           padding: 2rem 0 2rem;
 
-          //Font Styling
+          //Font 
           font-size: 2rem;
         }
 
@@ -438,7 +438,7 @@
           bottom: 10px;
           left: 0;
 
-          //Border Styling
+          //Border 
           background-color: $color-accent-light;
 
           @media only screen and (max-width: $bp-medium) {
@@ -453,14 +453,14 @@
         //Spacing
         margin: 2rem 0;
 
-        //Font Styling
+        //Font 
         text-indent: 2rem;
         font-size: 2rem;
         font-weight: 400;
         line-height: 1.8;
 
         @media only screen and (max-width: $bp-medium) {
-          //Font Styling
+          //Font 
           font-size: 1.6rem;
         }
       }
@@ -485,12 +485,12 @@
       width: fit-content;
       position: relative;
 
-      //Font Styling
+      //Font 
       text-align: center;
       font-size: 7rem;
       font-weight: 600;
 
-      //Color Styling
+      //Color 
       color: white;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
@@ -499,7 +499,7 @@
         //Spacing
         padding: 1rem 3rem;
 
-        //Font Styling
+        //Font 
         font-size: 2.8rem;
       }
 
@@ -513,7 +513,7 @@
         bottom: -10px;
         left: 0;
 
-        //Border Styling
+        //Border 
         background-color: $color-accent-light;
 
         @media only screen and (max-width: $bp-medium) {
@@ -555,11 +555,11 @@
         padding: 0 1rem;
         border-radius: 7px;
 
-        //Font Styling
+        //Font 
         font-size: 2rem;
         font-weight: 600;
 
-        //Color Styling
+        //Color 
         color: white;
       }
 
@@ -568,7 +568,7 @@
         padding: 4rem 2rem 4rem;
         margin: 0 auto;
 
-        //Font Styling
+        //Font 
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
@@ -583,7 +583,7 @@
         height: 1.8rem;
         margin: auto 1rem auto 0;
 
-        //Color Styling
+        //Color 
         fill: $color-accent-light;
       }
     }
@@ -599,11 +599,11 @@
     margin: 0 auto;
     padding-top: 35vh;
 
-    //Font Styling
+    //Font 
     font-size: 8rem;
     text-align: center;
 
-    //Color Styling
+    //Color 
     color: white;
   }
 }

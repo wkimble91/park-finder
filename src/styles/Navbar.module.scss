@@ -7,10 +7,10 @@
   height: 6rem;
   z-index: 200;
 
-  //Font Styling
+  //Font 
   text-decoration: none;
 
-  //Color Styling
+  //Color 
   background-color: $color-grey-dark;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .8);
 
@@ -36,11 +36,11 @@
   &Logo {
     margin: 0.5rem 3rem;
 
-    //Color Styling
+    //Color 
     width: 7.5rem;
     height: 5rem;
 
-    //Image Styling
+    //Image 
     background-image: url('../../public/logo-name.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -116,14 +116,14 @@
         padding: 1.4rem 2.6rem;
         position: relative;
 
-        //Font Styling
+        //Font 
         font-size: 1.6rem;
         font-weight: 600;
 
         //Animations
         transition: all 0.1s;
 
-        //Color Styling
+        //Color 
         color: $color-grey-light;
         // background-color: $color-accent;
         border-radius: 8px;
@@ -138,7 +138,7 @@
           height: 1px;
           bottom: 9px;
 
-          //Border Styling
+          //Border 
           border-bottom: 2px solid $color-accent-light;
 
           //Animations
@@ -151,7 +151,7 @@
         }
 
         @media only screen and (max-width: $bp-medium) {
-          //Font Styling
+          //Font 
           font-size: 1.8rem;
         }
 
@@ -159,7 +159,7 @@
           //Spacing
           margin-right: 0.5rem;
 
-          //Font Styling
+          //Font 
           font-size: 1.6rem;
           padding: 1rem 1.5rem;
         }

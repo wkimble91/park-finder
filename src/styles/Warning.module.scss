@@ -6,15 +6,15 @@
   margin: auto;
   padding: 0.1rem 1rem;
 
-  //Font Styling
+  //Font 
   font-size: 1.8rem;
   font-weight: 600;
   text-shadow: none;
 
-  //Color Styling
+  //Color 
   color: white;
 
-  //Border Styling
+  //Border 
   border-radius: 8px;
   border: 1px solid white;
 }
@@ -29,7 +29,7 @@
   border-radius: $default-border-radius;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 
-  //Font Styling
+  //Font 
   text-align: center;
   white-space: normal;
 
@@ -40,7 +40,7 @@
       //Mixin
       @include badge;
 
-      //Color Styling
+      //Color 
       background-color: #7678ed;
     }
 
@@ -48,7 +48,7 @@
       //Mixin
       @include badge;
 
-      //Color Styling
+      //Color 
       background-color: #9a031e;
     }
 
@@ -56,7 +56,7 @@
       //Mixin
       @include badge;
 
-      //Color Styling
+      //Color 
       background-color: #1a659e;
     }
 
@@ -64,7 +64,7 @@
       //Mixin
       @include badge;
 
-      //Color Styling
+      //Color 
       background-color: #ff928b;
     }
   }
@@ -74,7 +74,7 @@
     margin: 2rem 0 1.5rem;
     display: inline-block;
 
-    //Font Styling
+    //Font 
     text-align: center;
     font-size: 2rem;
     line-height: 1.2;
@@ -85,14 +85,14 @@
       //Spacing
       padding: 2rem 0 0.5rem;
 
-      //Font Styling
+      //Font 
       font-size: 2rem;
     }
   }
 
   // WHEN A WARNING HAS A URL ASSOCIATED WITH IT
   a {
-    //Color Styling
+    //Color 
     text-decoration: underline;
     text-decoration-color: $color-accent-light;
     text-underline-offset: 3px;
@@ -100,7 +100,7 @@
   }
 
   &_description {
-    //Font Styling
+    //Font 
     font-size: 1.4rem;
     font-weight: 400;
     text-shadow: none;

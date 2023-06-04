@@ -20,11 +20,11 @@ html {
   //Animations
   scroll-behavior: smooth;
 
-  //Font Styling
+  //Font 
   font-size: 62.5%; //1rem = 10px
 
   @media only screen and (max-width: $bp-largest) {
-    //Font Styling
+    //Font 
     font-size: 50%; //1rem = 8px
   }
 }
@@ -35,27 +35,27 @@ body {
   width: 100vw;
   overflow-x: hidden;
 
-  //Font Styling
+  //Font 
   font-family: 'Montserrat', serif;
   line-height: 1.6;
 
-  //Color Styling
+  //Color 
   background-color: $color-grey-dark;
 }
 
 li {
-  //Font Styling
+  //Font 
   list-style: none;
 }
 
 a {
-  //Font Styling
+  //Font 
   text-decoration: none;
 }
 
 //Changes highlight coloring
 ::selection {
-  //Color Styling
+  //Color 
   background-color: rgba($color-accent-light, .75);
   color: white;
 }
@@ -104,8 +104,8 @@ a {
 //Parent
 //Display
 //Spacing
-//Font Styling
-//Color Styling
-//Image Styling
-//Border Styling
+//Font 
+//Color 
+//Image 
+//Border 
 //Animations

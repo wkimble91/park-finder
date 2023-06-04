@@ -12,7 +12,7 @@
   padding: 0 6rem;
   height: 120vh;
 
-  //Image Styling
+  //Image 
   background-image: linear-gradient(to bottom,
       rgba($color-grey-dark, 0.35) 0%,
       rgba($color-grey-dark, 0.35) 50%,
@@ -43,10 +43,10 @@
     //Spacing
     margin-top: 15rem;
 
-    //Font Styling
+    //Font 
     text-align: center;
 
-    //Border Styling
+    //Border 
     border-radius: $default-border-radius;
 
     @media only screen and (max-width: $bp-medium) {
@@ -56,17 +56,17 @@
   }
 
   &Header {
-    //Font Styling
+    //Font 
     font-size: clamp(6rem, 8vw, 14rem);
     font-weight: 600;
     line-height: 1.6;
     padding: 1.5rem 5rem;
 
-    //Color Styling
+    //Color 
     color: white;
     text-shadow: 3px 3px 2px black;
 
-    //Border Styling
+    //Border 
     border-radius: 1rem;
   }
 
@@ -77,10 +77,10 @@
     top: 0;
     left: 0;
 
-    //Font Styling
+    //Font 
     font-size: 1.4rem;
 
-    //Color Styling
+    //Color 
     color: rgba(255, 255, 255, .6);
   }
 }
@@ -89,7 +89,7 @@
   //Spacing
   margin: 10rem auto auto;
 
-  //Border Styling
+  //Border 
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 
   //Animations
@@ -99,7 +99,7 @@
     //Spacing
     scale: 1.01;
 
-    //Border Styling
+    //Border 
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
   }
 
@@ -114,16 +114,16 @@
     padding: 1rem 2rem;
     width: 50rem;
 
-    //Font Styling
+    //Font 
     font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: 400;
 
-    //Color Styling
+    //Color 
     background-color: rgba($color-grey-dark, .95);
     color: white;
 
-    //Border Styling
+    //Border 
     border: none;
     border-radius: 2px;
 
@@ -142,7 +142,7 @@
       //Spacing
       width: 80vw;
 
-      //Font Styling
+      //Font 
       font-size: 1.8rem;
     }
   }

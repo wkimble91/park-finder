@@ -30,12 +30,12 @@
     height: fit-content;
     z-index: 200;
 
-    //Font Styling
+    //Font 
     text-align: center;
     font-size: 1.8rem;
     font-weight: 600;
 
-    //Color Styling
+    //Color 
     color: white;
 
     @media only screen and (max-width: 56.25em),
@@ -52,12 +52,12 @@
       margin: 0 auto;
       padding: 1rem 1rem 0;
 
-      //Font Styling
+      //Font 
       font-size: 2.4rem;
       text-align: center;
       font-weight: 800;
 
-      //Color Styling
+      //Color 
       color: white;
     }
 
@@ -65,11 +65,11 @@
       //Spacing
       margin: 0 auto;
 
-      //Font Styling
+      //Font 
       text-align: center;
       font-size: 1.8rem;
 
-      //Color Styling
+      //Color 
       color: lightgray;
     }
 
@@ -77,11 +77,11 @@
       //Spacing
       margin: 0 auto;
 
-      //Font Styling
+      //Font 
       text-align: center;
       font-size: 1.6rem;
 
-      //Color Styling
+      //Color 
       color: lightgray;
     }
 
@@ -89,16 +89,16 @@
       //Spacing
       margin: 0 auto;
 
-      //Font Styling
+      //Font 
       text-align: center;
       font-size: 1.6rem;
       font-weight: 400;
 
-      //Color Styling
+      //Color 
       color: lightgray;
 
       ul li {
-        //Font Styling
+        //Font 
         font-size: 1.6rem;
         line-height: 2.2rem;
         font-weight: 300;
@@ -111,19 +111,19 @@
     position: absolute;
     width: 100%;
 
-    //Image Styling
+    //Image 
     backface-visibility: hidden;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
-    //Border Styling
+    //Border 
     border-radius: $default-border-radius;
 
     //Animations
     transition: all 0.8s ease;
 
     &Front {
-      //Image Styling
+      //Image 
       background-image: linear-gradient(to right bottom,
           rgba(30, 30, 30, 1),
           rgba(10, 10, 10, 1));
@@ -138,7 +138,7 @@
       height: 100%;
       transform: rotateY(180deg);
 
-      //Color Styling
+      //Color 
       background-image: linear-gradient(to right bottom,
           rgba(40, 40, 40, 1),
           rgba(20, 20, 20, 1));
@@ -153,7 +153,7 @@
         width: 60%;
         padding: 1rem 1rem 3rem;
 
-        //Font Styling
+        //Font 
         word-wrap: break-word;
 
         @media only screen and (max-width: $bp-largest) {
@@ -179,7 +179,7 @@
     //Spacing
     height: 100%;
 
-    //Image Styling
+    //Image 
     object-fit: cover;
     background-size: cover;
     background-blend-mode: screen;
@@ -200,12 +200,11 @@
     height: auto;
     max-width: 60rem;
 
-    //Color Styling
+    //Color 
     background-color: $color-grey-dark;
 
-    //Border Styling
+    //Border 
     border-radius: $default-border-radius;
-
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 
     &Side {
@@ -213,7 +212,7 @@
       height: auto;
       position: relative;
 
-      //Border Styling
+      //Border 
       box-shadow: none;
 
       //Animations
@@ -229,10 +228,10 @@
         width: 100%;
         padding: 7rem 0 1rem;
 
-        //Color Styling
+        //Color 
         background-color: rgb(40, 40, 40);
 
-        //Border Styling
+        //Border 
         border-radius: 0 0 $default-border-radius $default-border-radius;
         clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%);
 

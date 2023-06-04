@@ -10,7 +10,7 @@
   height: fit-content;
   padding: 2rem 3rem;
 
-  //Color Styling
+  //Color 
   background-color: $color-grey-dark;
 
   @media only screen and (max-width: $bp-large) {
@@ -26,12 +26,12 @@
     justify-content: space-between;
     align-items: center;
 
-    //Font Styling
+    //Font 
     font-size: 1.8rem;
     font-weight: 200;
     width: 80%;
 
-    //Color Styling
+    //Color 
     color: white;
 
     p {
@@ -39,11 +39,11 @@
     }
 
     a {
-      //Font Styling
+      //Font 
       text-decoration: underline;
       text-underline-offset: 3px;
 
-      //Color Styling
+      //Color 
       color: inherit;
     }
 
@@ -53,12 +53,12 @@
       justify-content: flex-end;
       align-items: center;
 
-      //Font Styling
+      //Font 
       text-align: center;
     }
 
     @media only screen and (max-width: $bp-medium) {
-      //Font Styling
+      //Font 
       font-size: 1.3rem;
     }
   }
@@ -66,16 +66,17 @@
   &Logo {
     margin: 1rem 3rem;
 
-    //Color Styling
+    //Color 
     width: 6rem;
     height: 6rem;
 
-    //Image Styling
+    //Image 
     background-image: url('../../public/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
 
     &:hover {
+      //Animation
       animation: wiggle 1s linear;
     }
 
