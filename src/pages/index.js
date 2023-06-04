@@ -13,50 +13,59 @@ export default function Home() {
       name: 'Great Smoky Mountains National Park',
       image: '/featuredParks/GSM.jpg',
       link: '/park?parkCode=grsm',
+      rank: '1st',
     },
-    {
-      name: 'Grand Canyon National Park',
-      image: '/featuredParks/GC.jpg',
-      link: '/park?parkCode=grca',
-    },
-    {
-      name: 'Zion National Park',
-      image: '/featuredParks/ZNP.jpg',
-      link: '/park?parkCode=zion',
-    },
-  ];
-  const featuredParks2 = [
     {
       name: 'Rocky Mountains National Park',
       image: '/featuredParks/RM.jpg',
       link: '/park?parkCode=romo',
+      rank: '4th',
+    },
+    {
+      name: 'Yellowstone National Park',
+      image: '/featuredParks/YeNP.jpg',
+      link: '/park?parkCode=yell',
+      rank: '7th',
+    },
+  ];
+  const featuredParks2 = [
+    {
+      name: 'Grand Canyon National Park',
+      image: '/featuredParks/GC.jpg',
+      link: '/park?parkCode=grca',
+      rank: '2nd',
     },
     {
       name: 'Acadia National Park',
       image: '/featuredParks/ANP.jpg',
       link: '/park?parkCode=acad',
-    },
-    {
-      name: 'Yosemite National Park',
-      image: '/featuredParks/YoNP.jpg',
-      link: '/park?parkCode=yose',
-    },
-  ];
-  const featuredParks3 = [
-    {
-      name: 'Yellowstone National Park',
-      image: '/featuredParks/YeNP.jpg',
-      link: '/park?parkCode=yell',
+      rank: '5th',
     },
     {
       name: 'Joshua Tree National Park',
       image: '/featuredParks/JT.jpg',
       link: '/park?parkCode=jotr',
+      rank: '8th',
+    },
+  ];
+  const featuredParks3 = [
+    {
+      name: 'Zion National Park',
+      image: '/featuredParks/ZNP.jpg',
+      link: '/park?parkCode=zion',
+      rank: '3rd',
+    },
+    {
+      name: 'Yosemite National Park',
+      image: '/featuredParks/YoNP.jpg',
+      link: '/park?parkCode=yose',
+      rank: '6th',
     },
     {
       name: 'Glacier National Park',
       image: '/featuredParks/GNP.jpg',
       link: '/park?parkCode=glac',
+      rank: '9th',
     },
   ];
 
@@ -97,7 +106,11 @@ export default function Home() {
                   interval={7000}
                   className={styles.heroCarouselContainer}
                 >
-                  <Link target='_blank' href={park.link}>
+                  <Link
+                    target='_blank'
+                    href={park.link}
+                    className={styles.heroCarouselLink}
+                  >
                     <Image
                       className={styles.heroCarousel}
                       priority
@@ -106,9 +119,8 @@ export default function Home() {
                       src={park.image}
                       alt={park.name}
                     />
-                    <span className={styles.heroCarouselTitle}>
-                      {park.name}
-                    </span>
+                    <span>{`${park.rank} Most Popular Park`}</span>
+                    <span>{park.name}</span>
                   </Link>
                 </Carousel.Item>
               ))}
@@ -124,7 +136,11 @@ export default function Home() {
                   interval={7000}
                   className={styles.heroCarouselContainer}
                 >
-                  <Link target='_blank' href={park.link}>
+                  <Link
+                    target='_blank'
+                    href={park.link}
+                    className={styles.heroCarouselLink}
+                  >
                     <Image
                       className={styles.heroCarousel}
                       priority
@@ -133,9 +149,8 @@ export default function Home() {
                       src={park.image}
                       alt={park.name}
                     />
-                    <span className={styles.heroCarouselTitle}>
-                      {park.name}
-                    </span>
+                    <span>{`${park.rank} Most Popular Park`}</span>
+                    <span>{park.name}</span>
                   </Link>
                 </Carousel.Item>
               ))}
@@ -151,7 +166,11 @@ export default function Home() {
                   interval={7000}
                   className={styles.heroCarouselContainer}
                 >
-                  <Link target='_blank' href={park.link}>
+                  <Link
+                    target='_blank'
+                    href={park.link}
+                    className={styles.heroCarouselLink}
+                  >
                     <Image
                       className={styles.heroCarousel}
                       priority
@@ -160,9 +179,8 @@ export default function Home() {
                       src={park.image}
                       alt={park.name}
                     />
-                    <span className={styles.heroCarouselTitle}>
-                      {park.name}
-                    </span>
+                    <span>{`${park.rank} Most Popular Park`}</span>
+                    <span>{park.name}</span>
                   </Link>
                 </Carousel.Item>
               ))}

@@ -14,17 +14,21 @@
 @media only screen and (max-width: 56.25em) { .aboutDescription { font-size: 1.6rem; padding: 1rem 1.5rem; } }
 .aboutImages1 { grid-row: 1 / span 1; background-image: url("../../public/about/1.jpg"); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; -webkit-box-shadow: 2px 2px 3px black; box-shadow: 2px 2px 3px black; margin: 4rem; max-width: 100rem; }
 @media only screen and (max-width: 56.25em) { .aboutImages1 { width: auto; height: 15rem; margin: 2rem 4rem; } }
-.aboutImages1 span { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages1 span:nth-of-type(1) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.2rem; font-weight: 600; margin: 4.5rem 0; padding: 0.1rem .6rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages1 span:nth-of-type(2) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .aboutImages1 { grid-row: 2 / span 1; } }
 .aboutImages2 { grid-row: 2 / span 1; background-image: url("../../public/about/2.jpg"); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; -webkit-box-shadow: 2px 2px 3px black; box-shadow: 2px 2px 3px black; margin: 4rem; max-width: 100rem; }
 @media only screen and (max-width: 56.25em) { .aboutImages2 { width: auto; height: 15rem; margin: 2rem 4rem; } }
-.aboutImages2 span { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages2 span:nth-of-type(1) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.2rem; font-weight: 600; margin: 4.5rem 0; padding: 0.1rem .6rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages2 span:nth-of-type(2) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .aboutImages2 { grid-row: 3 / span 1; } }
 .aboutImages3 { grid-row: 3 / span 1; background-image: url("../../public/about/3.jpg"); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; -webkit-box-shadow: 2px 2px 3px black; box-shadow: 2px 2px 3px black; margin: 4rem; max-width: 100rem; }
 @media only screen and (max-width: 56.25em) { .aboutImages3 { width: auto; height: 15rem; margin: 2rem 4rem; } }
-.aboutImages3 span { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages3 span:nth-of-type(1) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.2rem; font-weight: 600; margin: 4.5rem 0; padding: 0.1rem .6rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages3 span:nth-of-type(2) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .aboutImages3 { grid-row: 4 / span 1; } }
 .aboutImages4 { grid-row: 4 / span 1; background-image: url("../../public/about/4.jpg"); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; -webkit-box-shadow: 2px 2px 3px black; box-shadow: 2px 2px 3px black; margin: 4rem; max-width: 100rem; }
 @media only screen and (max-width: 56.25em) { .aboutImages4 { width: auto; height: 15rem; margin: 2rem 4rem; } }
-.aboutImages4 span { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages4 span:nth-of-type(1) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.2rem; font-weight: 600; margin: 4.5rem 0; padding: 0.1rem .6rem; background-color: rgba(0, 0, 0, 0.7); }
+.aboutImages4 span:nth-of-type(2) { position: absolute; bottom: 0; right: 0; color: white; font-size: 1.6rem; font-weight: 600; margin: 0.8rem 0; padding: 0.3rem 1rem; background-color: rgba(0, 0, 0, 0.7); }
 @media only screen and (max-width: 56.25em) { .aboutImages4 { grid-row: 5 / span 1; } }

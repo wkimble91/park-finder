@@ -61,6 +61,7 @@ export default function About() {
           target='_blank'
           className={styles.aboutImages1}
         >
+          <span>4th Least Visited Park</span>
           <span>North Cascades National Park</span>
         </Link>
         <Link
@@ -68,6 +69,7 @@ export default function About() {
           target='_blank'
           className={styles.aboutImages2}
         >
+          <span>3rd Least Visited Park</span>
           <span>Kobuk Valley National Park</span>
         </Link>
         <Link
@@ -75,6 +77,7 @@ export default function About() {
           target='_blank'
           className={styles.aboutImages3}
         >
+          <span>2nd Least Visited Park</span>
           <span>National Park of American Samoa</span>
         </Link>
         <Link
@@ -82,6 +85,7 @@ export default function About() {
           target='_blank'
           className={styles.aboutImages4}
         >
+          <span>1st Least Visited Park</span>
           <span>Gates of the Arctic National Park</span>
         </Link>
       </main>
