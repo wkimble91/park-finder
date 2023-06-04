@@ -84,7 +84,7 @@ export default function Home() {
               </h2>
             </div>
             <Link href='/explore' className={styles.heroButton}>
-              Find A Park <span>Near You</span>
+              Find A Park Near You
               <svg className={styles.heroButtonSVG}>
                 <use href='#icon-chevron-right-outline'>
                   <symbol id='icon-chevron-right-outline' viewBox='0 0 24 24'>

@@ -37,15 +37,19 @@
   }
 
   &Container {
-    min-height: 100vh;
-    max-width: 200rem;
-    width: 100%;
-    height: 100%;
+    //Display
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    //Spacing
+    min-height: 100vh;
+    max-width: 200rem;
+    width: 100%;
+    height: 100%;
+
     @media only screen and (max-width: $bp-medium) {
+      //Display
       flex-direction: column;
     }
 
@@ -69,7 +73,7 @@
       }
 
       @media only screen and (max-width: $bp-medium) {
-
+        //Display
         justify-content: center;
 
         //Spacing
@@ -77,9 +81,7 @@
         min-height: 100vh;
         padding: 4rem;
 
-        // MOVE IMAGE TO JUST THE HERO
-        // AND MOVE THE FEATURED PARKS BELOW
-
+        // MOVE IMAGE TO JUST THE HERO AND MOVE THE FEATURED PARKS BELOW THE HERO
         //Image Styling
         background-image: linear-gradient(to bottom,
             rgba($color-grey-dark, 0.2) 0%,
@@ -132,18 +134,11 @@
 
     @media only screen and (max-width: $bp-largest) {
       //Font Styling
-      // font-size: 14.5rem;
       text-shadow: 3px 3px 1px black;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      //Font Styling
-      // font-size: 12rem;
     }
 
     @media only screen and (max-width: $bp-small) {
       //Font Styling
-      // font-size: 6rem;
       text-shadow: 2px 2px 1px black;
     }
   }
@@ -176,49 +171,67 @@
   }
 
   &Button {
+    //Display
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size: 2.4rem;
-    font-weight: 600;
-    padding: 2rem 3rem;
-    border-radius: .8rem;
-    transition: all 0.3s ease-in-out;
-    border: 2px solid white;
+
+    //Spacing
     width: fit-content;
+    padding: 2rem 3rem;
     margin-top: 10rem;
 
-    span {
-      margin-left: 5px;
-    }
+    //Font Styling
+    font-size: 2.4rem;
+    font-weight: 600;
+
+    //Color Styling
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    //Border Styling
+    border: none;
+    border-radius: .8rem;
+    border: 2px solid white;
+
+    //Animation
+    transition: all 0.3s ease-in-out;
 
     @media only screen and (max-width: $bp-largest) {
+      //Spacing
+      padding: 1.8rem 2.8rem;
+
       //Font Styling
       font-size: 2.2rem;
-      padding: 1.8rem 2.8rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
+      //Spacing
+      padding: 1.6em 2.6rem;
+
       //Font Styling
       font-size: 2rem;
-      padding: 1.6em 2.6rem;
     }
 
     @media only screen and (max-width: $bp-small) {
+      //Spacing
+      padding: 1.4rem 2rem;
+
       //Font Styling
       font-size: 1.8rem;
-      padding: 1.4rem 2rem;
     }
 
     &SVG {
-      margin-left: 2rem;
+      //Display
       display: inline-block;
+
+      //Spacing
+      margin-left: 2rem;
       width: 2.5rem;
       height: 2.5rem;
       stroke-width: 0;
+
+      //Color Styling
       stroke: white;
       fill: white;
 
@@ -237,9 +250,8 @@
   }
 
   &Carousel {
-    position: relative;
-
     //Spacing
+    position: relative;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -261,28 +273,38 @@
 
     &Link {
       &>span:nth-of-type(1) {
+        //Spacing
         position: absolute;
         z-index: 3;
         bottom: 0;
         right: 0;
-        color: white;
-        font-size: 1.3rem;
-        font-weight: 600;
         margin: 4.8rem 0;
         padding: 0.1rem .6rem;
+
+        //Font Styling
+        font-size: 1.3rem;
+        font-weight: 600;
+
+        //Color Styling
+        color: rgba(white, .8);
         background-color: rgba(0, 0, 0, 0.7);
       }
 
       &>span:nth-of-type(2) {
+        //Spacing
         position: absolute;
         z-index: 3;
         bottom: 0;
         right: 0;
-        color: white;
-        font-size: 1.8rem;
-        font-weight: 600;
         margin: 0.8rem 0;
         padding: 0.3rem 1rem;
+
+        //Font Styling
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        //Color Styling
+        color: white;
         background-color: rgba(0, 0, 0, 0.7);
       }
     }
