@@ -54,7 +54,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <Script src='https://getinsights.io/js/insights.js'></Script>
+        <Script src='https://getinsights.io/js/insights.js' />
         <Script id='getInsights-script'>
           insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();
         </Script>
