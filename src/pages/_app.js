@@ -12,10 +12,6 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      <Script src='https://getinsights.io/js/insights.js' />
-      <Script id='getInsights-script'>
-        {`insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();`}
-      </Script>
     </>
   );
 }
