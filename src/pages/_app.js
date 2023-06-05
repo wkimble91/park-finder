@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <Script src='https://getinsights.io/js/insights.js' />
       <Script id='getInsights-script'>
-        insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();
+        {`insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();`}
       </Script>
     </>
   );
