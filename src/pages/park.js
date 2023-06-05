@@ -40,7 +40,7 @@ export default function Park(parkData) {
           setParkWarnings(response.data);
         });
     }
-  }, []);
+  }, [parkInfo]);
 
   useEffect(() => {
     // Scroll to top of page
