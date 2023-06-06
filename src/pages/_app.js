@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
       <Navbar />
       <Component {...pageProps} />
       <Script src='https://getinsights.io/js/insights.js' defer></Script>
-      <Script defer>
+      <Script id='getInsights-script' defer>
         insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();
       </Script>
     </>
