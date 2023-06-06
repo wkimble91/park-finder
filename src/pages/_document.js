@@ -53,10 +53,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script src='https://getinsights.io/js/insights.js' defer></script>
-        <script defer>
-          insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();
-        </script>
       </body>
     </Html>
   );
