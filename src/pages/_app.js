@@ -1,7 +1,6 @@
 import '@/styles/globals.css';
 import React from 'react';
 import Head from 'next/head';
-import Script from 'next/script';
 import Navbar from '../components/Navbar';
 
 export default function App({ Component, pageProps }) {
@@ -12,10 +11,6 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      <Script src='https://getinsights.io/js/insights.js' defer></Script>
-      <Script id='getInsights-script' defer>
-        insights.init('Q4aXnJtuMFDfixwb'); insights.trackPages();
-      </Script>
     </>
   );
 }

@@ -16,11 +16,11 @@
       //Spacing
       position: relative;
       width: 100vw;
-      height: 80vh;
+      height: 70vh;
       z-index: 1;
 
       //Color 
-      background-color: $color-grey-dark;
+      background-color: $color-background;
 
       & a span {
         //Display
@@ -73,40 +73,33 @@
     }
   }
 
-  // FLOATING PARK TITLE
   &Name {
+    //Display
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     //Spacing
-    position: absolute;
-    margin: -180px auto 0;
-    padding: 0 5vw 0;
-    width: 100%;
-    z-index: 2;
+    height: 15vh;
 
     //Font 
     font-family: 'Playfair', serif;
-    font-weight: 900;
-    font-size: clamp(5.5rem, 3.5vw, 11rem);
+    font-weight: 600;
+    font-size: clamp(5.5rem, 4.5vw, 11rem);
     text-align: center;
-    text-shadow: $text-outline-dark;
     //Color 
-    color: white;
-
-    @media only screen and (max-width: $bp-medium) {
-      //Spacing
-      padding: 0.5rem 1rem;
-      margin: -200px auto 100px;
-    }
+    color: $color-secondary;
   }
 
   // PRICE, LOCATION, AND PHONE INFO
   &Info {
     //Display
     display: flex;
-    justify-content: space-around;
 
     //Spacing
     width: fit-content;
-    height: 20vh;
+    height: 15vh;
     margin: 0 auto;
 
     //Font 
@@ -126,7 +119,6 @@
 
     &Item {
       //Spacing
-      margin: auto 0;
       padding: 3rem 4rem;
       width: fit-content;
       min-width: 35rem;
@@ -136,7 +128,7 @@
       text-align: center;
 
       //Color 
-      color: white;
+      color: $color-secondary;
       text-shadow: 1px 1px 1px black;
 
 
@@ -188,7 +180,7 @@
         text-align: center;
         text-shadow: none;
         text-decoration: underline;
-        text-decoration-color: $color-accent-light;
+        text-decoration-color: $color-accent;
         text-underline-offset: 3px;
 
         //Color 
@@ -236,7 +228,7 @@
       white-space: nowrap;
 
       //Color 
-      color: white;
+      color: $color-secondary;
 
       @media only screen and (max-width: $bp-medium) {
         //Display
@@ -267,10 +259,10 @@
       margin: 0 auto 1.4rem;
 
       //Color 
-      background-color: $color-accent-dark;
+      background-color: $color-accent;
 
       //Border 
-      border: 3px solid white;
+      border: 3px solid $color-secondary;
       border-radius: 50%;
       box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
 
@@ -293,7 +285,7 @@
         height: 5rem;
 
         //Color 
-        fill: white;
+        fill: $color-secondary;
 
         @media only screen and (max-width: $bp-medium) {
           //Spacing
@@ -314,7 +306,7 @@
       font-weight: 600;
       text-align: center;
 
-      color: white;
+      color: $color-secondary;
 
       @media only screen and (max-width: $bp-medium) {
         font-size: 3rem;
@@ -345,11 +337,11 @@
     z-index: 1;
 
     //Color 
-    color: white;
+    color: $color-secondary;
 
     //Border 
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 2px solid $color-secondary;
+    border-bottom: 2px solid $color-secondary;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 
     @media only screen and (max-width: $bp-small) {
@@ -439,7 +431,7 @@
           left: 0;
 
           //Border 
-          background-color: $color-accent-light;
+          background-color: $color-accent;
 
           @media only screen and (max-width: $bp-medium) {
             //Spacing
@@ -491,7 +483,7 @@
       font-weight: 600;
 
       //Color 
-      color: white;
+      color: $color-secondary;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 
@@ -514,7 +506,7 @@
         left: 0;
 
         //Border 
-        background-color: $color-accent-light;
+        background-color: $color-accent;
 
         @media only screen and (max-width: $bp-medium) {
           width: 0%;
@@ -560,7 +552,7 @@
         font-weight: 600;
 
         //Color 
-        color: white;
+        color: $color-secondary;
       }
 
       &Error {
@@ -584,7 +576,7 @@
         margin: auto 1rem auto 0;
 
         //Color 
-        fill: $color-accent-light;
+        fill: $color-accent;
       }
     }
   }
@@ -604,6 +596,6 @@
     text-align: center;
 
     //Color 
-    color: white;
+    color: $color-secondary;
   }
 }

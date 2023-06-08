@@ -12,11 +12,11 @@
   text-shadow: none;
 
   //Color 
-  color: white;
+  color: $color-secondary;
 
   //Border 
-  border-radius: 8px;
-  border: 1px solid white;
+  border-radius: $default-border-radius-lg;
+  border: 1px solid $color-secondary;
 }
 
 .Warning {
@@ -25,8 +25,8 @@
   padding: 2rem 2rem 1rem;
   width: 100%;
   max-width: 100rem;
-  background-color: $color-accent-dark;
-  border-radius: $default-border-radius;
+  background-color: $color-primary;
+  border-radius: $default-border-radius-lg;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 
   //Font 
@@ -37,35 +37,31 @@
   // BADGES FOR EACH TYPE OF WARNING
   &_catagory {
     &_closure {
-      //Mixin
       @include badge;
 
       //Color 
-      background-color: #7678ed;
+      background-color: #9e2a2b;
     }
 
     &_danger {
-      //Mixin
       @include badge;
 
       //Color 
-      background-color: #9a031e;
+      background-color: #540b0e;
     }
 
     &_information {
-      //Mixin
       @include badge;
 
       //Color 
-      background-color: #1a659e;
+      background-color: #335c67;
     }
 
     &_caution {
-      //Mixin
       @include badge;
 
       //Color 
-      background-color: #ff928b;
+      background-color: #e09f3e;
     }
   }
 
@@ -76,7 +72,7 @@
 
     //Font 
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 1.2;
     font-weight: 600;
     text-shadow: 1px 0 1px black;
@@ -94,14 +90,14 @@
   a {
     //Color 
     text-decoration: underline;
-    text-decoration-color: $color-accent-light;
+    text-decoration-color: $color-accent;
     text-underline-offset: 3px;
     color: inherit;
   }
 
   &_description {
     //Font 
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-shadow: none;
   }

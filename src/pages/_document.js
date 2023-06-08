@@ -39,7 +39,7 @@ export default function Document() {
           rel='stylesheet'
         />
         <link
-          href='https://fonts.googleapis.com/css2?family=Playfair:wght@900&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Playfair:wght@300;900&display=swap'
           rel='stylesheet'
         />
         {/* --- Bootstrap CSS for Carousel --- */}

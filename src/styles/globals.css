@@ -12,9 +12,9 @@ li { list-style: none; }
 
 a { text-decoration: none; }
 
-::-moz-selection { background-color: rgba(170, 139, 86, 0.75); color: white; }
+::-moz-selection { background-color: rgba(170, 139, 86, 0.75); color: #f7f2f7; }
 
-::selection { background-color: rgba(170, 139, 86, 0.75); color: white; }
+::selection { background-color: rgba(170, 139, 86, 0.75); color: #f7f2f7; }
 
 /*-- -------------------------- -->
 <---         Animations         -->

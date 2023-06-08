@@ -15,9 +15,9 @@
 
   //Image 
   background-image: linear-gradient(to bottom,
-      rgba($color-grey-dark, 0.2) 0%,
-      rgba($color-grey-dark, 0.2) 85%,
-      rgba($color-grey-dark, 1) 100%),
+      rgba($color-background, 0.2) 0%,
+      rgba($color-background, 0.2) 85%,
+      rgba($color-background, 1) 100%),
     url(../../public/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -64,9 +64,6 @@
       height: auto;
       width: 60%;
 
-      //Border 
-      border-radius: $default-border-radius;
-
       @media only screen and (max-width: $bp-large) {
         //Font 
         width: 54%;
@@ -81,12 +78,11 @@
         min-height: 100vh;
         padding: 4rem;
 
-        // MOVE IMAGE TO JUST THE HERO AND MOVE THE FEATURED PARKS BELOW THE HERO
-        //Image 
+        // MOVE IMAGE TO JUST THE HERO AND MOVE THE FEATURED PARKS BELOW THE HERO //
         background-image: linear-gradient(to bottom,
-            rgba($color-grey-dark, 0.2) 0%,
-            rgba($color-grey-dark, 0.2) 85%,
-            rgba($color-grey-dark, 1) 100%),
+            rgba($color-background, 0.2) 0%,
+            rgba($color-background, 0.2) 85%,
+            rgba($color-background, 1) 100%),
           url(../../public/hero.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -130,7 +126,7 @@
     text-shadow: 4px 4px 1px black;
 
     //Color 
-    color: white;
+    color: $color-secondary;
 
     @media only screen and (max-width: $bp-largest) {
       //Font 
@@ -151,7 +147,7 @@
     text-shadow: 2px 2px 2px black;
 
     //Color 
-    color: white;
+    color: $color-secondary;
     opacity: 0.8;
 
     @media only screen and (max-width: $bp-largest) {
@@ -186,13 +182,13 @@
     font-weight: 600;
 
     //Color 
-    color: white;
+    color: $color-secondary;
     background-color: rgba(0, 0, 0, 0.8);
 
     //Border 
     border: none;
     border-radius: .8rem;
-    border: 2px solid white;
+    border: 2px solid $color-secondary;
 
     //Animation
     transition: all 0.3s ease-in-out;
@@ -232,8 +228,8 @@
       stroke-width: 0;
 
       //Color 
-      stroke: white;
-      fill: white;
+      stroke: $color-secondary;
+      fill: $color-secondary;
 
       @media only screen and (max-width: $bp-medium) {
         //Font 
@@ -245,7 +241,7 @@
     &:hover {
       scale: 1.05;
       transform: translateX(.6rem);
-      color: white;
+      color: $color-secondary;
     }
   }
 
@@ -286,7 +282,7 @@
         font-weight: 400;
 
         //Color 
-        color: rgba(white, .9);
+        color: rgba($color-secondary, .9);
         background-color: rgba(0, 0, 0, 0.7);
       }
 
@@ -304,9 +300,23 @@
         font-weight: 600;
 
         //Color 
-        color: white;
+        color: $color-secondary;
         background-color: rgba(0, 0, 0, 0.7);
       }
+    }
+  }
+
+  &>span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgba(255, 255, 255, .4);
+    font-size: 1.4rem;
+    margin: 0 0 3rem 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 0;
+      margin: 95.5vh 0 0 2rem;
     }
   }
 }

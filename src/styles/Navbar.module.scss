@@ -11,7 +11,7 @@
   text-decoration: none;
 
   //Color 
-  background-color: $color-grey-dark;
+  background-color: $color-background;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .8);
 
   //Animation
@@ -124,8 +124,7 @@
         transition: all 0.1s;
 
         //Color 
-        color: $color-grey-light;
-        // background-color: $color-accent;
+        color: $color-secondary;
         border-radius: 8px;
 
         // Hover Lines
@@ -139,7 +138,7 @@
           bottom: 9px;
 
           //Border 
-          border-bottom: 2px solid $color-accent-light;
+          border-bottom: 3px solid $color-accent;
 
           //Animations
           transition: width 0.4s;

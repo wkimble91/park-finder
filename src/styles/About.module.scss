@@ -3,7 +3,7 @@
 .about {
   //Display
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60% 35%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 4rem;
 
@@ -14,9 +14,9 @@
 
   //Image 
   background-image: linear-gradient(to bottom,
-      rgba($color-grey-dark, 0.4) 0%,
-      rgba($color-grey-dark, 0.4) 80%,
-      rgba($color-grey-dark, 1) 100%),
+      rgba($color-background, 0.4) 0%,
+      rgba($color-background, 0.4) 80%,
+      rgba($color-background, 1) 100%),
     url(../../public/river.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
     padding: 3rem;
 
     //Color
-    background-color: $color-grey-dark;
+    background-color: $color-background;
     box-shadow: 2px 2px 4px black;
 
     @media only screen and (max-width: $bp-medium) {
@@ -77,7 +77,7 @@
     font-size: 7rem;
 
     //Color
-    color: white;
+    color: $color-secondary;
 
     @media only screen and (max-width: $bp-medium) {
       //Font
@@ -95,7 +95,7 @@
       left: 0;
 
       //Border 
-      background-color: $color-accent-light;
+      background-color: $color-accent;
 
       //Animations
       animation: 0.8s ease-in-out grow;
@@ -123,7 +123,7 @@
     line-height: 1.8;
 
     //Color
-    color: white;
+    color: $color-secondary;
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
@@ -164,7 +164,7 @@
       font-weight: 400;
 
       //Color 
-      color: rgba(white, .9);
+      color: rgba($color-secondary, .9);
       background-color: rgba(0, 0, 0, 0.7);
     }
 
@@ -181,7 +181,7 @@
       font-weight: 600;
 
       //Color 
-      color: white;
+      color: $color-secondary;
       background-color: rgba(0, 0, 0, 0.7);
     }
   }

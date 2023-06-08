@@ -36,7 +36,7 @@
     font-weight: 600;
 
     //Color 
-    color: white;
+    color: $color-secondary;
 
     @media only screen and (max-width: 56.25em),
     only screen and (hover: none) {
@@ -58,7 +58,7 @@
       font-weight: 800;
 
       //Color 
-      color: white;
+      color: $color-secondary;
     }
 
     &Cost {
@@ -70,7 +70,7 @@
       font-size: 1.8rem;
 
       //Color 
-      color: lightgray;
+      color: $color-secondary;
     }
 
     &Contact {
@@ -82,7 +82,7 @@
       font-size: 1.6rem;
 
       //Color 
-      color: lightgray;
+      color: $color-secondary;
     }
 
     &Hours {
@@ -95,7 +95,7 @@
       font-weight: 400;
 
       //Color 
-      color: lightgray;
+      color: $color-secondary;
 
       ul li {
         //Font 
@@ -117,10 +117,10 @@
     box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
 
     //Border 
-    border-radius: $default-border-radius;
+    border-radius: $default-border-radius-sm;
 
     //Animations
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
 
     &Front {
       //Image 
@@ -139,9 +139,11 @@
       transform: rotateY(180deg);
 
       //Color 
+      // background-color: $color-background;
+
       background-image: linear-gradient(to right bottom,
-          rgba(40, 40, 40, 1),
-          rgba(20, 20, 20, 1));
+          rgba(30, 30, 30, 1),
+          rgba(10, 10, 10, 1));
 
       &Left {
         //Display
@@ -201,10 +203,10 @@
     max-width: 60rem;
 
     //Color 
-    background-color: $color-grey-dark;
+    background-color: $color-background;
 
     //Border 
-    border-radius: $default-border-radius;
+    border-radius: $default-border-radius-sm;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 
     &Side {
@@ -232,7 +234,7 @@
         background-color: rgb(40, 40, 40);
 
         //Border 
-        border-radius: 0 0 $default-border-radius $default-border-radius;
+        border-radius: 0 0 $default-border-radius-sm $default-border-radius-sm;
         clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0 100%);
 
         //Animations

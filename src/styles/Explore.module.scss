@@ -14,10 +14,10 @@
 
   //Image 
   background-image: linear-gradient(to bottom,
-      rgba($color-grey-dark, 0.35) 0%,
-      rgba($color-grey-dark, 0.35) 50%,
-      rgba($color-grey-dark, 1) 90%,
-      rgba($color-grey-dark, 1) 100%),
+      rgba($color-background, 0.35) 0%,
+      rgba($color-background, 0.35) 50%,
+      rgba($color-background, 1) 90%,
+      rgba($color-background, 1) 100%),
     url(../../public/explore.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
     text-align: center;
 
     //Border 
-    border-radius: $default-border-radius;
+    border-radius: $default-border-radius-sm;
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
@@ -58,16 +58,17 @@
   &Header {
     //Font 
     font-size: clamp(6rem, 8vw, 14rem);
-    font-weight: 600;
+    font-family: 'Playfair', serif;
+    font-weight: 300;
     line-height: 1.6;
     padding: 1.5rem 5rem;
 
     //Color 
-    color: white;
-    text-shadow: 3px 3px 2px black;
+    color: $color-secondary;
+    text-shadow: 1px 1px 1px black;
 
     //Border 
-    border-radius: 1rem;
+    border-radius: $default-border-radius-lg;
   }
 
   &>span {
@@ -120,8 +121,8 @@
     font-weight: 400;
 
     //Color 
-    background-color: rgba($color-grey-dark, .95);
-    color: white;
+    background-color: rgba($color-background, .95);
+    color: $color-secondary;
 
     //Border 
     border: none;

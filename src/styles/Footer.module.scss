@@ -11,7 +11,7 @@
   padding: 2rem 3rem;
 
   //Color 
-  background-color: $color-grey-dark;
+  background-color: $color-background;
 
   @media only screen and (max-width: $bp-large) {
     //Spacing
@@ -32,7 +32,7 @@
     width: 80%;
 
     //Color 
-    color: white;
+    color: $color-secondary;
 
     p {
       margin: 0;

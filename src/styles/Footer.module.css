@@ -1,6 +1,6 @@
 .footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100vw; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: 2rem 3rem; background-color: #181818; }
 @media only screen and (max-width: 75em) { .footer { padding: 1rem; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
-.footerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 1.8rem; font-weight: 200; width: 80%; color: white; }
+.footerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 1.8rem; font-weight: 200; width: 80%; color: #f7f2f7; }
 .footerBox p { margin: 0; }
 .footerBox a { text-decoration: underline; text-underline-offset: 3px; color: inherit; }
 @media only screen and (max-width: 75em) { .footerBox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; } }
