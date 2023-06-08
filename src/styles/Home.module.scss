@@ -269,6 +269,8 @@
     }
 
     &Link {
+
+      //Ranking
       &>span:nth-of-type(1) {
         //Spacing
         position: absolute;
@@ -279,7 +281,7 @@
         padding: 0.1rem .6rem;
 
         //Font 
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 400;
 
         //Color 
@@ -287,6 +289,7 @@
         background-color: rgba(0, 0, 0, 0.7);
       }
 
+      //Title
       &>span:nth-of-type(2) {
         //Spacing
         position: absolute;

@@ -25,7 +25,7 @@
 .heroButton:hover { scale: 1.05; -webkit-transform: translateX(0.6rem); transform: translateX(0.6rem); color: #f7f2f7; }
 .heroCarousel { position: relative; z-index: 1; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 .heroCarouselContainer { position: relative; z-index: 1; height: auto; width: 100%; max-width: 55rem; -webkit-box-shadow: 1px 1px 4px black; box-shadow: 1px 1px 4px black; }
-.heroCarouselLink > span:nth-of-type(1) { position: absolute; z-index: 3; bottom: 0; right: 0; margin: 4.8rem 0; padding: 0.1rem .6rem; font-size: 1.3rem; font-weight: 400; color: rgba(247, 242, 247, 0.9); background-color: rgba(0, 0, 0, 0.7); }
+.heroCarouselLink > span:nth-of-type(1) { position: absolute; z-index: 3; bottom: 0; right: 0; margin: 4.8rem 0; padding: 0.1rem .6rem; font-size: 1.4rem; font-weight: 400; color: rgba(247, 242, 247, 0.9); background-color: rgba(0, 0, 0, 0.7); }
 .heroCarouselLink > span:nth-of-type(2) { position: absolute; z-index: 3; bottom: 0; right: 0; margin: 0.8rem 0; padding: 0.3rem 1rem; font-size: 1.8rem; font-weight: 600; color: #f7f2f7; background-color: rgba(0, 0, 0, 0.7); }
 .hero > span { position: absolute; bottom: 0; left: 0; color: rgba(255, 255, 255, 0.4); font-size: 1.4rem; margin: 0 0 3rem 2rem; }
 @media only screen and (max-width: 56.25em) { .hero > span { top: 0; margin: 95.5vh 0 0 2rem; } }
