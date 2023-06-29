@@ -6,8 +6,8 @@
 .exploreHeader { font-size: clamp(6rem, 8vw, 14rem); font-family: 'Playfair', serif; font-weight: 300; line-height: 1.6; padding: 1.5rem 5rem; color: #f7f2f7; text-shadow: 1px 1px 1px black; border-radius: 10px; }
 .explore > span { position: absolute; margin: 95vh 0 0 2rem; top: 0; left: 0; font-size: 1.4rem; color: rgba(255, 255, 255, 0.6); }
 
-.stateSelector { margin: 10rem auto auto; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.1s; transition: all 0.1s; }
-.stateSelector:hover { scale: 1.01; -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); }
+.stateSelector { margin: 10rem auto auto; -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); -webkit-transition: all 0.2s; transition: all 0.2s; }
+.stateSelector:hover { -webkit-transform: scale(1.01); transform: scale(1.01); -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); }
 @media only screen and (max-width: 75em) { .stateSelector { margin: 4rem auto auto; } }
 .stateSelector select { margin: 0 auto; padding: 1rem 2rem; width: 50rem; font-size: 2rem; letter-spacing: 0.1rem; font-weight: 400; background-color: rgba(24, 24, 24, 0.95); color: #f7f2f7; border: none; border-radius: 2px; }
 @media only screen and (max-width: 75em) { .stateSelector select { width: 60vw; margin: 0 auto; } }
