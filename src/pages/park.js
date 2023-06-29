@@ -157,7 +157,9 @@ export default function Park(parkData) {
                   <p>No Phone Number Provided</p>
                 ) : (
                   <a
-                    href={`tel:${parkInfo.contacts.phoneNumbers[0].phoneNumber}`}>
+                    href={`tel:${parkInfo.contacts.phoneNumbers[0].phoneNumber
+                      .split(' ')
+                      .join('')}`}>
                     {parkInfo.contacts.phoneNumbers[0].phoneNumber}
                   </a>
                 )}
