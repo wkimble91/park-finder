@@ -240,8 +240,7 @@
     }
 
     &:hover {
-      scale: 1.05;
-      transform: translateX(.6rem);
+      transform: translateX(1rem) scale(1.05);
       color: $color-secondary;
     }
   }
