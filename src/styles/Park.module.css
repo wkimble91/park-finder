@@ -2,13 +2,13 @@
 .parkImage { z-index: 1; -o-object-fit: cover; object-fit: cover; }
 .parkImageContainer { position: relative; width: 100vw; height: 70vh; z-index: 1; background-color: #181818; }
 .parkImageContainer a span { scale: 3; background-color: rgba(0, 0, 0, 0.6); border-radius: 3px; }
-.parkDivider { position: absolute; bottom: 1; left: 1; z-index: 2; width: 100%; margin-top: calc(-50px + 2px); overflow: hidden; }
+.parkDivider { position: absolute; bottom: 1; left: 1; z-index: 2; width: 100%; margin-top: calc(-40px + 2px); overflow: hidden; }
 @media only screen and (max-width: 56.25em) { .parkDivider { margin-top: calc(-20px + 2px); } }
-.parkDivider svg { display: block; position: relative; width: calc(100% + 1.3px); height: 50px; }
+.parkDivider svg { display: block; position: relative; width: calc(100% + 1.3px); height: 40px; }
 @media only screen and (max-width: 56.25em) { .parkDivider svg { height: 20px; } }
 .parkDividerFill { fill: #181818; }
-.parkName { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 15vh; font-family: 'Playfair', serif; font-weight: 600; font-size: clamp(5.5rem, 4.5vw, 11rem); text-align: center; color: #f7f2f7; }
-.parkInfo { display: -webkit-box; display: -ms-flexbox; display: flex; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 15vh; margin: 0 auto; text-align: center; }
+.parkName { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 18vh; font-family: 'Playfair', serif; font-weight: 600; font-size: clamp(5.5rem, 4vw, 8rem); line-height: 1; text-align: center; overflow: visible; color: #f7f2f7; }
+.parkInfo { display: -webkit-box; display: -ms-flexbox; display: flex; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: 12vh; margin: 0 auto; text-align: center; }
 @media only screen and (max-width: 56.25em) { .parkInfo { width: 100vw; min-width: -webkit-fit-content; min-width: -moz-fit-content; min-width: fit-content; } }
 @media only screen and (max-width: 25em) { .parkInfo { -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
 .parkInfoItem { padding: 3rem 4rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; min-width: 35rem; white-space: nowrap; text-align: center; color: #f7f2f7; text-shadow: 1px 1px 1px black; }
@@ -19,7 +19,7 @@
 @media only screen and (max-width: 37.5em) { .parkInfoItem p { font-size: 1.6rem; } }
 .parkInfoItem a { font-size: 2rem; line-height: 1.2; text-align: center; text-shadow: none; text-decoration: underline; -webkit-text-decoration-color: #aa8b56; text-decoration-color: #aa8b56; text-underline-offset: 3px; color: inherit; text-shadow: 1px 1px 1px black; }
 @media only screen and (max-width: 37.5em) { .parkInfoItem a { font-size: 1.6rem; } }
-.parkWarning { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto 5rem; }
+.parkWarning { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 5rem auto; }
 @media only screen and (max-width: 56.25em) { .parkWarning { width: 80vw; min-width: -webkit-fit-content; min-width: -moz-fit-content; min-width: fit-content; } }
 @media only screen and (max-width: 25em) { .parkWarning { -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 90vw; } }
 .parkWarningContainer { padding: 3rem 4rem; min-width: 30rem; white-space: nowrap; color: #f7f2f7; }

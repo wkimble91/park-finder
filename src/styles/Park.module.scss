@@ -43,7 +43,7 @@
     left: 1;
     z-index: 2;
     width: 100%;
-    margin-top: calc(-50px + 2px);
+    margin-top: calc(-40px + 2px);
     overflow: hidden;
 
     // DECREASES CURVE FOR SMALLER SCREENS
@@ -59,7 +59,7 @@
       //Spacing
       position: relative;
       width: calc(100% + 1.3px);
-      height: 50px;
+      height: 40px;
 
       @media only screen and (max-width: $bp-medium) {
         //Spacing
@@ -81,13 +81,16 @@
 
 
     //Spacing
-    height: 15vh;
+    height: 18vh;
 
     //Font 
     font-family: 'Playfair', serif;
     font-weight: 600;
-    font-size: clamp(5.5rem, 4.5vw, 11rem);
+    font-size: clamp(5.5rem, 4vw, 8rem);
+    line-height: 1;
     text-align: center;
+    overflow: visible;
+
     //Color 
     color: $color-secondary;
   }
@@ -99,7 +102,7 @@
 
     //Spacing
     width: fit-content;
-    height: 15vh;
+    height: 12vh;
     margin: 0 auto;
 
     //Font 
@@ -202,7 +205,7 @@
 
     //Spacing
     width: fit-content;
-    margin: 0 auto 5rem;
+    margin: 5rem auto;
 
     @media only screen and (max-width: $bp-medium) {
       //Spacing
