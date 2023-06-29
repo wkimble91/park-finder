@@ -91,14 +91,11 @@ export default function Park(parkData) {
             ) : (
               <Carousel
                 indicators={false}
-                className={styles.parkImageContainer}
-              >
+                className={styles.parkImageContainer}>
                 {parkInfo.images.map((image, index) => (
                   <Carousel.Item
                     key={index}
-                    interval={8000}
-                    className={styles.parkImageContainer}
-                  >
+                    className={styles.parkImageContainer}>
                     <Image
                       className={styles.parkImage}
                       fill
@@ -119,12 +116,10 @@ export default function Park(parkData) {
               data-name='Layer 1'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 1200 120'
-              preserveAspectRatio='none'
-            >
+              preserveAspectRatio='none'>
               <path
                 d='M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z'
-                className={styles.parkDividerFill}
-              ></path>
+                className={styles.parkDividerFill}></path>
             </svg>
           </div>
 
@@ -162,8 +157,7 @@ export default function Park(parkData) {
                   <p>No Phone Number Provided</p>
                 ) : (
                   <a
-                    href={`tel:${parkInfo.contacts.phoneNumbers[0].phoneNumber}`}
-                  >
+                    href={`tel:${parkInfo.contacts.phoneNumbers[0].phoneNumber}`}>
                     {parkInfo.contacts.phoneNumbers[0].phoneNumber}
                   </a>
                 )}
@@ -179,8 +173,7 @@ export default function Park(parkData) {
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='-4 -2 40 40'
                   fill='none'
-                  className={styles.parkWarningIconWarning}
-                >
+                  className={styles.parkWarningIconWarning}>
                   <path d='M16 2.899l13.409 26.726h-26.819l13.409-26.726zM16 0c-0.69 0-1.379 0.465-1.903 1.395l-13.659 27.222c-1.046 1.86-0.156 3.383 1.978 3.383h27.166c2.134 0 3.025-1.522 1.978-3.383h0l-13.659-27.222c-0.523-0.93-1.213-1.395-1.903-1.395v0z'></path>
                   <path d='M18 26c0 1.105-0.895 2-2 2s-2-0.895-2-2c0-1.105 0.895-2 2-2s2 0.895 2 2z'></path>
                   <path d='M16 22c-1.105 0-2-0.895-2-2v-6c0-1.105 0.895-2 2-2s2 0.895 2 2v6c0 1.105-0.895 2-2 2z'></path>
@@ -236,8 +229,7 @@ export default function Park(parkData) {
                   <li key={index} className={styles.parkTodoListItem}>
                     <svg
                       className={styles.parkTodoListIcon}
-                      viewBox='0 0 32 32'
-                    >
+                      viewBox='0 0 32 32'>
                       <path d='M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM14 24.828l-7.414-7.414 2.828-2.828 4.586 4.586 9.586-9.586 2.828 2.828-12.414 12.414z'></path>
                     </svg>
                     {activity.name}
