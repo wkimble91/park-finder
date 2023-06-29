@@ -159,6 +159,8 @@ export default function Park(parkData) {
                   <a
                     href={`tel:${parkInfo.contacts.phoneNumbers[0].phoneNumber
                       .split(' ')
+                      .join('')
+                      .split('-')
                       .join('')}`}>
                     {parkInfo.contacts.phoneNumbers[0].phoneNumber}
                   </a>
