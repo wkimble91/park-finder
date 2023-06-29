@@ -101,7 +101,6 @@ export default function Home() {
               {featuredParks1.map((park, index) => (
                 <Carousel.Item
                   key={index}
-                  interval={7000}
                   className={styles.heroCarouselContainer}>
                   <Link
                     target='_blank'
@@ -128,7 +127,6 @@ export default function Home() {
               {featuredParks2.map((park, index) => (
                 <Carousel.Item
                   key={index}
-                  interval={7000}
                   className={styles.heroCarouselContainer}>
                   <Link
                     target='_blank'
@@ -155,7 +153,6 @@ export default function Home() {
               {featuredParks3.map((park, index) => (
                 <Carousel.Item
                   key={index}
-                  interval={7000}
                   className={styles.heroCarouselContainer}>
                   <Link
                     target='_blank'
