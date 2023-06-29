@@ -86,11 +86,10 @@ export default function Home() {
             <Link href='/explore' className={styles.heroButton}>
               Find A Park Near You
               <svg className={styles.heroButtonSVG}>
-                <use href='#icon-chevron-right-outline'>
-                  <symbol id='icon-chevron-right-outline' viewBox='0 0 24 24'>
-                    <path d='M10 20c-0.802 0-1.555-0.312-2.122-0.879-0.566-0.566-0.878-1.32-0.878-2.121s0.312-1.555 0.879-2.122l2.878-2.878-2.878-2.879c-0.567-0.566-0.879-1.32-0.879-2.121s0.312-1.555 0.879-2.122c1.133-1.132 3.109-1.133 4.243 0.001l7.121 7.121-7.122 7.121c-0.566 0.567-1.319 0.879-2.121 0.879zM10 6c-0.268 0-0.518 0.104-0.707 0.292-0.189 0.19-0.293 0.441-0.293 0.708s0.104 0.518 0.293 0.707l4.292 4.293-4.292 4.293c-0.189 0.189-0.293 0.439-0.293 0.707s0.104 0.518 0.293 0.707c0.378 0.379 1.037 0.378 1.414 0.001l5.708-5.708-5.708-5.707c-0.189-0.189-0.439-0.293-0.707-0.293z'></path>
-                  </symbol>
-                </use>
+                <use href='#icon-chevron-right-outline'></use>
+                <symbol id='icon-chevron-right-outline' viewBox='0 0 24 24'>
+                  <path d='M10 20c-0.802 0-1.555-0.312-2.122-0.879-0.566-0.566-0.878-1.32-0.878-2.121s0.312-1.555 0.879-2.122l2.878-2.878-2.878-2.879c-0.567-0.566-0.879-1.32-0.879-2.121s0.312-1.555 0.879-2.122c1.133-1.132 3.109-1.133 4.243 0.001l7.121 7.121-7.122 7.121c-0.566 0.567-1.319 0.879-2.121 0.879zM10 6c-0.268 0-0.518 0.104-0.707 0.292-0.189 0.19-0.293 0.441-0.293 0.708s0.104 0.518 0.293 0.707l4.292 4.293-4.292 4.293c-0.189 0.189-0.293 0.439-0.293 0.707s0.104 0.518 0.293 0.707c0.378 0.379 1.037 0.378 1.414 0.001l5.708-5.708-5.708-5.707c-0.189-0.189-0.439-0.293-0.707-0.293z'></path>
+                </symbol>
               </svg>
             </Link>
           </div>
@@ -98,19 +97,16 @@ export default function Home() {
             <Carousel
               fade
               indicators={false}
-              className={styles.heroCarouselContainer}
-            >
+              className={styles.heroCarouselContainer}>
               {featuredParks1.map((park, index) => (
                 <Carousel.Item
                   key={index}
                   interval={7000}
-                  className={styles.heroCarouselContainer}
-                >
+                  className={styles.heroCarouselContainer}>
                   <Link
                     target='_blank'
                     href={park.link}
-                    className={styles.heroCarouselLink}
-                  >
+                    className={styles.heroCarouselLink}>
                     <Image
                       className={styles.heroCarousel}
                       priority
@@ -128,19 +124,16 @@ export default function Home() {
             <Carousel
               fade
               indicators={false}
-              className={styles.heroCarouselContainer}
-            >
+              className={styles.heroCarouselContainer}>
               {featuredParks2.map((park, index) => (
                 <Carousel.Item
                   key={index}
                   interval={7000}
-                  className={styles.heroCarouselContainer}
-                >
+                  className={styles.heroCarouselContainer}>
                   <Link
                     target='_blank'
                     href={park.link}
-                    className={styles.heroCarouselLink}
-                  >
+                    className={styles.heroCarouselLink}>
                     <Image
                       className={styles.heroCarousel}
                       priority
@@ -158,19 +151,16 @@ export default function Home() {
             <Carousel
               fade
               indicators={false}
-              className={styles.heroCarouselContainer}
-            >
+              className={styles.heroCarouselContainer}>
               {featuredParks3.map((park, index) => (
                 <Carousel.Item
                   key={index}
                   interval={7000}
-                  className={styles.heroCarouselContainer}
-                >
+                  className={styles.heroCarouselContainer}>
                   <Link
                     target='_blank'
                     href={park.link}
-                    className={styles.heroCarouselLink}
-                  >
+                    className={styles.heroCarouselLink}>
                     <Image
                       className={styles.heroCarousel}
                       priority
