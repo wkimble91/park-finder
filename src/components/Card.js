@@ -19,7 +19,7 @@ class Card extends Component {
   };
   render() {
     return (
-      <div className={styles.Card}>
+      <article className={styles.Card}>
         <div className={`${styles.CardSide} ${styles.CardSideFront}`}>
           <div className={styles.CardImageContainer}>
             {this.props.images.length !== 0 ? (
@@ -116,7 +116,7 @@ class Card extends Component {
             )}
           </div>
         </div>
-      </div>
+      </article>
     );
   }
 }
